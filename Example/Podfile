@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'TigerTradingSDK_Example' do
+  pod 'TigerTradingSDK', :path => '../'
+
+  target 'TigerTradingSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
