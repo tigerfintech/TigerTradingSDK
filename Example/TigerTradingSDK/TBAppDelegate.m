@@ -8,11 +8,29 @@
 
 #import "TBAppDelegate.h"
 
+#import <TigerQuoteSDK/TigerQuoteSDKManager.h>
+#import "TBViewController.h"
+
+#import <AFNetworking/AFNetworking.h>
+
 @implementation TBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+    
+    // Setup SDK with options and clientId
+    [TigerQuoteSDKManager setupWithOption:launchOptions clientId:@"1012892644333"];
+
+    // Initialize the root view controller
+    TBViewController *vc = [[TBViewController alloc] init];
+    
+    // If you want to use a navigation controller, uncomment the following lines
+    // UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    // self.window.rootViewController = nav;
+    self.window.rootViewController = vc;
     return YES;
 }
 

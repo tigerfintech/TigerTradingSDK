@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A08BA83D45ADA54A323679A /* Pods_TigerTradingSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BFF27654BAA43C74CD7EFE7 /* Pods_TigerTradingSDK_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,8 +21,12 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		77C9C583031E7222A53C718C /* Pods_TigerTradingSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E657DDEFE980500A3D24F3E2 /* Pods_TigerTradingSDK_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		BE955697A756AFD80EE62021 /* Pods_TigerTradingSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6ADCBCE567E6A473BBFB80 /* Pods_TigerTradingSDK_Example.framework */; };
+		C050395D2C81AAC300CDCBB6 /* TBCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C05039582C81AAC200CDCBB6 /* TBCellModel.m */; };
+		C050395E2C81AAC300CDCBB6 /* TBTokenManangerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C050395A2C81AAC300CDCBB6 /* TBTokenManangerViewController.m */; };
+		C050395F2C81AAC300CDCBB6 /* TBTokenManangerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C050395C2C81AAC300CDCBB6 /* TBTokenManangerViewController.xib */; };
+		DB0E0F0C122E2A6AD44721FF /* Pods_TigerTradingSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B543505DE220875F3C20563 /* Pods_TigerTradingSDK_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B543505DE220875F3C20563 /* Pods_TigerTradingSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TigerTradingSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D3292EE655D4BE83E0E91A /* Pods-TigerTradingSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TigerTradingSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TigerTradingSDK_Tests/Pods-TigerTradingSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		54E6932FFEE46C4D1556AA83 /* Pods-TigerTradingSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TigerTradingSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-TigerTradingSDK_Example/Pods-TigerTradingSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5BFF27654BAA43C74CD7EFE7 /* Pods_TigerTradingSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TigerTradingSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* TigerTradingSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TigerTradingSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +68,13 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B3C6DA471FF4AE3634D01E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9AB81AEDDD3E8DFCB0390EE5 /* Pods-TigerTradingSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TigerTradingSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-TigerTradingSDK_Tests/Pods-TigerTradingSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C05039582C81AAC200CDCBB6 /* TBCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCellModel.m; sourceTree = "<group>"; };
+		C05039592C81AAC200CDCBB6 /* TBTokenManangerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTokenManangerViewController.h; sourceTree = "<group>"; };
+		C050395A2C81AAC300CDCBB6 /* TBTokenManangerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTokenManangerViewController.m; sourceTree = "<group>"; };
+		C050395B2C81AAC300CDCBB6 /* TBCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCellModel.h; sourceTree = "<group>"; };
+		C050395C2C81AAC300CDCBB6 /* TBTokenManangerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBTokenManangerViewController.xib; sourceTree = "<group>"; };
+		E657DDEFE980500A3D24F3E2 /* Pods_TigerTradingSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TigerTradingSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C72B70289D23EE976C6AFC /* Pods-TigerTradingSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TigerTradingSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-TigerTradingSDK_Example/Pods-TigerTradingSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FE6ADCBCE567E6A473BBFB80 /* Pods_TigerTradingSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TigerTradingSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +85,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				BE955697A756AFD80EE62021 /* Pods_TigerTradingSDK_Example.framework in Frameworks */,
+				77C9C583031E7222A53C718C /* Pods_TigerTradingSDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +96,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				5A08BA83D45ADA54A323679A /* Pods_TigerTradingSDK_Tests.framework in Frameworks */,
+				DB0E0F0C122E2A6AD44721FF /* Pods_TigerTradingSDK_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +142,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				FE6ADCBCE567E6A473BBFB80 /* Pods_TigerTradingSDK_Example.framework */,
-				5BFF27654BAA43C74CD7EFE7 /* Pods_TigerTradingSDK_Tests.framework */,
+				E657DDEFE980500A3D24F3E2 /* Pods_TigerTradingSDK_Example.framework */,
+				0B543505DE220875F3C20563 /* Pods_TigerTradingSDK_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +156,11 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* TBViewController.h */,
 				6003F5A6195388D20070C39A /* TBViewController.m */,
+				C050395B2C81AAC300CDCBB6 /* TBCellModel.h */,
+				C05039582C81AAC200CDCBB6 /* TBCellModel.m */,
+				C05039592C81AAC200CDCBB6 /* TBTokenManangerViewController.h */,
+				C050395A2C81AAC300CDCBB6 /* TBTokenManangerViewController.m */,
+				C050395C2C81AAC300CDCBB6 /* TBTokenManangerViewController.xib */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -247,6 +260,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = luopengfei;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 322YC97D83;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -279,6 +295,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				C050395F2C81AAC300CDCBB6 /* TBTokenManangerViewController.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -302,11 +319,88 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TigerTradingSDK_Example/Pods-TigerTradingSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TigerTradingSDK/TigerTradingSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/AFNetworking.framework/AFNetworking",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/ChartKLineView.framework/ChartKLineView",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/FLAnimatedImage.framework/FLAnimatedImage",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/FMDB.framework/FMDB",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/Mantle.framework/Mantle",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/Masonry.framework/Masonry",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/MBProgressHUD.framework/MBProgressHUD",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/MJRefresh.framework/MJRefresh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/MqttCocoaAsyncSocket.framework/MqttCocoaAsyncSocket",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/Protobuf.framework/Protobuf",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/ReactiveObjC.framework/ReactiveObjC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/SDWebImage.framework/SDWebImage",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBAccountSystemKit.framework/TBAccountSystemKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBAuthBusiness.framework/TBAuthBusiness",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBBaseKit.framework/TBBaseKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBBusinessSupportKit.framework/TBBusinessSupportKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBCocoaMQTT.framework/TBCocoaMQTT",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBHomePage.framework/TBHomePage",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBHostManager.framework/TBHostManager",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBInitializeKit.framework/TBInitializeKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/tbmqtt.framework/tbmqtt",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBNetworking.framework/TBNetworking",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBPerformanceKit.framework/TBPerformanceKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBServiceProtocolKit.framework/TBServiceProtocolKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBShareKit.framework/TBShareKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBStockBusiness.framework/TBStockBusiness",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBStockBusinessBaseKit.framework/TBStockBusinessBaseKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBStockKit.framework/TBStockKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBSwiftComponent.framework/TBSwiftComponent",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBThirdParty.framework/TBThirdParty",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBTigerTradeResources.framework/TBTigerTradeResources",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBToolsKit.framework/TBToolsKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBTradeBusiness.framework/TBTradeBusiness",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBTradeBusinessBaseKit.framework/TBTradeBusinessBaseKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBUIKit.framework/TBUIKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBWebView.framework/TBWebView",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TigerBrokersKit.framework/TigerBrokersKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TigerQuoteSDK.framework/TigerQuoteSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/libpag/libpag.framework/libpag",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TigerTradingSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartKLineView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mantle.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MqttCocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBAccountSystemKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBAuthBusiness.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBBaseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBBusinessSupportKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBCocoaMQTT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBHomePage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBHostManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBInitializeKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/tbmqtt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBPerformanceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBServiceProtocolKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBStockBusiness.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBStockBusinessBaseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBStockKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBSwiftComponent.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBThirdParty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBTigerTradeResources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBToolsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBTradeBusiness.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBTradeBusinessBaseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBWebView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TigerBrokersKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TigerQuoteSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libpag.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -367,6 +461,8 @@
 				6003F59E195388D20070C39A /* TBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* TBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				C050395D2C81AAC300CDCBB6 /* TBCellModel.m in Sources */,
+				C050395E2C81AAC300CDCBB6 /* TBTokenManangerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +590,7 @@
 			baseConfigurationReference = 54E6932FFEE46C4D1556AA83 /* Pods-TigerTradingSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 322YC97D83;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TigerTradingSDK/TigerTradingSDK-Prefix.pch";
 				INFOPLIST_FILE = "TigerTradingSDK/TigerTradingSDK-Info.plist";
@@ -511,6 +608,7 @@
 			baseConfigurationReference = E9C72B70289D23EE976C6AFC /* Pods-TigerTradingSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 322YC97D83;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TigerTradingSDK/TigerTradingSDK-Prefix.pch";
 				INFOPLIST_FILE = "TigerTradingSDK/TigerTradingSDK-Info.plist";
