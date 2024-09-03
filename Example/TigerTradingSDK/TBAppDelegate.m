@@ -11,8 +11,6 @@
 #import <TigerTradingSDK/TigerTradingSDKManager.h>
 #import "TBViewController.h"
 
-#import <AFNetworking/AFNetworking.h>
-
 @implementation TBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

@@ -73,6 +73,7 @@
 		C050395A2C81AAC300CDCBB6 /* TBTokenManangerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTokenManangerViewController.m; sourceTree = "<group>"; };
 		C050395B2C81AAC300CDCBB6 /* TBCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCellModel.h; sourceTree = "<group>"; };
 		C050395C2C81AAC300CDCBB6 /* TBTokenManangerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBTokenManangerViewController.xib; sourceTree = "<group>"; };
+		C053DB3C2C86EB0200223044 /* TigerTradingSDK_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TigerTradingSDK_Example.entitlements; sourceTree = "<group>"; };
 		E657DDEFE980500A3D24F3E2 /* Pods_TigerTradingSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TigerTradingSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C72B70289D23EE976C6AFC /* Pods-TigerTradingSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TigerTradingSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-TigerTradingSDK_Example/Pods-TigerTradingSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +118,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				C053DB3C2C86EB0200223044 /* TigerTradingSDK_Example.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for TigerTradingSDK */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -261,7 +263,8 @@
 				ORGANIZATIONNAME = luopengfei;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 322YC97D83;
+						DevelopmentTeam = 6F4WWKT2BZ;
+						ProvisioningStyle = Automatic;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -589,14 +592,19 @@
 			baseConfigurationReference = 54E6932FFEE46C4D1556AA83 /* Pods-TigerTradingSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 322YC97D83;
+				CODE_SIGN_ENTITLEMENTS = TigerTradingSDK_Example.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F4WWKT2BZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TigerTradingSDK/TigerTradingSDK-Prefix.pch";
 				INFOPLIST_FILE = "TigerTradingSDK/TigerTradingSDK-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "org.cocoapods.demo.TigerTradingSDK-Example1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -607,14 +615,19 @@
 			baseConfigurationReference = E9C72B70289D23EE976C6AFC /* Pods-TigerTradingSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 322YC97D83;
+				CODE_SIGN_ENTITLEMENTS = TigerTradingSDK_Example.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F4WWKT2BZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TigerTradingSDK/TigerTradingSDK-Prefix.pch";
 				INFOPLIST_FILE = "TigerTradingSDK/TigerTradingSDK-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "org.cocoapods.demo.TigerTradingSDK-Example1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
