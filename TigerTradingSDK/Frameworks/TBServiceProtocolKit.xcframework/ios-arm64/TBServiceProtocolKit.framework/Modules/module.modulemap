@@ -1,0 +1,6 @@
+framework module TBServiceProtocolKit {
+  umbrella header "TBServiceProtocolKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

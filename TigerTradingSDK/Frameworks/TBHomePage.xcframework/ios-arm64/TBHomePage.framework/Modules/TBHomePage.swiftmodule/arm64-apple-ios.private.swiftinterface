@@ -1,0 +1,98 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TBHomePage
+import Foundation
+import Swift
+import TBBaseKit
+@_exported import TBHomePage
+import TBSwiftComponent
+import TBUIKit
+import TBWebView
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(TBDefaultHomePageViewController) @_Concurrency.MainActor(unsafe) public class TBDefaultHomePageViewController : TBUIKit.TBBaseViewController {
+  @_Concurrency.MainActor(unsafe) final public let backView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func hasTBNavigationBar() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func enableDragBack() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func autoGenerateBackBarButtonItem() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init!(navigatorURL URL: Foundation.URL!, query: [Swift.AnyHashable : Any]!)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TBHomePageConfig : ObjectiveC.NSObject {
+  @objc public class func sharedInstance() -> TBHomePage.TBHomePageConfig
+  @objc public func bffModels() -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public func bffModel(_ name: Swift.String) -> TBSwiftComponent.TBStockProLiteConfigItemModel?
+  public func fetchHomePageConfig(success: (() -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public func update(_ editedConfigs: [TBSwiftComponent.TBStockProLiteConfigItemModel], success: (() -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  public func fetchHomePageDefaultConfig(_ success: (([TBSwiftComponent.TBStockProLiteConfigItemModel]?) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc deinit
+}
+extension TBHomePage.TBHomePageConfig {
+  public var sortRecommendModules: [TBSwiftComponent.TBStockProLiteConfigItemModel]? {
+    get
+  }
+}
+public let NOTIFICATION_UPDATE_HOME_PAGE_CONFIG_SUCCESS: Swift.String
+@objc(TBHomePageTableViewCellDelegate) public protocol TBHomePageTableViewCellDelegate {
+  @objc func handleEvent(eventId: Swift.String?, params: Any?)
+  @objc func reloadData(index: Swift.Int, isSection: Swift.Bool)
+}
+@_hasMissingDesignatedInitializers @objc(TBHomePageTableViewCell) @_Concurrency.MainActor(unsafe) public class TBHomePageTableViewCell : TBUIKit.TBTableViewCell {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var canBecomeFirstResponder: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func canPerformAction(_ action: ObjectiveC.Selector, withSender sender: Any?) -> Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(TBHomeTabViewController) @_Concurrency.MainActor(unsafe) public class TBHomePageViewController : TBUIKit.TBBaseViewController {
+  @objc @_Concurrency.MainActor(unsafe) public var homepageScrollViewDidScroll: ((UIKit.UIScrollView, Swift.Bool) -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) public func scrollToTop()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func changeAppColorStyle()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func hasTBNavigationBar() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func autoGenerateBackBarButtonItem() -> Swift.Bool
+}
+extension TBHomePage.TBHomePageViewController : UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) public func scrollViewDidEndScrolling(_ scrollView: UIKit.UIScrollView)
+}
+extension TBHomePage.TBHomePageViewController : TBHomePage.TBHomePageTableViewCellDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func handleEvent(eventId: Swift.String?, params: Any?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func reloadData(index: Swift.Int, isSection: Swift.Bool)
+}
+extension TBHomePage.TBHomePageViewController : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+}
+extension TBHomePage.TBHomePageViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func updateNetworkStatus()
+}

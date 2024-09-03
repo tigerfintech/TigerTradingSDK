@@ -1,0 +1,11 @@
+framework module TBThirdParty {
+  umbrella header "TBThirdParty-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TBThirdParty.Swift {
+  header "TBThirdParty-Swift.h"
+  requires objc
+}

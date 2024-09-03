@@ -1,0 +1,11 @@
+framework module TBTradeBusiness {
+  umbrella header "TBTradeBusiness-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TBTradeBusiness.Swift {
+  header "TBTradeBusiness-Swift.h"
+  requires objc
+}

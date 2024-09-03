@@ -1,0 +1,81 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TBTradeBusiness
+import ChartKLineView
+import Foundation
+import Swift
+import TBSwiftComponent
+@_exported import TBTradeBusiness
+import TBUIKit
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(TBAnalysisChartYAxisRenderer) open class TBAnalysisChartYAxisRenderer : ChartKLineView.YAxisRenderer {
+  @objc override open func computeAxisValues(min: Swift.Double, max: Swift.Double)
+  override open func drawYLabels(context: CoreGraphics.CGContext, fixedPosition: CoreFoundation.CGFloat, positions: [CoreFoundation.CGPoint], offset: CoreFoundation.CGFloat, textAlign: UIKit.NSTextAlignment)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, yAxis: ChartKLineView.YAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(AnalysisYAxis) open class AnalysisYAxis : ChartKLineView.YAxis {
+  @objc open var avgCost: Swift.Double
+  @objc open var isShort: Swift.Bool
+  @objc override open func getLongestLabel() -> Swift.String
+  @objc override dynamic public init()
+  @objc override public init(position: ChartKLineView.YAxis.AxisDependency)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBAnalysisLineChartView) @_Concurrency.MainActor(unsafe) open class TBAnalysisLineChartView : ChartKLineView.LineChartView {
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBArrowChartXAxisRender) public class TBArrowChartXAxisRender : ChartKLineView.XAxisRenderer {
+  @objc open var arrowWidth: Swift.Double
+  @objc open var arrowHeight: Swift.Double
+  @objc open var enableArrow: Swift.Bool
+  @objc override open func renderAxisLine(context: CoreGraphics.CGContext)
+  @objc override open func computeAxisValues(min: Swift.Double, max: Swift.Double)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, xAxis: ChartKLineView.XAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBArrowChartYAxisRender) public class TBArrowChartYAxisRender : ChartKLineView.YAxisRenderer {
+  @objc open var arrowWidth: Swift.Double
+  @objc open var arrowHeight: Swift.Double
+  @objc open var enableArrow: Swift.Bool
+  @objc override open func renderAxisLine(context: CoreGraphics.CGContext)
+  @objc override open func computeAxisValues(min: Swift.Double, max: Swift.Double)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, yAxis: ChartKLineView.YAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBPortfolioLiteViewController) @_Concurrency.MainActor(unsafe) open class TBPortfolioLiteViewController : TBSwiftComponent.TBSwiftTableViewViewController {
+  @_Concurrency.MainActor(unsafe) open var portfolioItems: [any TBSwiftComponent.TBSwiftTableViewCellDataSource]
+  @objc @_Concurrency.MainActor(unsafe) public func contentTableView() -> UIKit.UITableView
+  @objc @_Concurrency.MainActor(unsafe) public func displayedModules() -> [any TBSwiftComponent.TBSwiftTableViewCellDataSource]?
+  @objc @_Concurrency.MainActor(unsafe) public func indexPathOf(moduleIdentifier: Swift.String?) -> Foundation.NSIndexPath?
+  @objc @_Concurrency.MainActor(unsafe) public func tableViewTopRoundedEnabled(enabled: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func changeAppColorStyle()
+  @objc @_Concurrency.MainActor(unsafe) public func updateDataSourcesWithPortfolioIds(portfolioIds: [Foundation.NSNumber])
+  @objc @_Concurrency.MainActor(unsafe) public func refreshPageData()
+  @_Concurrency.MainActor(unsafe) public func configModule(modules: [Swift.String]) -> [any TBSwiftComponent.TBSwiftTableViewCellDataSource]
+  @_Concurrency.MainActor(unsafe) public func reflectVC(name: Swift.String) -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func hasTBNavigationBar() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init!(navigatorURL URL: Foundation.URL!, query: [Swift.AnyHashable : Any]!)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class TBStockPositionSharePieRenderer : ChartKLineView.PieChartRenderer {
+  @objc override public func drawValues(context: CoreGraphics.CGContext)
+  @objc override public init(chart: ChartKLineView.PieChartView, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TUPPieChartColorLineRenderer) open class TUPPieChartColorLineRenderer : ChartKLineView.PieChartRenderer {
+  @objc override open func drawValues(context: CoreGraphics.CGContext)
+  @objc override public init(chart: ChartKLineView.PieChartView, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}

@@ -1,0 +1,6 @@
+framework module TBAccountSystemKit {
+  umbrella header "TBAccountSystemKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module TBToolsKit {
+  umbrella header "TBToolsKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

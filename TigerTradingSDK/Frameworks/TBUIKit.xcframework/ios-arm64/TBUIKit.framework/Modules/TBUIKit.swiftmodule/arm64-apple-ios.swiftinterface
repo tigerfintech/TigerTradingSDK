@@ -1,0 +1,819 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TBUIKit
+import ChartKLineView
+import CoreGraphics
+import Foundation
+import Swift
+import TBBaseKit
+@_exported import TBUIKit
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+@_hasMissingDesignatedInitializers @objc(FloatingPanelBackdropView) @_Concurrency.MainActor(unsafe) public class BackdropView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var dismissalTapGestureRecognizer: UIKit.UITapGestureRecognizer
+  @objc deinit
+}
+@objc public protocol FloatingPanelBehavior {
+  @objc optional var springDecelerationRate: CoreFoundation.CGFloat { get }
+  @objc optional var springResponseTime: CoreFoundation.CGFloat { get }
+  @objc optional var momentumProjectionRate: CoreFoundation.CGFloat { get }
+  @objc optional func shouldProjectMomentum(_ fpc: TBUIKit.FloatingPanelController, to proposedTargetPosition: TBUIKit.FloatingPanelState) -> Swift.Bool
+  @objc optional func redirectionalProgress(_ fpc: TBUIKit.FloatingPanelController, from: TBUIKit.FloatingPanelState, to: TBUIKit.FloatingPanelState) -> CoreFoundation.CGFloat
+  @objc optional func allowsRubberBanding(for edge: UIKit.UIRectEdge) -> Swift.Bool
+  @objc optional var removalInteractionVelocityThreshold: CoreFoundation.CGFloat { get }
+}
+open class FloatingPanelDefaultBehavior : TBUIKit.FloatingPanelBehavior {
+  public init()
+  @objc open var springDecelerationRate: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @objc open var springResponseTime: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @objc open var momentumProjectionRate: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @objc open func redirectionalProgress(_ fpc: TBUIKit.FloatingPanelController, from: TBUIKit.FloatingPanelState, to: TBUIKit.FloatingPanelState) -> CoreFoundation.CGFloat
+  @objc open func allowsRubberBanding(for edge: UIKit.UIRectEdge) -> Swift.Bool
+  @objc open var removalInteractionVelocityThreshold: CoreFoundation.CGFloat
+  @objc deinit
+}
+@objc public protocol FloatingPanelControllerDelegate {
+  @objc(floatingPanel:layoutForTraitCollection:) optional func floatingPanel(_ fpc: TBUIKit.FloatingPanelController, layoutFor newCollection: UIKit.UITraitCollection) -> any TBUIKit.FloatingPanelLayout
+  @objc(floatingPanel:layoutForSize:) optional func floatingPanel(_ fpc: TBUIKit.FloatingPanelController, layoutFor size: CoreFoundation.CGSize) -> any TBUIKit.FloatingPanelLayout
+  @objc(floatingPanel:animatorForPresentingToState:) optional func floatingPanel(_ fpc: TBUIKit.FloatingPanelController, animatorForPresentingTo state: TBUIKit.FloatingPanelState) -> UIKit.UIViewPropertyAnimator
+  @objc(floatingPanel:animatorForDismissingWithVelocity:) optional func floatingPanel(_ fpc: TBUIKit.FloatingPanelController, animatorForDismissingWith velocity: CoreFoundation.CGVector) -> UIKit.UIViewPropertyAnimator
+  @objc optional func floatingPanelDidChangeState(_ fpc: TBUIKit.FloatingPanelController)
+  @objc optional func floatingPanelShouldBeginDragging(_ fpc: TBUIKit.FloatingPanelController) -> Swift.Bool
+  @objc optional func floatingPanelDidMove(_ fpc: TBUIKit.FloatingPanelController)
+  @objc optional func floatingPanelWillBeginDragging(_ fpc: TBUIKit.FloatingPanelController)
+  @objc optional func floatingPanelWillEndDragging(_ fpc: TBUIKit.FloatingPanelController, withVelocity velocity: CoreFoundation.CGPoint, targetState: Swift.UnsafeMutablePointer<TBUIKit.FloatingPanelState>)
+  @objc optional func floatingPanelDidEndDragging(_ fpc: TBUIKit.FloatingPanelController, willAttract attract: Swift.Bool)
+  @objc optional func floatingPanelWillBeginAttracting(_ fpc: TBUIKit.FloatingPanelController, to state: TBUIKit.FloatingPanelState)
+  @objc optional func floatingPanelDidEndAttracting(_ fpc: TBUIKit.FloatingPanelController)
+  @objc(floatingPanel:shouldRemoveAtLocation:withVelocity:) optional func floatingPanel(_ fpc: TBUIKit.FloatingPanelController, shouldRemoveAt location: CoreFoundation.CGPoint, with velocity: CoreFoundation.CGVector) -> Swift.Bool
+  @objc(floatingPanelWillRemove:) optional func floatingPanelWillRemove(_ fpc: TBUIKit.FloatingPanelController)
+  @objc optional func floatingPanelDidRemove(_ fpc: TBUIKit.FloatingPanelController)
+  @objc(floatingPanel:contentOffsetForPinningScrollView:) optional func floatingPanel(_ fpc: TBUIKit.FloatingPanelController, contentOffsetForPinning trackingScrollView: UIKit.UIScrollView) -> CoreFoundation.CGPoint
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor(unsafe) open class FloatingPanelController : UIKit.UIViewController {
+  @objc public enum ContentInsetAdjustmentBehavior : Swift.Int {
+    case always
+    case never
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public enum ContentMode : Swift.Int {
+    case `static`
+    case fitToBounds
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any TBUIKit.FloatingPanelControllerDelegate)? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var surfaceView: TBUIKit.SurfaceView! {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var backdropView: TBUIKit.BackdropView! {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) weak public var trackingScrollView: UIKit.UIScrollView? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var panGestureRecognizer: TBUIKit.FloatingPanelPanGestureRecognizer {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var state: TBUIKit.FloatingPanelState {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var isAttracting: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var layout: any TBUIKit.FloatingPanelLayout {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var behavior: any TBUIKit.FloatingPanelBehavior {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var adjustedContentInsets: UIKit.UIEdgeInsets {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var contentInsetAdjustmentBehavior: TBUIKit.FloatingPanelController.ContentInsetAdjustmentBehavior
+  @objc @_Concurrency.MainActor(unsafe) public var isRemovalInteractionEnabled: Swift.Bool {
+    @objc(isRemovalInteractionEnabled) get
+    @objc(setRemovalInteractionEnabled:) set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var contentViewController: UIKit.UIViewController? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var nearbyState: TBUIKit.FloatingPanelState {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var contentMode: TBUIKit.FloatingPanelController.ContentMode {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor(unsafe) public init(delegate: (any TBUIKit.FloatingPanelControllerDelegate)? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func willTransition(to newCollection: UIKit.UITraitCollection, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var childForStatusBarStyle: UIKit.UIViewController? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var childForStatusBarHidden: UIKit.UIViewController? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var childForScreenEdgesDeferringSystemGestures: UIKit.UIViewController? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var childForHomeIndicatorAutoHidden: UIKit.UIViewController? {
+    @objc get
+  }
+  @objc(show:completion:) @_Concurrency.MainActor(unsafe) public func show(animated: Swift.Bool = false, completion: (() -> Swift.Void)? = nil)
+  @objc(hide:completion:) @_Concurrency.MainActor(unsafe) public func hide(animated: Swift.Bool = false, completion: (() -> Swift.Void)? = nil)
+  @objc(addPanelToParent:at:animated:completion:) @_Concurrency.MainActor(unsafe) public func addPanel(toParent parent: UIKit.UIViewController, at viewIndex: Swift.Int = -1, animated: Swift.Bool = false, completion: (() -> Swift.Void)? = nil)
+  @objc(removePanelFromParent:completion:) @_Concurrency.MainActor(unsafe) public func removePanelFromParent(animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @objc(moveToState:animated:completion:) @_Concurrency.MainActor(unsafe) public func move(to: TBUIKit.FloatingPanelState, animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public func set(contentViewController: UIKit.UIViewController?)
+  @objc(trackScrollView:) @_Concurrency.MainActor(unsafe) public func track(scrollView: UIKit.UIScrollView)
+  @objc(untrackScrollView:) @_Concurrency.MainActor(unsafe) public func untrack(scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func accessibilityPerformEscape() -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public func invalidateLayout()
+  @objc @_Concurrency.MainActor(unsafe) public func surfaceLocation(for state: TBUIKit.FloatingPanelState) -> CoreFoundation.CGPoint
+  @objc @_Concurrency.MainActor(unsafe) public var surfaceLocation: CoreFoundation.CGPoint {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+extension UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func fp_original_dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func fp_dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class FloatingPanelPanGestureRecognizer : UIKit.UIPanGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override weak final public var delegate: (any UIKit.UIGestureRecognizerDelegate)? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) weak final public var delegateProxy: (any UIKit.UIGestureRecognizerDelegate)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(target: Any?, action: ObjectiveC.Selector?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UISpringTimingParameters {
+  @_Concurrency.MainActor(unsafe) convenience public init(decelerationRate: CoreFoundation.CGFloat, frequencyResponse: CoreFoundation.CGFloat, initialVelocity: CoreFoundation.CGVector = .zero)
+  @_Concurrency.MainActor(unsafe) convenience public init(dampingRatio: CoreFoundation.CGFloat, frequencyResponse: CoreFoundation.CGFloat, initialVelocity: CoreFoundation.CGVector = .zero)
+}
+@_hasMissingDesignatedInitializers @objc(FloatingPanelGrabberView) @_Concurrency.MainActor(unsafe) public class GrabberView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var barColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+  @objc deinit
+}
+@objc public protocol FloatingPanelLayout {
+  @objc var position: TBUIKit.FloatingPanelPosition { get }
+  @objc var initialState: TBUIKit.FloatingPanelState { get }
+  @objc var anchors: [TBUIKit.FloatingPanelState : any TBUIKit.FloatingPanelLayoutAnchoring] { get }
+  @objc optional func prepareLayout(surfaceView: UIKit.UIView, in view: UIKit.UIView) -> [UIKit.NSLayoutConstraint]
+  @objc optional func backdropAlpha(for state: TBUIKit.FloatingPanelState) -> CoreFoundation.CGFloat
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class FloatingPanelBottomLayout : ObjectiveC.NSObject, TBUIKit.FloatingPanelLayout {
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc open var initialState: TBUIKit.FloatingPanelState {
+    @objc get
+  }
+  @objc open var anchors: [TBUIKit.FloatingPanelState : any TBUIKit.FloatingPanelLayoutAnchoring] {
+    @objc get
+  }
+  @objc open var position: TBUIKit.FloatingPanelPosition {
+    @objc get
+  }
+  @objc open func prepareLayout(surfaceView: UIKit.UIView, in view: UIKit.UIView) -> [UIKit.NSLayoutConstraint]
+  @objc open func backdropAlpha(for state: TBUIKit.FloatingPanelState) -> CoreFoundation.CGFloat
+  @objc deinit
+}
+@objc public protocol FloatingPanelLayoutAnchoring {
+  @objc var referenceGuide: TBUIKit.FloatingPanelLayoutReferenceGuide { get }
+  @objc func layoutConstraints(_ fpc: TBUIKit.FloatingPanelController, for position: TBUIKit.FloatingPanelPosition) -> [UIKit.NSLayoutConstraint]
+}
+@_hasMissingDesignatedInitializers @objc final public class FloatingPanelLayoutAnchor : ObjectiveC.NSObject, TBUIKit.FloatingPanelLayoutAnchoring {
+  @objc public init(absoluteInset: CoreFoundation.CGFloat, edge: TBUIKit.FloatingPanelReferenceEdge, referenceGuide: TBUIKit.FloatingPanelLayoutReferenceGuide)
+  @objc public init(fractionalInset: CoreFoundation.CGFloat, edge: TBUIKit.FloatingPanelReferenceEdge, referenceGuide: TBUIKit.FloatingPanelLayoutReferenceGuide)
+  @objc final public let referenceGuide: TBUIKit.FloatingPanelLayoutReferenceGuide
+  @objc deinit
+}
+extension TBUIKit.FloatingPanelLayoutAnchor {
+  @objc final public func layoutConstraints(_ vc: TBUIKit.FloatingPanelController, for position: TBUIKit.FloatingPanelPosition) -> [UIKit.NSLayoutConstraint]
+}
+@_hasMissingDesignatedInitializers @objc final public class FloatingPanelIntrinsicLayoutAnchor : ObjectiveC.NSObject, TBUIKit.FloatingPanelLayoutAnchoring {
+  @objc public init(absoluteOffset offset: CoreFoundation.CGFloat, referenceGuide: TBUIKit.FloatingPanelLayoutReferenceGuide = .safeArea)
+  @objc public init(fractionalOffset offset: CoreFoundation.CGFloat, referenceGuide: TBUIKit.FloatingPanelLayoutReferenceGuide = .safeArea)
+  @objc final public let referenceGuide: TBUIKit.FloatingPanelLayoutReferenceGuide
+  @objc deinit
+}
+extension TBUIKit.FloatingPanelIntrinsicLayoutAnchor {
+  @objc final public func layoutConstraints(_ vc: TBUIKit.FloatingPanelController, for position: TBUIKit.FloatingPanelPosition) -> [UIKit.NSLayoutConstraint]
+}
+@_hasMissingDesignatedInitializers @objc final public class FloatingPanelAdaptiveLayoutAnchor : ObjectiveC.NSObject, TBUIKit.FloatingPanelLayoutAnchoring {
+  @objc public init(absoluteOffset offset: CoreFoundation.CGFloat, contentLayout: UIKit.UILayoutGuide, referenceGuide: TBUIKit.FloatingPanelLayoutReferenceGuide, contentBoundingGuide: TBUIKit.FloatingPanelLayoutContentBoundingGuide = .none)
+  @objc public init(fractionalOffset offset: CoreFoundation.CGFloat, contentLayout: UIKit.UILayoutGuide, referenceGuide: TBUIKit.FloatingPanelLayoutReferenceGuide, contentBoundingGuide: TBUIKit.FloatingPanelLayoutContentBoundingGuide = .none)
+  @objc final public let referenceGuide: TBUIKit.FloatingPanelLayoutReferenceGuide
+  @objc final public let contentBoundingGuide: TBUIKit.FloatingPanelLayoutContentBoundingGuide
+  @objc deinit
+}
+extension TBUIKit.FloatingPanelAdaptiveLayoutAnchor {
+  @objc final public func layoutConstraints(_ vc: TBUIKit.FloatingPanelController, for position: TBUIKit.FloatingPanelPosition) -> [UIKit.NSLayoutConstraint]
+}
+@objc public enum FloatingPanelReferenceEdge : Swift.Int {
+  case top
+  case left
+  case bottom
+  case right
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum FloatingPanelLayoutReferenceGuide : Swift.Int {
+  case superview = 0
+  case safeArea = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum FloatingPanelLayoutContentBoundingGuide : Swift.Int {
+  case none = 0
+  case superview = 1
+  case safeArea = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum FloatingPanelPosition : Swift.Int {
+  case top
+  case left
+  case bottom
+  case right
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc open class FloatingPanelState : ObjectiveC.NSObject, Foundation.NSCopying, Swift.RawRepresentable {
+  public typealias RawValue = Swift.String
+  required public init?(rawValue: TBUIKit.FloatingPanelState.RawValue)
+  @objc public init(rawValue: TBUIKit.FloatingPanelState.RawValue, order: Swift.Int)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  final public let rawValue: TBUIKit.FloatingPanelState.RawValue
+  final public let order: Swift.Int
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public var debugDescription: Swift.String {
+    @objc get
+  }
+  @objc(Full) public static let full: TBUIKit.FloatingPanelState
+  @objc(Half) public static let half: TBUIKit.FloatingPanelState
+  @objc(Tip) public static let tip: TBUIKit.FloatingPanelState
+  @objc(Hidden) public static let hidden: TBUIKit.FloatingPanelState
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class StickyGridCollectionViewLayout : UIKit.UICollectionViewFlowLayout {
+  @objc @_Concurrency.MainActor(unsafe) open var stickyRowsCount: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var stickyColumnsCount: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var collectionViewContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepare()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func shouldInvalidateLayout(forBoundsChange newBounds: CoreFoundation.CGRect) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func invalidateLayout()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(FloatingPanelSurfaceAppearance) @objcMembers public class SurfaceAppearance : ObjectiveC.NSObject {
+  @_inheritsConvenienceInitializers @objc(FloatingPanelSurfaceAppearanceShadow) public class Shadow : ObjectiveC.NSObject {
+    @objc public var hidden: Swift.Bool
+    @objc public var color: UIKit.UIColor
+    @objc public var offset: CoreFoundation.CGSize
+    @objc public var opacity: Swift.Float
+    @objc public var radius: CoreFoundation.CGFloat
+    @objc public var spread: CoreFoundation.CGFloat
+    @objc override dynamic public init()
+    @objc required dynamic public init?(coder: Foundation.NSCoder)
+    @objc deinit
+  }
+  @objc public var backgroundColor: UIKit.UIColor?
+  @objc public var cornerRadius: CoreFoundation.CGFloat
+  @objc @available(iOS 13.0, *)
+  public var cornerCurve: QuartzCore.CALayerCornerCurve {
+    @objc get
+    @objc set
+  }
+  @objc public var shadows: [TBUIKit.SurfaceAppearance.Shadow]
+  @objc public var borderColor: UIKit.UIColor?
+  @objc public var borderWidth: CoreFoundation.CGFloat
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(FloatingPanelSurfaceView) @objcMembers @_Concurrency.MainActor(unsafe) public class SurfaceView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) final public let grabberHandle: TBUIKit.GrabberView
+  @objc @_Concurrency.MainActor(unsafe) public var grabberHandlePadding: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var grabberAreaOffset: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) public var grabberHandleSize: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) weak public var contentView: UIKit.UIView?
+  @objc @_Concurrency.MainActor(unsafe) public var contentPadding: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var backgroundColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var appearance: TBUIKit.SurfaceAppearance {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var containerMargins: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public let containerView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public class var requiresConstraintBasedLayout: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func updateConstraints()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class TBAnalysisRateView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) open var sell: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var hold: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var buy: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var centerText: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) open var colorIndex: Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) open class TBAnalyzeHalfPieChartView : ChartKLineView.PieChartView {
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @objc @_Concurrency.MainActor(unsafe) open var centerConsensusAngle: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var avgSectorScore: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override open var diameter: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override open func calculateOffsets()
+  @_Concurrency.MainActor(unsafe) @objc override open var centerCircleBox: CoreFoundation.CGPoint {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBBoxCombinedChartRenderer : TBUIKit.TBCombinedChartRenderer {
+  override open var drawCircleMaxMinOnly: Swift.Bool {
+    get
+    set
+  }
+  override open var drawZeroCircleEnable: Swift.Bool {
+    get
+    set
+  }
+  @objc override open func createRenderers()
+  @objc override public init(chart: ChartKLineView.CombinedChartView, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBBoxLineBarChartRenderer : ChartKLineView.BarChartRenderer {
+  @objc override public init(dataProvider: any ChartKLineView.BarChartDataProvider, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc override open func initBuffers()
+  @objc override open func drawData(context: CoreGraphics.CGContext)
+  @objc override open func drawDataSet(context: CoreGraphics.CGContext, dataSet: any ChartKLineView.IBarChartDataSet, index: Swift.Int)
+  override open func prepareBarHighlight(x: Swift.Double, y1: Swift.Double, y2: Swift.Double, barWidthHalf: Swift.Double, trans: ChartKLineView.Transformer, rect: inout CoreFoundation.CGRect)
+  @objc override open func drawValues(context: CoreGraphics.CGContext)
+  @objc override open func drawValue(context: CoreGraphics.CGContext, value: Swift.String, xPos: CoreFoundation.CGFloat, yPos: CoreFoundation.CGFloat, font: ChartKLineView.NSUIFont, align: UIKit.NSTextAlignment, color: ChartKLineView.NSUIColor)
+  @objc override open func drawExtras(context: CoreGraphics.CGContext)
+  @objc override open func drawHighlighted(context: CoreGraphics.CGContext, indices: [ChartKLineView.Highlight])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class TBBubbleChartXAxisRender : TBUIKit.TBCommonChartXAxisRender {
+  @objc override open func renderGridLines(context: CoreGraphics.CGContext)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, xAxis: ChartKLineView.XAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class TBChartDrawLineRenderer : ChartKLineView.CustomChartRenderer {
+  @objc override public init(dataProvider: any ChartKLineView.CustomDrawChartDataProvider, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+@objc public protocol TBChartViewDelegate : ChartKLineView.ChartViewDelegate {
+  @objc optional func tbchartValueLongpressGesture(longGestrue: UIKit.UILongPressGestureRecognizer, selectedXIndex: Swift.Int)
+  @objc optional func tbchartScaled(chartView: ChartKLineView.ChartViewBase, scaleX: CoreFoundation.CGFloat, scaleY: CoreFoundation.CGFloat, locationX: CoreFoundation.CGFloat, locationY: CoreFoundation.CGFloat)
+  @objc optional func tbchartDoubleTap(chartView: ChartKLineView.ChartViewBase)
+  @objc optional func tbChartTapAction(chartView: ChartKLineView.ChartViewBase)
+  @objc optional func tbChartTapCompanyAction(chartView: ChartKLineView.ChartViewBase, actionIndex: Swift.Int)
+  @objc optional func tbIndicatorTapAction(type: ChartKLineView.YAxisType)
+  @objc optional func tbChartTypeChange(chartView: ChartKLineView.ChartViewBase)
+  @objc optional func tbChartCompareStockRemove(symbol: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers open class TBCombinedChartRenderer : ChartKLineView.CombinedChartRenderer {
+  open var drawCircleMaxMinOnly: Swift.Bool {
+    get
+    set
+  }
+  open var drawZeroCircleEnable: Swift.Bool {
+    get
+    set
+  }
+  @objc open var drawLabelAtCircleEnable: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc override open func createRenderers()
+  @objc override open func drawHighlighted(context: CoreGraphics.CGContext, indices: [ChartKLineView.Highlight])
+  @objc override public init(chart: ChartKLineView.CombinedChartView, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class TBCombinedChartView : ChartKLineView.CombinedChartView {
+  @objc @_Concurrency.MainActor(unsafe) weak open var tbdelegate: (any TBUIKit.TBChartViewDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) open var bigGrideBorder: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) open var shouldLocalFormat: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var longPressEnable: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) open var drawLastPointAndLabel: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) open var drawCircleMaxMinOnly: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var drawZeroCircleEnable: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var drawLabelAtCircleEnable: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override public func calculateOffsets()
+  @_Concurrency.MainActor(unsafe) @objc override public func calcMinMax()
+  @_Concurrency.MainActor(unsafe) @objc override open func drawGridBackground(context: CoreGraphics.CGContext)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class TBCommonBarChartRenderer : ChartKLineView.BarChartRenderer {
+  @objc override public init(dataProvider: any ChartKLineView.BarChartDataProvider, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBCommonChartXAxisRender : ChartKLineView.XAxisRenderer {
+  @objc override open func computeAxisValues(min: Swift.Double, max: Swift.Double)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, xAxis: ChartKLineView.XAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBCommonChartYAxisRender : ChartKLineView.YAxisRenderer {
+  override public func drawYLabels(context: CoreGraphics.CGContext, fixedPosition: CoreFoundation.CGFloat, positions: [CoreFoundation.CGPoint], offset: CoreFoundation.CGFloat, textAlign: UIKit.NSTextAlignment)
+  @objc override open func computeAxis(min: Swift.Double, max: Swift.Double, inverted: Swift.Bool)
+  @objc override open func renderGridLines(context: CoreGraphics.CGContext)
+  @objc override open func drawGridLine(context: CoreGraphics.CGContext, position: CoreFoundation.CGPoint)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, yAxis: ChartKLineView.YAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBCommonChartYAxis : ChartKLineView.YAxis {
+  @objc open var bigGrideBorder: Swift.Bool
+  @objc open var shouldLocalFormat: Swift.Bool
+  @objc open var customYAxisEntried: Swift.Bool
+  @objc open var shouldAlignTop: Swift.Bool
+  @objc open var shouldAlignBottom: Swift.Bool
+  @objc open var longestText: Swift.String
+  @objc override open func getLongestLabel() -> Swift.String
+  @objc override open func getFormattedLabel(_ index: Swift.Int) -> Swift.String
+  @objc override open func calculate(min dataMin: Swift.Double, max dataMax: Swift.Double)
+  @objc override dynamic public init()
+  @objc override public init(position: ChartKLineView.YAxis.AxisDependency)
+  @objc deinit
+}
+extension TBUIKit.FloatingPanelController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var shouldAutorotate: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class TBFloatingPanel : ObjectiveC.NSObject {
+  public var fpc: TBUIKit.FloatingPanelController?
+  @objc public var willDismissCallBack: (() -> Swift.Void)?
+  @objc public func addFloating(parentVC: UIKit.UIViewController, contentVC: UIKit.UIViewController, trackView: UIKit.UIScrollView?)
+  @objc public func addFloating(parentVC: UIKit.UIViewController, contentVC: UIKit.UIViewController, trackView: UIKit.UIScrollView?, contentHeight: CoreFoundation.CGFloat)
+  @objc public func addFloating(parentVC: UIKit.UIViewController, contentVC: UIKit.UIViewController, trackView: UIKit.UIScrollView?, contentHeight: CoreFoundation.CGFloat, backClear: Swift.Bool)
+  @objc public func newUIAddFloating(parentVC: UIKit.UIViewController, contentVC: UIKit.UIViewController, trackView: UIKit.UIScrollView?, contentHeight: CoreFoundation.CGFloat)
+  @objc public func newUIAddFloating(parentVC: UIKit.UIViewController, contentVC: UIKit.UIViewController, trackView: UIKit.UIScrollView?, contentHeight: CoreFoundation.CGFloat, contentInsets: UIKit.UIEdgeInsets)
+  @objc public func addFloating(parentVC: UIKit.UIViewController, contentVC: UIKit.UIViewController, viewIndex: Swift.Int, trackView: UIKit.UIScrollView?, contentHeight: CoreFoundation.CGFloat, backClear: Swift.Bool, backgroundColor: UIKit.UIColor)
+  @objc public func addFloating(parentVC: UIKit.UIViewController, contentVC: UIKit.UIViewController, viewIndex: Swift.Int, trackView: UIKit.UIScrollView?, contentHeight: CoreFoundation.CGFloat, backClear: Swift.Bool, backgroundColor: UIKit.UIColor, contentInsets: UIKit.UIEdgeInsets)
+  @objc public func grabberHidden(hidden: Swift.Bool)
+  @objc public func dismiss()
+  @objc(dismissWithAnimated:callBack:) public func dismiss(animated: Swift.Bool, callBack: (() -> Swift.Void)?)
+  @objc public func update(contentHeight height: CoreFoundation.CGFloat)
+  @objc public func invalidateLayout()
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension TBUIKit.TBFloatingPanel : TBUIKit.FloatingPanelControllerDelegate {
+  @objc dynamic public func floatingPanelDidChangeState(_ fpc: TBUIKit.FloatingPanelController)
+  @objc dynamic public func floatingPanelShouldBeginDragging(_ fpc: TBUIKit.FloatingPanelController) -> Swift.Bool
+  @objc dynamic public func floatingPanelDidMove(_ fpc: TBUIKit.FloatingPanelController)
+}
+@objc public protocol TBMarqueeViewCopyable {
+  @objc func copyMarqueeView() -> UIKit.UIView
+}
+extension UIKit.UIView : TBUIKit.TBMarqueeViewCopyable {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func copyMarqueeView() -> UIKit.UIView
+}
+@objc public enum TBMarqueeType : Swift.Int {
+  case left
+  case right
+  case reverse
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class TBMarqueeView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var marqueeType: TBUIKit.TBMarqueeType
+  @objc @_Concurrency.MainActor(unsafe) public var contentMargin: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) public var frameInterval: Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) public var pointsPerFrame: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) public var contentView: UIKit.UIView? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var contentViewFrameConfigWhenCantMarquee: ((UIKit.UIView) -> ())?
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func willMove(toSuperview newSuperview: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor(unsafe) public func reloadContentView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc @_Concurrency.MainActor(unsafe) public func reloadData()
+  @objc @_Concurrency.MainActor(unsafe) public func resetContainerView()
+}
+@objc @_inheritsConvenienceInitializers open class TBMaxMinLineChartRenderer : ChartKLineView.LineChartRenderer {
+  open var notLimitCount: Swift.Bool
+  open var drawZeroCircle: Swift.Bool
+  open var drawLabelAtCircleEnable: Swift.Bool
+  open var ignoreHorizontalIndicatorValue: Swift.Bool
+  open var drawLastPointAndLabel: Swift.Bool
+  @objc override open func drawValues(context: CoreGraphics.CGContext)
+  @objc override open func drawHighlighted(context: CoreGraphics.CGContext, indices: [ChartKLineView.Highlight])
+  @objc override open func drawExtras(context: CoreGraphics.CGContext)
+  @objc override open func isDrawingValuesAllowed(dataProvider: (any ChartKLineView.ChartDataProvider)?) -> Swift.Bool
+  @objc override public init(dataProvider: any ChartKLineView.LineChartDataProvider, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBMultipleColorLegendRenderer : ChartKLineView.LegendRenderer {
+  @objc override open func drawForm(context: CoreGraphics.CGContext, x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat, entry: ChartKLineView.LegendEntry, legend: ChartKLineView.Legend)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, legend: ChartKLineView.Legend?)
+  @objc deinit
+}
+extension ChartKLineView.LegendEntry {
+  public var entryColors: [UIKit.UIColor]? {
+    get
+    set
+  }
+}
+@objc(TBNumberLabelDelegate) public protocol TBNumberLabelDelegate {
+  @objc optional func animationDidStop(_ label: TBUIKit.TBNumberLabel)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBNumberLabel : UIKit.UILabel, QuartzCore.CAAnimationDelegate {
+  @objc @_Concurrency.MainActor(unsafe) public var animating: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var numberText: Swift.String
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any TBUIKit.TBNumberLabelDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) open func setNumberText(_ numberText: Swift.String, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func setCurrency(symbol: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc public func animationDidStop(_ anim: QuartzCore.CAAnimation, finished flag: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init!(frame: CoreFoundation.CGRect, size: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init!(frame: CoreFoundation.CGRect, size: CoreFoundation.CGFloat, color: UIKit.UIColor!)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init!(frame: CoreFoundation.CGRect, font: UIKit.UIFont!, color: UIKit.UIColor!)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init!(font: UIKit.UIFont!, color: UIKit.UIColor!)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init!(frame: CoreFoundation.CGRect, font: UIKit.UIFont!, color: UIKit.UIColor!, text: Swift.String!)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TBOptionStrategyBuilderChartView : TBUIKit.TBCombinedChartView {
+  @objc @_Concurrency.MainActor(unsafe) public static let defaultOnePageCount: Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) open var xValCount: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var minScaleX: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var maxScaleX: CoreFoundation.CGFloat {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) open func dragOffsetX() -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open func updateOnePageCount(_ count: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) open func updateDataChanged()
+  @objc @_Concurrency.MainActor(unsafe) open func initialZoom()
+  @_Concurrency.MainActor(unsafe) open func initialScaleX(preScaleX: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open func reset()
+  @_Concurrency.MainActor(unsafe) @objc override public func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBOptionStrategyBuilderPnlChartXAxisRender : TBUIKit.TBCommonChartXAxisRender {
+  @objc override open func renderAxisLabels(context: CoreGraphics.CGContext)
+  @objc override open var gridClippingRect: CoreFoundation.CGRect {
+    @objc get
+  }
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, xAxis: ChartKLineView.XAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBRealTimeAssetChartView) @_Concurrency.MainActor(unsafe) open class TBRealTimeAssetChartView : TBUIKit.TBCombinedChartView {
+  @objc @_Concurrency.MainActor(unsafe) open var axisMaximum: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var spreadColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var needScanning: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override open func notifyDataSetChanged()
+  @objc @_Concurrency.MainActor(unsafe) open func startAnimating()
+  @objc @_Concurrency.MainActor(unsafe) open func stopAnimation()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class TBRealTimeAssetSpreadAnimationView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension TBUIKit.TBRealTimeAssetSpreadAnimationView : QuartzCore.CAAnimationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func animationDidStart(_ anim: QuartzCore.CAAnimation)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func animationDidStop(_ anim: QuartzCore.CAAnimation, finished flag: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers open class TBStockBubbleRender : ChartKLineView.BubbleChartRenderer {
+  @objc override open func drawDataSet(context: CoreGraphics.CGContext, dataSet: any ChartKLineView.IBubbleChartDataSet, dataSetIndex: Swift.Int)
+  @objc override open func drawValues(context: CoreGraphics.CGContext)
+  @objc override open func drawExtras(context: CoreGraphics.CGContext)
+  @objc override open func drawHighlighted(context: CoreGraphics.CGContext, indices: [ChartKLineView.Highlight])
+  @objc override public init(dataProvider: any ChartKLineView.BubbleChartDataProvider, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBStockLegend : ChartKLineView.Legend {
+  @objc override open func calculateDimensions(labelFont: ChartKLineView.NSUIFont, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc override dynamic public init()
+  @objc override public init(entries: [ChartKLineView.LegendEntry])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) open class TBStockTabAnalyzePriceTrendLineChartView : ChartKLineView.LineChartView {
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override open func calcMinMax()
+  @_Concurrency.MainActor(unsafe) @objc override open func calculateOffsets()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBTabSliderChartView) @_Concurrency.MainActor(unsafe) public class TabSliderChartView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) open var leftRightFont: UIKit.UIFont?
+  @objc @_Concurrency.MainActor(unsafe) open var originValue: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) open var terminusValue: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) open var totalValue: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var lineHeight: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var lineLeftSpace: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var upSelectedValue: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var upSelectedShowValue: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) open var downSelectedValue: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var downSelectedShowValue: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) open func notifyDataChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBValuationCombinedChartRenderer : TBUIKit.TBCombinedChartRenderer {
+  override open var drawCircleMaxMinOnly: Swift.Bool {
+    get
+    set
+  }
+  override open var drawZeroCircleEnable: Swift.Bool {
+    get
+    set
+  }
+  @objc override open func createRenderers()
+  @objc override public init(chart: ChartKLineView.CombinedChartView, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBValuationHorizontalRenderer : ChartKLineView.HorizontalBarChartRenderer {
+  @objc override public init(dataProvider: any ChartKLineView.BarChartDataProvider, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc override open func initBuffers()
+  @objc override open func drawDataSet(context: CoreGraphics.CGContext, dataSet: any ChartKLineView.IBarChartDataSet, index: Swift.Int)
+  override open func prepareBarHighlight(x: Swift.Double, y1: Swift.Double, y2: Swift.Double, barWidthHalf: Swift.Double, trans: ChartKLineView.Transformer, rect: inout CoreFoundation.CGRect)
+  @objc override open func drawValues(context: CoreGraphics.CGContext)
+  @objc override open func isDrawingValuesAllowed(dataProvider: (any ChartKLineView.ChartDataProvider)?) -> Swift.Bool
+  @objc override open func setHighlightDrawPos(highlight high: ChartKLineView.Highlight, barRect: CoreFoundation.CGRect)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBValuationLegendRenderer : TBUIKit.TBMultipleColorLegendRenderer {
+  @objc override open func renderLegend(context: CoreGraphics.CGContext)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, legend: ChartKLineView.Legend?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBValuationValueChartRender : TBUIKit.TBMaxMinLineChartRenderer {
+  open var drawCommonEnabled: Swift.Bool
+  @objc override open func drawValues(context: CoreGraphics.CGContext)
+  @objc override public init(dataProvider: any ChartKLineView.LineChartDataProvider, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+extension ChartKLineView.ViewPortHandler {
+  @objc dynamic public var contractModel: TBStockKit.TBFuturesContractModel? {
+    @objc get
+    @objc set
+  }
+}
+extension TBUIKit.FloatingPanelController.ContentInsetAdjustmentBehavior : Swift.Equatable {}
+extension TBUIKit.FloatingPanelController.ContentInsetAdjustmentBehavior : Swift.Hashable {}
+extension TBUIKit.FloatingPanelController.ContentInsetAdjustmentBehavior : Swift.RawRepresentable {}
+extension TBUIKit.FloatingPanelController.ContentMode : Swift.Equatable {}
+extension TBUIKit.FloatingPanelController.ContentMode : Swift.Hashable {}
+extension TBUIKit.FloatingPanelController.ContentMode : Swift.RawRepresentable {}
+extension TBUIKit.FloatingPanelReferenceEdge : Swift.Equatable {}
+extension TBUIKit.FloatingPanelReferenceEdge : Swift.Hashable {}
+extension TBUIKit.FloatingPanelReferenceEdge : Swift.RawRepresentable {}
+extension TBUIKit.FloatingPanelLayoutReferenceGuide : Swift.Equatable {}
+extension TBUIKit.FloatingPanelLayoutReferenceGuide : Swift.Hashable {}
+extension TBUIKit.FloatingPanelLayoutReferenceGuide : Swift.RawRepresentable {}
+extension TBUIKit.FloatingPanelLayoutContentBoundingGuide : Swift.Equatable {}
+extension TBUIKit.FloatingPanelLayoutContentBoundingGuide : Swift.Hashable {}
+extension TBUIKit.FloatingPanelLayoutContentBoundingGuide : Swift.RawRepresentable {}
+extension TBUIKit.FloatingPanelPosition : Swift.Equatable {}
+extension TBUIKit.FloatingPanelPosition : Swift.Hashable {}
+extension TBUIKit.FloatingPanelPosition : Swift.RawRepresentable {}
+extension TBUIKit.TBMarqueeType : Swift.Equatable {}
+extension TBUIKit.TBMarqueeType : Swift.Hashable {}
+extension TBUIKit.TBMarqueeType : Swift.RawRepresentable {}

@@ -9,8 +9,8 @@
 #import "TBViewController.h"
 #import "TBCellModel.h"
 
-#import <TigerQuoteSDK/TigerQuoteSDKSettingManager.h>
-#import <TigerQuoteSDK/TigerQuoteSDKManager.h>
+#import <TigerTradingSDK/TigerTradingSDKManager.h>
+#import <TigerTradingSDK/TigerTradingSDKSettingManager.h>
 
 #import "TBTokenManangerViewController.h"
 
@@ -28,7 +28,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     // token 过期处理通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tokenExpired) name:TigerQuoteSDKLoginTokenExpiredNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tokenExpired) name:TigerTradingSDKLoginTokenExpiredNotification object:nil];
 
     // 初始化数据源
     [self setupDataSource];
@@ -49,7 +49,7 @@
 /// 实际使用时需要实现自己的token交换逻辑
 - (void)tokenExpired {
     // 交换token
-//    [TigerQuoteSDKManager registerAccessToken:@"" idToken:@"" autorizationCode:@"" state:@"" callBack:^(BOOL) {
+//    [TigerTradingSDKManager registerAccessToken:@"" idToken:@"" autorizationCode:@"" state:@"" callBack:^(BOOL) {
 //        
 //    }];
 }
@@ -82,14 +82,14 @@
                                                                 handler:^(UIAlertAction * _Nonnull action) {
             // 处理选择白皮肤的逻辑
             NSLog(@"选择了浅色皮肤");
-            [TigerQuoteSDKSettingManager setAppColorStyle:TigerQuoteSDKAppearTypeLight];
+            [TigerTradingSDKSettingManager setAppColorStyle:TigerTradingSDKAppearTypeLight];
         }];
         UIAlertAction *blackSkinAction = [UIAlertAction actionWithTitle:@"使用深色皮肤"
                                                                   style:UIAlertActionStyleDefault
                                                                 handler:^(UIAlertAction * _Nonnull action) {
             // 处理选择黑皮肤的逻辑
             NSLog(@"选择了深色皮肤");
-            [TigerQuoteSDKSettingManager setAppColorStyle:TigerQuoteSDKAppearTypeDark];
+            [TigerTradingSDKSettingManager setAppColorStyle:TigerTradingSDKAppearTypeDark];
         }];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消"
                                                                style:UIAlertActionStyleCancel
@@ -112,23 +112,23 @@
                                                                   style:UIAlertActionStyleDefault
                                                                 handler:^(UIAlertAction * _Nonnull action) {
             NSLog(@"选择了自动");
-            [TigerQuoteSDKSettingManager setTigerQuoteLanguage:TigerQuoteLanguageTypeAuto];
+            [TigerTradingSDKSettingManager setTigerQuoteLanguage:TigerTradingLanguageTypeAuto];
         }];
         UIAlertAction *enAction = [UIAlertAction actionWithTitle:@"English"
                                                                   style:UIAlertActionStyleDefault
                                                                 handler:^(UIAlertAction * _Nonnull action) {
-            [TigerQuoteSDKSettingManager setTigerQuoteLanguage:TigerQuoteLanguageTypeEnglish];
+            [TigerTradingSDKSettingManager setTigerQuoteLanguage:TigerTradingLanguageTypeEnglish];
         }];
         
         UIAlertAction *zhHansAction = [UIAlertAction actionWithTitle:@"简体中文"
                                                                   style:UIAlertActionStyleDefault
                                                                 handler:^(UIAlertAction * _Nonnull action) {
-            [TigerQuoteSDKSettingManager setTigerQuoteLanguage:TigerQuoteLanguageTypeZhHans];
+            [TigerTradingSDKSettingManager setTigerQuoteLanguage:TigerTradingLanguageTypeZhHans];
         }];
         UIAlertAction *zhHantAction = [UIAlertAction actionWithTitle:@"繁体中文"
                                                                   style:UIAlertActionStyleDefault
                                                                 handler:^(UIAlertAction * _Nonnull action) {
-            [TigerQuoteSDKSettingManager setTigerQuoteLanguage:TigerQuoteLanguageTypeAutoZhHant];
+            [TigerTradingSDKSettingManager setTigerQuoteLanguage:TigerTradingLanguageTypeZhHant];
         }];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消"
                                                                style:UIAlertActionStyleCancel
@@ -152,12 +152,12 @@
         UIAlertAction *whiteSkinAction = [UIAlertAction actionWithTitle:@"使用红涨绿跌"
                                                                   style:UIAlertActionStyleDefault
                                                                 handler:^(UIAlertAction * _Nonnull action) {
-            [TigerQuoteSDKSettingManager setTigerQuoteIncreaseColorType:TigerQuoteSDKIncreaseColorTypeRed];
+            [TigerTradingSDKSettingManager setTigerQuoteIncreaseColorType:TigerTradingSDKIncreaseColorTypeRed];
         }];
         UIAlertAction *blackSkinAction = [UIAlertAction actionWithTitle:@"使用绿涨红跌"
                                                                   style:UIAlertActionStyleDefault
                                                                 handler:^(UIAlertAction * _Nonnull action) {
-            [TigerQuoteSDKSettingManager setTigerQuoteIncreaseColorType:TigerQuoteSDKIncreaseColorTypeGreen];
+            [TigerTradingSDKSettingManager setTigerQuoteIncreaseColorType:TigerTradingSDKIncreaseColorTypeGreen];
 
         }];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消"
@@ -174,7 +174,7 @@
     }];
     
     TBCellModel *versionModel = [[TBCellModel alloc] initWithTitle:@"获取SDK版本号" action:^{
-        NSString *strVersion = [TigerQuoteSDKManager sdkVersion];
+        NSString *strVersion = [TigerTradingSDKManager sdkVersion];
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"版本号"
                                                                                  message:strVersion
                                                                           preferredStyle:UIAlertControllerStyleActionSheet];
@@ -201,20 +201,20 @@
     }];
         
     TBCellModel *model3 = [[TBCellModel alloc] initWithTitle:@"打开搜索页面" action:^{
-        [TigerQuoteSDKManager openSearchViewController:self];
+        [TigerTradingSDKManager openSearchViewController:self];
     }];
     
     TBCellModel *model4 = [[TBCellModel alloc] initWithTitle:@"跳转首页" action:^{
         NSLog(@"Tapped on Item 4");
         // 实现对应的逻辑
-        [TigerQuoteSDKManager openHomePageViewController: self];
+        [TigerTradingSDKManager openHomePageViewController: self];
         
     }];
     
     TBCellModel *model5 = [[TBCellModel alloc] initWithTitle:@"跳转订单列表" action:^{
         NSLog(@"Tapped on Item 4");
         // 实现对应的逻辑
-        [TigerQuoteSDKManager openOrderListViewController: self];
+        [TigerTradingSDKManager openOrderListViewController: self];
         
     }];
     

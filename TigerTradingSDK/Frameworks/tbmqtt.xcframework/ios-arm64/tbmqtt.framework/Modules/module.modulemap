@@ -1,0 +1,11 @@
+framework module tbmqtt {
+  umbrella header "tbmqtt-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module tbmqtt.Swift {
+  header "tbmqtt-Swift.h"
+  requires objc
+}

@@ -1,0 +1,6 @@
+framework module TBTigerTradeResources {
+  umbrella header "TBTigerTradeResources-umbrella.h"
+
+  export *
+  module * { export * }
+}

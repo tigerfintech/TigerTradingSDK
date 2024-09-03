@@ -1,0 +1,97 @@
+//
+//  TBPositionIndocatorMacro.h
+//  TBTradeBusiness
+//
+//  Created by 王昌阳 on 2022/8/5.
+//
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+typedef NS_ENUM(NSInteger, TBVerticalDashLineType) {
+    TBVerticalDashLineTypeNone = 0,
+    TBVerticalDashLineTypeTop,
+    TBVerticalDashLineTypeBottom,
+    TBVerticalDashLineTypeAll,
+};
+
+typedef NSString *TBPositionIndicatorType NS_STRING_ENUM;
+
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypePositions;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypePositionsAndMarketValue;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeLatestPriceAndCost;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeFloatingProfitAndLoss;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeTodayProfitAndLoss;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeProportionOfPositions;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeProportionOfMargin;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeImpliedVolatility;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeHistoryVolatility;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeDelta;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeGamma;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeVaga;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeTheta;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeRho;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypePositionDays;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeMarginAmount;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeNameCode;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypePositionPnl;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeRealizedPnl;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeLatestPriceAndAveragePrice;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeNAV;
+FOUNDATION_EXTERN TBPositionIndicatorType const kTBPositionIndicatorTypeAccruedInterest;
+
+typedef NSString *TBPositionSettingAccountType NS_STRING_ENUM;
+FOUNDATION_EXTERN TBPositionSettingAccountType const kTBPositionSettingAccountTypeOMNIBUS;
+FOUNDATION_EXTERN TBPositionSettingAccountType const kTBPositionSettingAccountTypeCONTRA;
+FOUNDATION_EXTERN TBPositionSettingAccountType const kTBPositionSettingAccountTypeIB;
+FOUNDATION_EXTERN TBPositionSettingAccountType const kTBPositionSettingAccountTypeVIRTUAL;
+
+
+typedef NSString *TBPositionSettingSegmentType NS_STRING_ENUM;
+FOUNDATION_EXTERN TBPositionSettingSegmentType const kTBPositionSettingSegmentTypeSEC;
+FOUNDATION_EXTERN TBPositionSettingSegmentType const kTBPositionSettingSegmentTypeFUT;
+FOUNDATION_EXTERN TBPositionSettingSegmentType const kTBPositionSettingSegmentTypeFUND;
+FOUNDATION_EXTERN TBPositionSettingSegmentType const kTBPositionSettingSegmentTypeDIGI;
+
+typedef NSString *TBPositionSettingCostType NS_STRING_ENUM;
+FOUNDATION_EXTERN TBPositionSettingCostType const kTBPositionSettingCostTypeFIFO;
+FOUNDATION_EXTERN TBPositionSettingCostType const kTBPositionSettingCostTypeDILUTED;
+FOUNDATION_EXTERN TBPositionSettingCostType const kTBPositionSettingCostTypeAVERAGE;
+
+typedef NSString *TBPositionSettingPortfolioModeType NS_STRING_ENUM;
+FOUNDATION_EXTERN TBPositionSettingPortfolioModeType const kTBPositionSettingPortfolioModeTypeClassic;
+FOUNDATION_EXTERN TBPositionSettingPortfolioModeType const kTBPositionSettingPortfolioModeTypeStrategy;
+
+typedef NSString *TBPositionReferencePriceType NS_STRING_ENUM;
+FOUNDATION_EXTERN TBPositionReferencePriceType const kTBPositionReferencePriceTypeHouring;
+FOUNDATION_EXTERN TBPositionReferencePriceType const kTBPositionReferencePriceTypeOvernight;
+
+FOUNDATION_EXTERN NSString *const kTBPositionReferencePriceTypeKey;
+
+FOUNDATION_EXTERN NSString *const kTBPositionCostTypeCacheKey;
+FOUNDATION_EXTERN NSString *const kTBPositionIndicatorsCacheKey;
+
+FOUNDATION_EXTERN NSString *const kTBPositionCostTypeDidChanged;
+
+@interface TBPositionIndocatorMacro : NSObject
+
++ (NSArray<TBPositionSettingSegmentType> *)getPositionSettingSegmentsList;
+
+@end
+
+@interface NSString (TBPositionSetting)
+
+- (NSString *)segmentTypeSettingName;
+
+- (NSString *)displayCostType;
+
+- (NSString *)costTypeStaticsName;
+
+- (NSString *)segTypeStatisticsName;
+
+- (NSString *)displayPositionReferencePriceTypeName;
+
+@end
+
+NS_ASSUME_NONNULL_END

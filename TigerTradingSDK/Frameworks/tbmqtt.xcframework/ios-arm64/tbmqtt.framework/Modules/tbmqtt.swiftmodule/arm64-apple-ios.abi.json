@@ -1,0 +1,2985 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tbmqtt",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBMQTTClient",
+        "printedName": "TBMQTTClient",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "subscribe",
+            "printedName": "subscribe(_:userProperty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt12TBMQTTClientP9subscribe_12userPropertyySS_SDyS2SGSgtF",
+            "mangledName": "$s6tbmqtt12TBMQTTClientP9subscribe_12userPropertyySS_SDyS2SGSgtF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClient>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClient>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unsubscribe",
+            "printedName": "unsubscribe(_:userProperty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt12TBMQTTClientP11unsubscribe_12userPropertyySS_SDyS2SGSgtF",
+            "mangledName": "$s6tbmqtt12TBMQTTClientP11unsubscribe_12userPropertyySS_SDyS2SGSgtF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClient>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClient>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribe",
+            "printedName": "subscribe(_:userProperty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt12TBMQTTClientP9subscribe_12userPropertyySaySSG_SDyS2SGSgtF",
+            "mangledName": "$s6tbmqtt12TBMQTTClientP9subscribe_12userPropertyySaySSG_SDyS2SGSgtF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClient>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClient>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unsubscribe",
+            "printedName": "unsubscribe(_:userProperty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt12TBMQTTClientP11unsubscribe_12userPropertyySaySSG_SDyS2SGSgtF",
+            "mangledName": "$s6tbmqtt12TBMQTTClientP11unsubscribe_12userPropertyySaySSG_SDyS2SGSgtF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClient>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClient>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "publish",
+            "printedName": "publish(_:responseTopic:topicPayload:correlationData:userProperty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt12TBMQTTClientP7publish_13responseTopic12topicPayload15correlationData12userPropertySiSgSS_SSSDySSypGSSSDyS2SGSgtF",
+            "mangledName": "$s6tbmqtt12TBMQTTClientP7publish_13responseTopic12topicPayload15correlationData12userPropertySiSgSS_SSSDySSypGSSSDyS2SGSgtF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClient>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClient>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt12TBMQTTClientP7connectSbSgyF",
+            "mangledName": "$s6tbmqtt12TBMQTTClientP7connectSbSgyF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClient>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClient>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "publishConnect",
+            "printedName": "publishConnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt12TBMQTTClientP14publishConnectSbSgyF",
+            "mangledName": "$s6tbmqtt12TBMQTTClientP14publishConnectSbSgyF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClient>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(timeout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt12TBMQTTClientP7connect7timeoutSbSgSd_tF",
+            "mangledName": "$s6tbmqtt12TBMQTTClientP7connect7timeoutSbSgSd_tF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClient>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt12TBMQTTClientP10disconnectyyF",
+            "mangledName": "$s6tbmqtt12TBMQTTClientP10disconnectyyF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClient>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ping",
+            "printedName": "ping()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt12TBMQTTClientP4pingyyF",
+            "mangledName": "$s6tbmqtt12TBMQTTClientP4pingyyF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClient>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6tbmqtt12TBMQTTClientP",
+        "mangledName": "$s6tbmqtt12TBMQTTClientP",
+        "moduleName": "tbmqtt",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBMQTTClientDelegate",
+        "printedName": "TBMQTTClientDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "mqtt",
+            "printedName": "mqtt(_:didStateChangeTo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TBCocoaMqttClient",
+                "printedName": "any TBCocoaMQTT.TBCocoaMqttClient",
+                "usr": "c:@M@TBCocoaMQTT@objc(pl)TBCocoaMqttClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CocoaMQTTConnState",
+                "printedName": "TBCocoaMQTT.CocoaMQTTConnState",
+                "usr": "c:@M@TBCocoaMQTT@E@CocoaMQTTConnState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt20TBMQTTClientDelegateP4mqtt_16didStateChangeToy11TBCocoaMQTT0I10MqttClient_p_AF013CocoaMQTTConnF0OtF",
+            "mangledName": "$s6tbmqtt20TBMQTTClientDelegateP4mqtt_16didStateChangeToy11TBCocoaMQTT0I10MqttClient_p_AF013CocoaMQTTConnF0OtF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClientDelegate>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClientDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mqtt",
+            "printedName": "mqtt(_:didPublishStateChangeTo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TBCocoaMqttClient",
+                "printedName": "any TBCocoaMQTT.TBCocoaMqttClient",
+                "usr": "c:@M@TBCocoaMQTT@objc(pl)TBCocoaMqttClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CocoaMQTTConnState",
+                "printedName": "TBCocoaMQTT.CocoaMQTTConnState",
+                "usr": "c:@M@TBCocoaMQTT@E@CocoaMQTTConnState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt20TBMQTTClientDelegateP4mqtt_23didPublishStateChangeToy11TBCocoaMQTT0J10MqttClient_p_AF013CocoaMQTTConnG0OtF",
+            "mangledName": "$s6tbmqtt20TBMQTTClientDelegateP4mqtt_23didPublishStateChangeToy11TBCocoaMQTT0J10MqttClient_p_AF013CocoaMQTTConnG0OtF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClientDelegate>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClientDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mqtt",
+            "printedName": "mqtt(_:didReceiveMessage:id:publishData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TBCocoaMqttClient",
+                "printedName": "any TBCocoaMQTT.TBCocoaMqttClient",
+                "usr": "c:@M@TBCocoaMQTT@objc(pl)TBCocoaMqttClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CocoaMQTT5Message",
+                "printedName": "TBCocoaMQTT.CocoaMQTT5Message",
+                "usr": "c:@M@TBCocoaMQTT@objc(cs)CocoaMQTT5Message"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TBCocoaMQTT.MqttDecodePublish?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MqttDecodePublish",
+                    "printedName": "TBCocoaMQTT.MqttDecodePublish",
+                    "usr": "c:@M@TBCocoaMQTT@objc(cs)MqttDecodePublish"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt20TBMQTTClientDelegateP4mqtt_17didReceiveMessage2id11publishDatay11TBCocoaMQTT0K10MqttClient_p_AH010CocoaMQTT5G0Cs6UInt16VAH0M13DecodePublishCSgtF",
+            "mangledName": "$s6tbmqtt20TBMQTTClientDelegateP4mqtt_17didReceiveMessage2id11publishDatay11TBCocoaMQTT0K10MqttClient_p_AH010CocoaMQTT5G0Cs6UInt16VAH0M13DecodePublishCSgtF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClientDelegate>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClientDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mqtt",
+            "printedName": "mqtt(_:didReceivePublishMessage:id:publishData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TBCocoaMqttClient",
+                "printedName": "any TBCocoaMQTT.TBCocoaMqttClient",
+                "usr": "c:@M@TBCocoaMQTT@objc(pl)TBCocoaMqttClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CocoaMQTT5Message",
+                "printedName": "TBCocoaMQTT.CocoaMQTT5Message",
+                "usr": "c:@M@TBCocoaMQTT@objc(cs)CocoaMQTT5Message"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TBCocoaMQTT.MqttDecodePublish?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MqttDecodePublish",
+                    "printedName": "TBCocoaMQTT.MqttDecodePublish",
+                    "usr": "c:@M@TBCocoaMQTT@objc(cs)MqttDecodePublish"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt20TBMQTTClientDelegateP4mqtt_24didReceivePublishMessage2id11publishDatay11TBCocoaMQTT0L10MqttClient_p_AH010CocoaMQTT5H0Cs6UInt16VAH0n6DecodeG0CSgtF",
+            "mangledName": "$s6tbmqtt20TBMQTTClientDelegateP4mqtt_24didReceivePublishMessage2id11publishDatay11TBCocoaMQTT0L10MqttClient_p_AH010CocoaMQTT5H0Cs6UInt16VAH0n6DecodeG0CSgtF",
+            "moduleName": "tbmqtt",
+            "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTClientDelegate>",
+            "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTClientDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6tbmqtt20TBMQTTClientDelegateP",
+        "mangledName": "$s6tbmqtt20TBMQTTClientDelegateP",
+        "moduleName": "tbmqtt",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tbmqtt",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBCocoaMQTT",
+        "printedName": "TBCocoaMQTT",
+        "declKind": "Import",
+        "moduleName": "tbmqtt"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBMQTTClientManager",
+        "printedName": "TBMQTTClientManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "subscribeStateChange",
+            "printedName": "subscribeStateChange",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((TBCocoaMQTT.CocoaMQTTConnState) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TBCocoaMQTT.CocoaMQTTConnState) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CocoaMQTTConnState",
+                        "printedName": "TBCocoaMQTT.CocoaMQTTConnState",
+                        "usr": "c:@M@TBCocoaMQTT@E@CocoaMQTTConnState"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(py)subscribeStateChange",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC20subscribeStateChangey11TBCocoaMQTT013CocoaMQTTConnE0OcSgvp",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((TBCocoaMQTT.CocoaMQTTConnState) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TBCocoaMQTT.CocoaMQTTConnState) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CocoaMQTTConnState",
+                            "printedName": "TBCocoaMQTT.CocoaMQTTConnState",
+                            "usr": "c:@M@TBCocoaMQTT@E@CocoaMQTTConnState"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)subscribeStateChange",
+                "mangledName": "$s6tbmqtt19TBMQTTClientManagerC20subscribeStateChangey11TBCocoaMQTT013CocoaMQTTConnE0OcSgvg",
+                "moduleName": "tbmqtt",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((TBCocoaMQTT.CocoaMQTTConnState) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TBCocoaMQTT.CocoaMQTTConnState) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CocoaMQTTConnState",
+                            "printedName": "TBCocoaMQTT.CocoaMQTTConnState",
+                            "usr": "c:@M@TBCocoaMQTT@E@CocoaMQTTConnState"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)setSubscribeStateChange:",
+                "mangledName": "$s6tbmqtt19TBMQTTClientManagerC20subscribeStateChangey11TBCocoaMQTT013CocoaMQTTConnE0OcSgvs",
+                "moduleName": "tbmqtt",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6tbmqtt19TBMQTTClientManagerC20subscribeStateChangey11TBCocoaMQTT013CocoaMQTTConnE0OcSgvM",
+                "mangledName": "$s6tbmqtt19TBMQTTClientManagerC20subscribeStateChangey11TBCocoaMQTT013CocoaMQTTConnE0OcSgvM",
+                "moduleName": "tbmqtt",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)connect",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC7connectyyF",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribeConnect",
+            "printedName": "subscribeConnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)subscribeConnect",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC16subscribeConnectyyF",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subcribeDisconnect",
+            "printedName": "subcribeDisconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)subcribeDisconnect",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC18subcribeDisconnectyyF",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "publishConnect",
+            "printedName": "publishConnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)publishConnect",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC14publishConnectyyF",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)disconnect",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC10disconnectyyF",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "paramModify",
+            "printedName": "paramModify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)paramModify",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC11paramModifyyyF",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBMQTTClientManager",
+                "printedName": "tbmqtt.TBMQTTClientManager",
+                "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any tbmqtt.TBMQTTConfigProtocol)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TBMQTTConfigProtocol",
+                    "printedName": "any tbmqtt.TBMQTTConfigProtocol",
+                    "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)initWithConfig:",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC6configAcA20TBMQTTConfigProtocol_pSg_tcfc",
+            "moduleName": "tbmqtt",
+            "objc_name": "initWithConfig:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "publish",
+            "printedName": "publish(_:responseTopic:topicPayload:callBack:backup:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.Data?, Swift.String?, Swift.String?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data?, Swift.String?, Swift.String?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Foundation.Data?, Swift.String?, Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Data?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)publish:responseTopic:topicPayload:callBack:backup:",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC7publish_13responseTopic12topicPayload8callBack6backupySS_SSSDySSypGy10Foundation4DataVSg_SSSgANtcSgyycSgtF",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "publish",
+            "printedName": "publish(_:responseTopic:topicPayload:userProperty:callBack:backup:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.Data?, Swift.String?, Swift.String?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data?, Swift.String?, Swift.String?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Foundation.Data?, Swift.String?, Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Data?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)publish:responseTopic:topicPayload:userProperty:callBack:backup:",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC7publish_13responseTopic12topicPayload12userProperty8callBack6backupySS_SSSDySSypGSDyS2SGSgy10Foundation4DataVSg_SSSgAQtcSgyycSgtF",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribe",
+            "printedName": "subscribe(_:userProperty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)subscribeTopic:userProperty:",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC9subscribe_12userPropertyySS_SDyS2SGSgtF",
+            "moduleName": "tbmqtt",
+            "objc_name": "subscribeTopic:userProperty:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribe",
+            "printedName": "subscribe(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)subscribeTopic:",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC9subscribeyySSF",
+            "moduleName": "tbmqtt",
+            "objc_name": "subscribeTopic:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unsubscribe",
+            "printedName": "unsubscribe(_:userProperty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)unsubscribeTopic:userProperty:",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC11unsubscribe_12userPropertyySS_SDyS2SGSgtF",
+            "moduleName": "tbmqtt",
+            "objc_name": "unsubscribeTopic:userProperty:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unsubscribe",
+            "printedName": "unsubscribe(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)unsubscribeTopic:",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC11unsubscribeyySSF",
+            "moduleName": "tbmqtt",
+            "objc_name": "unsubscribeTopic:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribe",
+            "printedName": "subscribe(_:userProperty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)subscribeTopics:userProperty:",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC9subscribe_12userPropertyySaySSG_SDyS2SGSgtF",
+            "moduleName": "tbmqtt",
+            "objc_name": "subscribeTopics:userProperty:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribe",
+            "printedName": "subscribe(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)subscribeTopics:",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC9subscribeyySaySSGF",
+            "moduleName": "tbmqtt",
+            "objc_name": "subscribeTopics:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unsubscribe",
+            "printedName": "unsubscribe(_:userProperty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)unsubscribeTopics:userProperty:",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC11unsubscribe_12userPropertyySaySSG_SDyS2SGSgtF",
+            "moduleName": "tbmqtt",
+            "objc_name": "unsubscribeTopics:userProperty:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unsubscribe",
+            "printedName": "unsubscribe(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)unsubscribeTopics:",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC11unsubscribeyySaySSGF",
+            "moduleName": "tbmqtt",
+            "objc_name": "unsubscribeTopics:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "subscribeMessage",
+            "printedName": "subscribeMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.Data, Swift.String, Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data, Swift.String, Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Foundation.Data, Swift.String, Swift.Bool)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(py)subscribeMessage",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC16subscribeMessagey10Foundation4DataV_SSSbtcSgvp",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Foundation.Data, Swift.String, Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Foundation.Data, Swift.String, Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Foundation.Data, Swift.String, Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)subscribeMessage",
+                "mangledName": "$s6tbmqtt19TBMQTTClientManagerC16subscribeMessagey10Foundation4DataV_SSSbtcSgvg",
+                "moduleName": "tbmqtt",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Foundation.Data, Swift.String, Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Foundation.Data, Swift.String, Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Foundation.Data, Swift.String, Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)setSubscribeMessage:",
+                "mangledName": "$s6tbmqtt19TBMQTTClientManagerC16subscribeMessagey10Foundation4DataV_SSSbtcSgvs",
+                "moduleName": "tbmqtt",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6tbmqtt19TBMQTTClientManagerC16subscribeMessagey10Foundation4DataV_SSSbtcSgvM",
+                "mangledName": "$s6tbmqtt19TBMQTTClientManagerC16subscribeMessagey10Foundation4DataV_SSSbtcSgvM",
+                "moduleName": "tbmqtt",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "publishMessageCallback",
+            "printedName": "publishMessageCallback",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String, Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, Swift.Bool)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(py)publishMessageCallback",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC22publishMessageCallbackySS_SbtcSgvp",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String, Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.String, Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)publishMessageCallback",
+                "mangledName": "$s6tbmqtt19TBMQTTClientManagerC22publishMessageCallbackySS_SbtcSgvg",
+                "moduleName": "tbmqtt",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String, Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.String, Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)setPublishMessageCallback:",
+                "mangledName": "$s6tbmqtt19TBMQTTClientManagerC22publishMessageCallbackySS_SbtcSgvs",
+                "moduleName": "tbmqtt",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6tbmqtt19TBMQTTClientManagerC22publishMessageCallbackySS_SbtcSgvM",
+                "mangledName": "$s6tbmqtt19TBMQTTClientManagerC22publishMessageCallbackySS_SbtcSgvM",
+                "moduleName": "tbmqtt",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBMQTTClientManager",
+                "printedName": "tbmqtt.TBMQTTClientManager",
+                "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager(im)init",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerCACycfc",
+            "moduleName": "tbmqtt",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "mqtt",
+            "printedName": "mqtt(_:didStateChangeTo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TBCocoaMqttClient",
+                "printedName": "any TBCocoaMQTT.TBCocoaMqttClient",
+                "usr": "c:@M@TBCocoaMQTT@objc(pl)TBCocoaMqttClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CocoaMQTTConnState",
+                "printedName": "TBCocoaMQTT.CocoaMQTTConnState",
+                "usr": "c:@M@TBCocoaMQTT@E@CocoaMQTTConnState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt19TBMQTTClientManagerC4mqtt_16didStateChangeToy11TBCocoaMQTT0I10MqttClient_p_AF013CocoaMQTTConnF0OtF",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC4mqtt_16didStateChangeToy11TBCocoaMQTT0I10MqttClient_p_AF013CocoaMQTTConnF0OtF",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mqtt",
+            "printedName": "mqtt(_:didPublishStateChangeTo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TBCocoaMqttClient",
+                "printedName": "any TBCocoaMQTT.TBCocoaMqttClient",
+                "usr": "c:@M@TBCocoaMQTT@objc(pl)TBCocoaMqttClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CocoaMQTTConnState",
+                "printedName": "TBCocoaMQTT.CocoaMQTTConnState",
+                "usr": "c:@M@TBCocoaMQTT@E@CocoaMQTTConnState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt19TBMQTTClientManagerC4mqtt_23didPublishStateChangeToy11TBCocoaMQTT0J10MqttClient_p_AF013CocoaMQTTConnG0OtF",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC4mqtt_23didPublishStateChangeToy11TBCocoaMQTT0J10MqttClient_p_AF013CocoaMQTTConnG0OtF",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mqtt",
+            "printedName": "mqtt(_:didReceiveMessage:id:publishData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TBCocoaMqttClient",
+                "printedName": "any TBCocoaMQTT.TBCocoaMqttClient",
+                "usr": "c:@M@TBCocoaMQTT@objc(pl)TBCocoaMqttClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CocoaMQTT5Message",
+                "printedName": "TBCocoaMQTT.CocoaMQTT5Message",
+                "usr": "c:@M@TBCocoaMQTT@objc(cs)CocoaMQTT5Message"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TBCocoaMQTT.MqttDecodePublish?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MqttDecodePublish",
+                    "printedName": "TBCocoaMQTT.MqttDecodePublish",
+                    "usr": "c:@M@TBCocoaMQTT@objc(cs)MqttDecodePublish"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt19TBMQTTClientManagerC4mqtt_17didReceiveMessage2id11publishDatay11TBCocoaMQTT0K10MqttClient_p_AH010CocoaMQTT5G0Cs6UInt16VAH0M13DecodePublishCSgtF",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC4mqtt_17didReceiveMessage2id11publishDatay11TBCocoaMQTT0K10MqttClient_p_AH010CocoaMQTT5G0Cs6UInt16VAH0M13DecodePublishCSgtF",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mqtt",
+            "printedName": "mqtt(_:didReceivePublishMessage:id:publishData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TBCocoaMqttClient",
+                "printedName": "any TBCocoaMQTT.TBCocoaMqttClient",
+                "usr": "c:@M@TBCocoaMQTT@objc(pl)TBCocoaMqttClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CocoaMQTT5Message",
+                "printedName": "TBCocoaMQTT.CocoaMQTT5Message",
+                "usr": "c:@M@TBCocoaMQTT@objc(cs)CocoaMQTT5Message"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TBCocoaMQTT.MqttDecodePublish?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MqttDecodePublish",
+                    "printedName": "TBCocoaMQTT.MqttDecodePublish",
+                    "usr": "c:@M@TBCocoaMQTT@objc(cs)MqttDecodePublish"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6tbmqtt19TBMQTTClientManagerC4mqtt_24didReceivePublishMessage2id11publishDatay11TBCocoaMQTT0L10MqttClient_p_AH010CocoaMQTT5H0Cs6UInt16VAH0n6DecodeG0CSgtF",
+            "mangledName": "$s6tbmqtt19TBMQTTClientManagerC4mqtt_24didReceivePublishMessage2id11publishDatay11TBCocoaMQTT0L10MqttClient_p_AH010CocoaMQTT5H0Cs6UInt16VAH0n6DecodeG0CSgtF",
+            "moduleName": "tbmqtt",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@tbmqtt@objc(cs)TBMQTTClientManager",
+        "mangledName": "$s6tbmqtt19TBMQTTClientManagerC",
+        "moduleName": "tbmqtt",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "TBMQTTClientDelegate",
+            "printedName": "TBMQTTClientDelegate",
+            "usr": "s:6tbmqtt20TBMQTTClientDelegateP",
+            "mangledName": "$s6tbmqtt20TBMQTTClientDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tbmqtt",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBMQTTConfigProtocol",
+        "printedName": "TBMQTTConfigProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "host",
+            "printedName": "host",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(py)host",
+            "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP4hostSSvp",
+            "moduleName": "tbmqtt",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(im)host",
+                "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP4hostSSvg",
+                "moduleName": "tbmqtt",
+                "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTConfigProtocol>",
+                "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTConfigProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "port",
+            "printedName": "port",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(py)port",
+            "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP4ports6UInt16Vvp",
+            "moduleName": "tbmqtt",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt16",
+                    "printedName": "Swift.UInt16",
+                    "usr": "s:s6UInt16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(im)port",
+                "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP4ports6UInt16Vvg",
+                "moduleName": "tbmqtt",
+                "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTConfigProtocol>",
+                "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTConfigProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enableSSL",
+            "printedName": "enableSSL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(py)enableSSL",
+            "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP9enableSSLSbvp",
+            "moduleName": "tbmqtt",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(im)enableSSL",
+                "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP9enableSSLSbvg",
+                "moduleName": "tbmqtt",
+                "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTConfigProtocol>",
+                "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTConfigProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "publishHost",
+            "printedName": "publishHost",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(py)publishHost",
+            "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP11publishHostSSvp",
+            "moduleName": "tbmqtt",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(im)publishHost",
+                "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP11publishHostSSvg",
+                "moduleName": "tbmqtt",
+                "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTConfigProtocol>",
+                "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTConfigProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "publishPort",
+            "printedName": "publishPort",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(py)publishPort",
+            "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP11publishPorts6UInt16Vvp",
+            "moduleName": "tbmqtt",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt16",
+                    "printedName": "Swift.UInt16",
+                    "usr": "s:s6UInt16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(im)publishPort",
+                "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP11publishPorts6UInt16Vvg",
+                "moduleName": "tbmqtt",
+                "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTConfigProtocol>",
+                "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTConfigProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "publishEnableSSL",
+            "printedName": "publishEnableSSL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(py)publishEnableSSL",
+            "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP16publishEnableSSLSbvp",
+            "moduleName": "tbmqtt",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(im)publishEnableSSL",
+                "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP16publishEnableSSLSbvg",
+                "moduleName": "tbmqtt",
+                "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTConfigProtocol>",
+                "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTConfigProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "publishEnable",
+            "printedName": "publishEnable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(py)publishEnable",
+            "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP13publishEnableSbvp",
+            "moduleName": "tbmqtt",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(im)publishEnable",
+                "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP13publishEnableSbvg",
+                "moduleName": "tbmqtt",
+                "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTConfigProtocol>",
+                "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTConfigProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "username",
+            "printedName": "username",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(py)username",
+            "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP8usernameSSvp",
+            "moduleName": "tbmqtt",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(im)username",
+                "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP8usernameSSvg",
+                "moduleName": "tbmqtt",
+                "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTConfigProtocol>",
+                "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTConfigProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "password",
+            "printedName": "password",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(py)password",
+            "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP8passwordSSvp",
+            "moduleName": "tbmqtt",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(im)password",
+                "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP8passwordSSvg",
+                "moduleName": "tbmqtt",
+                "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTConfigProtocol>",
+                "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTConfigProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userProperties",
+            "printedName": "userProperties",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(py)userProperties",
+            "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP14userPropertiesSDyS2SGvp",
+            "moduleName": "tbmqtt",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol(im)userProperties",
+                "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP14userPropertiesSDyS2SGvg",
+                "moduleName": "tbmqtt",
+                "genericSig": "<τ_0_0 where τ_0_0 : tbmqtt.TBMQTTConfigProtocol>",
+                "sugared_genericSig": "<Self where Self : tbmqtt.TBMQTTConfigProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@tbmqtt@objc(pl)TBMQTTConfigProtocol",
+        "mangledName": "$s6tbmqtt20TBMQTTConfigProtocolP",
+        "moduleName": "tbmqtt",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/tbmqtt\/tbmqtt\/Core\/TBMQTTClientManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6648,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/tbmqtt\/tbmqtt\/Core\/TBMQTTClientManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6700,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/tbmqtt\/tbmqtt\/Core\/TBMQTTClientManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7584,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/tbmqtt\/tbmqtt\/Core\/TBMQTTClientManager.swift",
+      "kind": "StringLiteral",
+      "offset": 190,
+      "length": 19,
+      "value": "\"tbmqtt.TBMQTTClientManager\""
+    }
+  ]
+}

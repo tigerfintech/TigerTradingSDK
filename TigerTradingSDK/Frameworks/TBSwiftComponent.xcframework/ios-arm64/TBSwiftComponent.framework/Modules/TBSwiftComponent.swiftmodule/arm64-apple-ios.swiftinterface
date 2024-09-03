@@ -1,0 +1,1247 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TBSwiftComponent
+import ChartKLineView
+import Foundation
+import Swift
+import TBBaseKit
+@_exported import TBSwiftComponent
+import TBUIKit
+import UIKit
+import WidgetKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers open class FutruesUtils : ObjectiveC.NSObject {
+  @discardableResult
+  @objc public static func timeFormat(zoneID: Swift.String, time: Swift.Int64, format: Swift.String) -> Swift.String
+  @discardableResult
+  @objc public static func dateFromString(zoneID: Swift.String, date: Swift.String, format: Swift.String) -> Foundation.Date
+  @discardableResult
+  @objc public static func timeFormat(zoneID: Swift.String, time: Swift.Int64, lineType: ChartKLineView.LineType) -> Swift.String
+  @discardableResult
+  @objc public static func formatDateString(lineType: ChartKLineView.LineType) -> Swift.String
+  @objc public static func trendMinuteEmptyCount(_ landMode: ChartKLineView.LandScapeMode) -> Swift.Int
+  @objc public static func marketType(market: Foundation.NSString, secType: Foundation.NSString) -> ChartKLineView.StockDrawType
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Swift.String {
+  public func char(at index: Swift.Int) -> Swift.Character?
+  public func sub(reg: Swift.String) -> Swift.String?
+  public func floatVaule() -> CoreFoundation.CGFloat
+  public func widthWithConstrainedHeight(_ height: CoreFoundation.CGFloat, font: UIKit.UIFont) -> CoreFoundation.CGFloat
+  public func heightWithConstrainedWidth(_ width: CoreFoundation.CGFloat, font: UIKit.UIFont) -> CoreFoundation.CGFloat?
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBAskBidLineChanegView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var askCount: Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) public var bidCount: Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) public func notifyDataChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct TBBaseError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public var failureReason: Swift.String? {
+    get
+  }
+  public var recoverySuggestion: Swift.String? {
+    get
+  }
+  public var helpAnchor: Swift.String? {
+    get
+  }
+  public init(_ desc: Swift.String)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBBottomButtonView) @_Concurrency.MainActor(unsafe) open class TBBottomButtonView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var bottomBtnHeight: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var isBottomSafeAreaShow: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var topMargin: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var bottomBtnTopMargin: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var bottomBtnBottomMargin: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var topButtonTitle: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var bottomButtonTitle: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var topButtonBackgroundColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor(unsafe) public var topButtonTitleColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor(unsafe) public var topButtonAction: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) public var bottomButtonAction: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func setupUI()
+  @_Concurrency.MainActor(unsafe) public func setupLayouts()
+  @objc @_Concurrency.MainActor(unsafe) public func setTopButtonDisable()
+  @objc @_Concurrency.MainActor(unsafe) public func setTopButtonUserInteractionEnabled(_ userInteractionEnabled: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func resetTopButton()
+  @objc @_Concurrency.MainActor(unsafe) public func setBottomButtonBorder(_ isBorder: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func setBottomButtonHidden(_ isHidden: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func getContentHeight() -> CoreFoundation.CGFloat
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBCustomChartYAxisRender : ChartKLineView.YAxisRenderer {
+  @objc override open func renderAxisLabels(context: CoreGraphics.CGContext)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, yAxis: ChartKLineView.YAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBDateFormatter) public class TBDateFormatter : ObjectiveC.NSObject {
+  @objc(TBDateFormatterStyle) public enum DateFormatterStyle : Swift.Int {
+    case yyyyMMddSimple
+    case yyyyMMdd
+    case yyyyMMddDot
+    case yyyyMMddLine
+    case yyyyMMddHHmm
+    case yyyyMMddHHmmss
+    case yyMMdd
+    case MMddyyyy
+    case MMMddyyyy
+    case MMMdd
+    case yyyy
+    case MMddHHmm
+    case MMdd
+    case HHmm
+    case HHmmss
+    case EEE
+    case EEEE
+    case MMM
+    case MMMM
+    case MMMddHHmm
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public class func formatterStyleRawValue(style: TBSwiftComponent.TBDateFormatter.DateFormatterStyle) -> Swift.String
+  @objc public class func covertSolidZoneToSystem(date: Swift.String?, solidFormatter: Swift.String, market: Swift.String, nFormatter: Swift.String) -> Swift.String
+  @objc public class func toSystemString(stamp: Foundation.NSNumber?) -> Swift.String
+  @objc public class func toSystemString(stamp: Foundation.NSNumber?, style: TBSwiftComponent.TBDateFormatter.DateFormatterStyle) -> Swift.String
+  @objc public class func toSystemString(stamp: Foundation.NSNumber?, dateFormat: Swift.String) -> Swift.String
+  @objc public class func toString(stamp: Foundation.NSNumber?, market: Swift.String) -> Swift.String
+  @objc public class func toString(stamp: Foundation.NSNumber?, style: TBSwiftComponent.TBDateFormatter.DateFormatterStyle, market: Swift.String) -> Swift.String
+  @objc public class func toString(stamp: Foundation.NSNumber?, dateFormat: Swift.String, market: Swift.String) -> Swift.String
+  @objc public class func toString(stamp: Foundation.NSNumber?, zoneID: Swift.String?) -> Swift.String
+  @objc public class func toString(stamp: Foundation.NSNumber?, style: TBSwiftComponent.TBDateFormatter.DateFormatterStyle, zoneID: Swift.String?) -> Swift.String
+  @objc public class func toString(stamp: Foundation.NSNumber?, dateFormat: Swift.String, zoneID: Swift.String?) -> Swift.String
+  @objc public class func toNumber(date: Swift.String?, dateFormat: Swift.String?, market: Swift.String?) -> Foundation.NSNumber
+  @objc public class func toNumber(date: Swift.String?, dateFormat: Swift.String?) -> Foundation.NSNumber
+  @objc public static var cnFormatter: Foundation.DateFormatter
+  @objc public static var usFormatter: Foundation.DateFormatter
+  @objc public static var siFormatter: Foundation.DateFormatter
+  @objc public static var auFormatter: Foundation.DateFormatter
+  @objc public static var nzFormatter: Foundation.DateFormatter
+  @objc public static var hkFormatter: Foundation.DateFormatter
+  @objc public static var ukFormatter: Foundation.DateFormatter
+  @objc public class func zoneId(market: Swift.String) -> Swift.String
+  @objc public class func locale(market: Swift.String?) -> Foundation.Locale
+  @objc public class func timeZone(market: Swift.String?) -> Foundation.TimeZone?
+  @objc public class func customFormatterString(style: TBSwiftComponent.TBDateFormatter.DateFormatterStyle)
+  @objc public class func customFormatterString() -> Swift.String
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBFloatingActionSheet) public class TBFloatingActionSheet : ObjectiveC.NSObject {
+  @objc public func show(parentVC: UIKit.UIViewController, titles: [Swift.String], tapAction: @escaping ((Swift.String, Swift.Int) -> Swift.Void))
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBFloatingMessage) public class TBFloatingMessage : ObjectiveC.NSObject {
+  @objc public func show(parentVC: UIKit.UIViewController, title: Swift.String?, content: Swift.String, sureButtonString: Swift.String, cancelButtonTitle: Swift.String?, sureAction: (() -> Swift.Void)?, cancelAction: (() -> Swift.Void)?)
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBFundamentalLineView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) open var maxPrice: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var minPrice: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var desString: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) open var latestPrice: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var openPrice: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var market: Swift.String
+  @objc @_Concurrency.MainActor(unsafe) open var secType: Swift.String
+  @objc @_Concurrency.MainActor(unsafe) open var close: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open func notifyDataChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public enum TBTabBarIndex : Swift.Int {
+  case home = 0
+  case quote
+  case community
+  case portfolio
+  case profile
+  case wealth
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(TBPortfolioTabIndex) public enum TBPortfolioTabIndex : Swift.Int {
+  case MyPortfolio = 0
+  case TodayOrder
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc(TBPortfolioTabTypeValue) public class TBPortfolioTabTypeValue : ObjectiveC.NSObject {
+  @objc public static let securities: Swift.String
+  @objc public static let funds: Swift.String
+  @objc public static let futures: Swift.String
+  @objc public static let cryptos: Swift.String
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public let GOTO_TABBAR_INDEX: Foundation.Notification.Name
+public let TBTABBAR_DEFAULT_INDEX_KEY: Swift.String
+public let TBTABBAR_DEFAULT_INDEX_SWITCH_KEY: Swift.String
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBGoToTabBarIndex) public class TBGoToTabBarIndex : ObjectiveC.NSObject {
+  @objc public static let shareInstance: TBSwiftComponent.TBGoToTabBarIndex
+  @objc public static let itemNameHome: Swift.String
+  @objc public static let itemNameQuote: Swift.String
+  @objc public static let itemNameCommunity: Swift.String
+  @objc public static let itemNamePortfolio: Swift.String
+  @objc public static let itemNameProfile: Swift.String
+  @objc public static let itemNameWealth: Swift.String
+  @objc override dynamic public init()
+  public func showSwitch() -> Swift.Bool
+  @objc(gotoHomePageTab) public static func homeTab()
+  @objc(gotoQuotePageTab:) public static func quoteTab(_ path: Swift.String)
+  @objc(gotoFundMallTab) public static func fundMallTab()
+  @objc(gotoFCNTab) public static func fcnTab()
+  @objc(gotoCommunityTab:) public static func communityTab(_ subIndex: Swift.Int)
+  @objc(gotoPortfolioTab:) public static func portfoliotab(_ path: Swift.String)
+  @objc(gotoPortfolioTab:tab:) public static func portfoliotab(_ path: Swift.String, tab: Swift.String)
+  @objc(gotoPortfolioTab:tab:saArriveFrom:) public static func portfoliotab(_ path: Swift.String, tab: Swift.String, saArriveFrom: Swift.String)
+  @objc(gotoPortfolioTab) public static func portfolioTab()
+  @objc(gotoProfileTab) public static func profileTab()
+  @objc public static func name(index: TBSwiftComponent.TBTabBarIndex) -> Swift.String?
+  @objc deinit
+}
+@objc(TBHomePageTableViewCellDataSource) public protocol TBHomePageTableViewCellDataSource {
+  @objc var isNeedSectionHeader: Swift.Bool { get }
+  @objc var cellHeight: CoreFoundation.CGFloat { get }
+  @objc var cellSubView: UIKit.UIView { get }
+  @objc static var moduleName: Swift.String? { get }
+  @objc optional func moduleAction(section: Swift.Int)
+  @objc func moduleRefreshDataNeeded()
+  @objc(handleModuleAction:) optional func handleModule(action: @escaping (_ eventId: Swift.String?, _ params: Any?) -> Swift.Void)
+  @objc(reloadDataCallBack:) optional func reloadData(callBack: @escaping ((_ isSection: Swift.Bool) -> Swift.Void))
+  @objc optional var sectionHeaderArrowHidden: Swift.Bool { get }
+  @objc optional var isNeedSectionHeaderInfoImageView: Swift.Bool { get }
+  @objc optional var sectionHeaderInfoImage: UIKit.UIImage? { get }
+  @objc optional var sectionHeaderInfoImageSize: CoreFoundation.CGSize { get }
+  @objc optional var sectionHeaderInfoImageCenterYOffset: CoreFoundation.CGFloat { get }
+  @objc optional func moduleInfoAction(sender: UIKit.UIButton)
+  @objc optional func moduleUpdate()
+  @objc optional func homePageViewWillAppear()
+  @objc optional func homePageViewWillDisappear()
+  @objc optional func moduleWillAppear()
+  @objc optional func moduleDidDisappear()
+  @objc optional func requestPolling()
+  @objc optional func quotePermissionChange()
+  @objc optional var impressionComponent: Swift.String? { get }
+  @objc optional var trackExtraParams: [Swift.String : Any]? { get }
+}
+@_inheritsConvenienceInitializers @objc(TBIPificationManager) public class IPificationManager : ObjectiveC.NSObject {
+  @objc public class func setupIPification(countryCode: Swift.String)
+  @objc public class func verify(inputPhoneNumber: Swift.String, completion: ((Swift.Dictionary<Swift.String, Any>?, (any Swift.Error)?) -> Swift.Void)?)
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Swift.Encodable {
+  public func tbConvertToJSONString() -> Swift.String?
+  public func tbConvertToJSON() -> Any?
+}
+extension Swift.Decodable {
+  public static func tbDecodeJSON(from string: Swift.String?, designatedPath: Swift.String? = nil) -> Self?
+  public static func tbDecodeJSON(from jsonObject: Any?, designatedPath: Swift.String? = nil) -> Self?
+}
+@_inheritsConvenienceInitializers @objc(TBLinkMessageBoxViewController) @_Concurrency.MainActor(unsafe) public class TBLinkMessageBoxViewController : TBSwiftComponent.TBMessageBoxViewController, TBUIKit.TTTAttributedLabelDelegate {
+  @_Concurrency.MainActor(unsafe) public var didSelectLink: ((_ url: Foundation.URL) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) override public var content: Swift.String? {
+    get
+    set
+  }
+  @objc(showWithTitle:message:links:confirmTitle:cancelTitle:selectedCallBack:) @_Concurrency.MainActor(unsafe) public static func show(_ title: Swift.String?, message: Swift.String?, links: [Swift.String : Swift.String]?, confirmTitle: Swift.String?, cancelTitle: Swift.String?, selectedCallBack: ((_ selectedIndex: Swift.Int) -> Swift.Void)?)
+  @_Concurrency.MainActor(unsafe) override public func getPromptLabel() -> TBUIKit.TTTAttributedLabel
+  @_Concurrency.MainActor(unsafe) @objc public func attributedLabel(_ label: TBUIKit.TTTAttributedLabel!, didSelectLinkWith url: Foundation.URL!)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBMessageBoxViewController) @_Concurrency.MainActor(unsafe) public class TBMessageBoxViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var btnHeight: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var btnBottomSpace: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var callBackAtDismissCompletion: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var floatingPanel: TBUIKit.TBFloatingPanel
+  @_Concurrency.MainActor(unsafe) public var promptTitle: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var contentHeight: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var content: Swift.String? {
+    get
+    set
+  }
+  @objc(showWithTitle:message:selectedCallBack:) @_Concurrency.MainActor(unsafe) public static func show(_ title: Swift.String?, message: Swift.String?, selectedCallBack: ((_ selectedIndex: Swift.Int) -> Swift.Void)?)
+  @objc(showWithTitle:message:confirmTitle:cancelTitle:selectedCallBack:) @_Concurrency.MainActor(unsafe) public static func show(_ title: Swift.String?, message: Swift.String?, confirmTitle: Swift.String?, cancelTitle: Swift.String?, selectedCallBack: ((_ selectedIndex: Swift.Int) -> Swift.Void)?)
+  @objc(showWithTitle:message:confirmTitle:cancelTitle:selectedCallBack:dissmissCallBack:) @_Concurrency.MainActor(unsafe) public static func show(_ title: Swift.String?, message: Swift.String?, confirmTitle: Swift.String?, cancelTitle: Swift.String?, selectedCallBack: ((_ selectedIndex: Swift.Int) -> Swift.Void)?, dismissCallBack: (() -> Swift.Void)?)
+  @objc(showWithTitle:message:confirmTitle:cancelTitle:callBackAtDismissCompletion:selectedCallBack:) @_Concurrency.MainActor(unsafe) public static func show(_ title: Swift.String?, message: Swift.String?, confirmTitle: Swift.String?, cancelTitle: Swift.String?, callBackAtDismissCompletion: Swift.Bool, selectedCallBack: ((_ selectedIndex: Swift.Int) -> Swift.Void)?)
+  @_Concurrency.MainActor(unsafe) public var cancelTitle: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var confirmTitle: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) public var selectedCallBack: ((Swift.Int) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var dismissCallBack: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public func getPromptLabel() -> UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public func bffMobileHost() -> Swift.String
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBMobileLocalizationManager) public class TBMobileLocalizationManager : ObjectiveC.NSObject {
+  @objc public class func fetchMobileLocalization(_ success: ((TBSwiftComponent.TBMoibleLocalizationModel?) -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  @objc public class func sharedInstance() -> TBSwiftComponent.TBMobileLocalizationManager
+  @objc public class func destroyInstance()
+  @objc override dynamic public init()
+  @objc public var localizationModel: TBSwiftComponent.TBMoibleLocalizationModel
+  @objc public class func isRedUp() -> Swift.Bool
+  @objc public class func setRedUp(_ isRedUp: Swift.Bool)
+  @objc public class func isSymbolFront() -> Swift.Bool
+  @objc public class func setSymbolFont(_ symbolFront: Swift.Bool)
+  @objc public class func isQuoteTapTab() -> Swift.Bool
+  @objc public class func setQuoteTapTab(_ quoteTapTab: Swift.Bool)
+  @objc public class func dateFormat() -> Swift.String
+  @objc public class func setDateFormat(_ format: Swift.String)
+  @objc public class func defaultChartType() -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(TBMoibleLocalizationModel) public class TBMoibleLocalizationModel : TBBaseKit.JSONModel {
+  @objc override dynamic open class func propertyIsOptional(_ propertyName: Swift.String!) -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBPlaceOrderPnLChartYAxisRender : TBSwiftComponent.TBCustomChartYAxisRender {
+  @objc override open func renderAxisLine(context: CoreGraphics.CGContext)
+  @objc override open func renderLimitLines(context: CoreGraphics.CGContext)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, yAxis: ChartKLineView.YAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@objc public protocol TBSegmentSliderDelegate {
+  @objc func sliderValue(segmentSlider: TBSwiftComponent.TBSegmentSlider, value: CoreFoundation.CGFloat)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBSegmentSlider) @_Concurrency.MainActor(unsafe) open class TBSegmentSlider : UIKit.UIControl {
+  @objc @_Concurrency.MainActor(unsafe) weak open var delegate: (any TBSwiftComponent.TBSegmentSliderDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) public var isOnlyAutoAdsorptionMarkPosition: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var normalRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var selectedRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var normalColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var normalHoleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var selectedColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var selectedHoleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var markPositions: [CoreFoundation.CGFloat]
+  @objc @_Concurrency.MainActor(unsafe) public var thumbImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc @_Concurrency.MainActor(unsafe) public var percent: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBStockDetailPriceListView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var sell: Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) public var buy: Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) public var mid: Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) public var max: Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBCodableJSON : ObjectiveC.NSObject, Swift.Codable {
+  @objc required override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBTigerGptConfigModel) public class TBTigerGptConfigModel : TBSwiftComponent.TBCodableJSON {
+  @objc public var name: Swift.String?
+  @objc public var orderRuleFirst: Swift.Bool
+  @objc public var selected: Swift.Bool
+  @objc public var visible: Swift.Bool
+  @objc public var visibilityRuleFirst: Swift.Bool
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc required dynamic public init()
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBStockProLiteConfigItemModel) public class TBStockProLiteConfigItemModel : TBSwiftComponent.TBCodableJSON, Foundation.NSCopying {
+  @objc public var name: Swift.String?
+  @objc public var visible: Swift.Bool
+  @objc public var removable: Swift.Bool
+  @objc public var sortable: Swift.Bool
+  @objc public var prompt: Swift.String?
+  @objc public var market: Swift.String?
+  @objc public var edition: Swift.String?
+  @objc public var brokerAccountType: Swift.String?
+  @objc public var omnibusSegmentType: Swift.String?
+  @objc public var costAlgoType: Swift.String?
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc required dynamic public init()
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBBFFPersonalizeRuleConfigItemModel) public class TBBFFPersonalizeRuleConfigItemModel : TBSwiftComponent.TBCodableJSON, Foundation.NSCopying {
+  @objc public var configItemDataKey: Swift.String?
+  @objc public var configItemDataType: Swift.Int
+  @objc public var data: Swift.String?
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc required dynamic public init()
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class TBStockIndicatrixItemModel : TBSwiftComponent.TBCodableJSON, Foundation.NSCopying {
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc public var name: Swift.String?
+  @objc public var check: Swift.Bool
+  @objc public var visible: Swift.Bool
+  @objc public var subName: Swift.String?
+  @objc public var enableSelected: Swift.Bool
+  @objc public var selected: Swift.Bool
+  @objc public var value: Swift.Int
+  @objc public var addition: Swift.String?
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc required dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBStockProLitePriceLineModel) public class TBStockProLitePriceLineModel : TBSwiftComponent.TBCodableJSON {
+  @objc public var flag: Swift.Bool
+  @objc public var edition: Swift.String?
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc required dynamic public init()
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBWatchlistConfigModel) public class TBWatchlistConfigModel : TBSwiftComponent.TBCodableJSON {
+  @objc public var name: Swift.String?
+  @objc public var content: Swift.String?
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc required dynamic public init()
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TBBFFConfigModuleRuleAdditionListItemModel : TBSwiftComponent.TBCodableJSON {
+  @objc public var itemKey: Swift.String?
+  @objc public var dataType: Swift.Int
+  @objc public var itemData: Swift.String?
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc required dynamic public init()
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TBBFFConfigModuleRuleAdditionListModel : TBSwiftComponent.TBCodableJSON {
+  @objc public var items: [TBSwiftComponent.TBBFFConfigModuleRuleAdditionListItemModel]?
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc required dynamic public init()
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TBBFFConfigModuleRuleModel : TBSwiftComponent.TBCodableJSON, Foundation.NSCopying {
+  @objc public var moduleName: Swift.String?
+  @objc public var active: Swift.Bool
+  @objc public var visible: Swift.Bool
+  @objc public var sortable: Swift.Bool
+  @objc public var removable: Swift.Bool
+  @objc public var addition: [TBSwiftComponent.TBBFFPersonalizeRuleConfigItemModel]?
+  @objc public var subModuleRules: [TBSwiftComponent.TBBFFConfigModuleRuleModel]?
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc required dynamic public init()
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc public class func checkEquality(a: TBSwiftComponent.TBBFFConfigModuleRuleModel, b: TBSwiftComponent.TBBFFConfigModuleRuleModel, checkSubModules: Swift.Bool) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TBBFFConfigModuleRuleListItemModel : TBSwiftComponent.TBCodableJSON, Foundation.NSCopying {
+  @objc public var scene: Swift.String?
+  @objc public var moduleRules: [TBSwiftComponent.TBBFFConfigModuleRuleModel]?
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc required dynamic public init()
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+extension TBSwiftComponent.TBBFFConfigModuleRuleListItemModel {
+  @objc dynamic public func selectModule(name: Swift.String?)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBStockProLiteConfigModel) public class TBStockProLiteConfigModel : TBSwiftComponent.TBCodableJSON {
+  @objc public var homeModule: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var homeModuleRecommend: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var quoteTab: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var portfolioModule: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var portfolioDataField: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var quoteStockTab: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var quoteDetailModule: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var portfolioCostAlgo: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var chartMinorIndex: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var majorChartIndicatrix: [TBSwiftComponent.TBStockIndicatrixItemModel]?
+  @objc public var minorChartIndicatrix: [TBSwiftComponent.TBStockIndicatrixItemModel]?
+  @objc public var homePageEdition: Swift.String?
+  @objc public var quoteDetailPageEdition: Swift.String?
+  @objc public var tradePageEdition: Swift.String?
+  @objc public var discoverPageEdition: Swift.String?
+  @objc public var assetPageEdition: Swift.String?
+  @objc public var tradeBtnStyle: Swift.String?
+  @objc public var currencyConfig: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var portfolioFunctionModule: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var portfolioModuleBelowAsset: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var portfolioFunctionModuleAppearCount: Swift.Int
+  @objc public var portfolioPageEdition: Swift.String?
+  @objc public var watchListMiniChart: [TBSwiftComponent.TBWatchlistConfigModel]?
+  @objc public var quoteDetailCurrentPriceLine: [TBSwiftComponent.TBStockProLitePriceLineModel]?
+  @objc public var economicCalendarRegion: [TBSwiftComponent.TBTigerGptConfigModel]?
+  @objc public var investRecommendMarket: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var communityOrNews: Swift.String?
+  @objc public var tigerGptArray: Foundation.NSMutableArray?
+  @objc public var accountAssetDetailSwitch: Swift.String?
+  @objc public var portfolioFunctionModulePro: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var personalizeRuleList: [TBSwiftComponent.TBBFFPersonalizeRuleConfigItemModel]?
+  @objc public var moduleRuleList: [TBSwiftComponent.TBBFFConfigModuleRuleListItemModel]?
+  @objc public var portfolioOptionDataField: [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public var tigerGptLink: Swift.String?
+  @objc public var portfolioMode: Swift.String?
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc required dynamic public init()
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc public static func fromJSON(_ obj: Any?) -> Self?
+  @objc public func toJSON() -> Any?
+  @objc deinit
+}
+extension TBSwiftComponent.TBStockProLiteConfigModel {
+  @objc dynamic public var calendarFilterRegion: [Swift.String]? {
+    @objc get
+  }
+}
+public enum ModuleName : Swift.String {
+  case homeModule
+  case homeModuleRecommend
+  case homePageEdition
+  case quoteTab
+  case quoteStockTab
+  case quoteDetailModule
+  case chartMinorIndex
+  case majorChartIndicatrix
+  case minorChartIndicatrix
+  case quoteDetailCurrentPriceLine
+  case economicCalendarRegion
+  case portfolioDataField
+  case portfolioCostAlgo
+  case portfolioFunctionModulePro
+  case currencyConfig
+  case personalizeRuleList
+  case moduleRuleList
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TBStockProLiteModuleRuleScene : Swift.String {
+  case QuoteMajorChart
+  case QuoteMinorChart
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc public enum TBStockProLiteIndicatorPeriod : Swift.Int {
+  case None = 0
+  case TimeTrend
+  case Day
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc(TBStockProLiteConst) public class TBStockProLiteConst : ObjectiveC.NSObject {
+  @objc public static let defaultMarkets: [Swift.String]
+  @objc public static let SymbolPageBuySell: Swift.String
+  @objc public static let SymbolPageTrade: Swift.String
+  @objc public static let HomePageEditionClassic: Swift.String
+  @objc public static let HomePageEditionTab: Swift.String
+  @objc public static let PortfolioModeClassic: Swift.String
+  @objc public static let PortfolioModeStrategy: Swift.String
+  @objc public static var oldKeyMap: [Swift.String : Swift.String] {
+    @objc get
+  }
+  @objc public static var chartMinorIndexs: [Swift.Int : Swift.String] {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class TBStockProLiteDefaultConfig : ObjectiveC.NSObject {
+  public class func defaultSymbolPageConfigs() -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  public class func defaultPortfolioConfig() -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  public class func defaultPortfolioMoreFunctionsConfig() -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public let PRO_MODE: Swift.String
+public let LITE_MODE: Swift.String
+extension Swift.String {
+  public func isLite() -> Swift.Bool
+  public func isPro() -> Swift.Bool
+  public func marketCode() -> Swift.String
+}
+@_inheritsConvenienceInitializers @objc(TBStockProLiteHttpManager) public class TBStockProLiteHttpManager : ObjectiveC.NSObject {
+  public class func fetchPersonalizationConfigsAll(success: ((TBSwiftComponent.TBStockProLiteConfigModel?) -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  public class func postPersonalizationConfigsAll(_ configs: [Swift.String : Any]?, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  public class func fetchPersonalizationConfig(_ moduleType: Swift.String?, success: ((TBSwiftComponent.TBStockProLiteConfigModel?) -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  @objc(postPersonalizationConfigModuleType:config:success:failure:) public class func postPersonalizationConfig(_ moduleType: Swift.String?, _ config: Any?, success: ((Swift.Bool) -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  public class func fetchPersonalizationConfigsModuleTypes()
+  @objc public class func restureDefaultConfigs(_ moduleType: Swift.String?, success: ((TBSwiftComponent.TBStockProLiteConfigModel?) -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  public class func postPersonalizationTradePositionConfigs(success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public class func fetchModuleRuleList(_ scene: Swift.String?, success: (([TBSwiftComponent.TBBFFConfigModuleRuleModel]?) -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  public class func fetchQuoteStockTabDefault(success: (([Swift.String]?) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc(fetchStockTabOrdersDefault:failure:) public class func fetchStockTabOrdersDefault(success: (([TBSwiftComponent.TBStockProLiteConfigItemModel]?) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc(fetchQuoteDetailModuleDefault:success:failure:) public class func fetchQuoteDetailModuleDefault(_ marketCode: Swift.String, success: (([TBSwiftComponent.TBStockProLiteConfigItemModel]?) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  public class func fetchHomeTabDefaultConfigs(success: (([TBSwiftComponent.TBStockProLiteConfigItemModel]?) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public class func fetchPositionIndicatorsDefaultConfigs(success: (([TBSwiftComponent.TBStockProLiteConfigItemModel]?) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public class func restorePositionIndicatorsDefaultConfigs(success: (([TBSwiftComponent.TBStockProLiteConfigItemModel]?) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  public class func fetchDefaultConfigs(_ moduleType: Swift.String?, success: ((TBSwiftComponent.TBStockProLiteConfigModel?) -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public let NOTIFICATION_PERSONAL_CONFIG_FETCH_SUCCESS: Swift.String
+public let NOTIFICATION_PERSONAL_CONFIG_HOME_PAGE_UPDATE: Swift.String
+public let NOTIFICATION_POSITION_CONFIG_CHANGED: Swift.String
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBStockProLiteManager) public class TBStockProLiteManager : ObjectiveC.NSObject {
+  @objc public class func reloadTimelines()
+  @objc public class func sharedInstance() -> TBSwiftComponent.TBStockProLiteManager
+  @objc(updateNewUser) public func newUser()
+  public var isNewUser: Swift.Bool {
+    get
+  }
+  @objc override dynamic public init()
+  public func updateDefaultLiteMode()
+  @objc(defaultLiteMode) public class func defaultIsLiteMode() -> Swift.Bool
+  @objc(symbolPageIsLiteModeWithSecType:) public class func symbolPageIsLiteMode(_ secType: Swift.String) -> Swift.Bool
+  @objc(symbolPageIsLiteMode) public class func symbolPageIsLiteMode() -> Swift.Bool
+  @objc(setSymbolPageLiteMode:success:failure:) public class func setSymbolPageLiteMode(_ isLiteMode: Swift.Bool, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  public var defaultTabBarIndex: Swift.Int
+  public func fetchLocalConfigs()
+  @objc public var configModel: TBSwiftComponent.TBStockProLiteConfigModel? {
+    @objc get
+    @objc set
+  }
+  @objc public var updateIndex: (() -> Swift.Void)?
+  @objc public func saveAllConfigs()
+  @objc(symbolPageConfigs:) public class func symbolPageConfigs(_ marketMode: Swift.String) -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc(setSymbolPageConfigs:marketCode:success:failure:) public class func setSymbolPageConfigs(_ configs: [TBSwiftComponent.TBStockProLiteConfigItemModel], marketCode: Swift.String, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public func fetchAllConfigs(_ updateIndex: Swift.Bool)
+  @objc public func fetchAllConfigs(updateIndex: Swift.Bool, success: (() -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public func fetchConfig(moduleName: Swift.String, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public func fetchConfig(moduleNames: [Swift.String], success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public func fetchConfig(moduleName: Swift.String, itemName: Swift.String?, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public func fetchConfig(moduleName: Swift.String, itemNames: [Swift.String], success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public func modifyConfig(moduleName: Swift.String, value: Any, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public func modifyConfig(modules: [Swift.String : Any], success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public func modifyConfig(moduleName: Swift.String, itemName: Swift.String, value: Any, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public func modifyConfig(moduleName: Swift.String, items: [Swift.String : Any], success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public func updateModulesIfNeeded()
+  @objc public func updateModulesIfNeeded(success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  public class func convertOverViewModel(_ marketMode: Swift.String, nsArray: Foundation.NSArray?) -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  public func fetchLoaclConfigs()
+  public class func defaultSymbolPageConfigs(_ marketMode: Swift.String) -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc public class func tradeBtnStyle() -> Swift.String
+  @objc(setTradeBtn:success:failure:) public class func setTradeBtn(style: Swift.String?, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc(setPortfolioMode:success:failure:) public class func setPortfolioMode(_ mode: Swift.String?, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc public class func searchMarketOrders() -> Swift.String
+  @objc public class func reportSymbolPageConfig(_ marketMode: Swift.String) -> [Swift.String]
+  @objc public func moduleRuleListItem(scene: Swift.String) -> TBSwiftComponent.TBBFFConfigModuleRuleListItemModel?
+  @objc public func moduleRule(scene: Swift.String, name: Swift.String) -> TBSwiftComponent.TBBFFConfigModuleRuleModel?
+  public func updateLocalModuleRuleList(scene: Swift.String, value: [TBSwiftComponent.TBBFFConfigModuleRuleModel])
+  @objc public func updateModuleRuleListIfNeeded(_ items: [TBSwiftComponent.TBBFFConfigModuleRuleListItemModel], success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc deinit
+}
+extension TBSwiftComponent.TBStockProLiteManager {
+  @objc dynamic public class func quoteTab() -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc dynamic public class func setQuoteTab(_ tabs: [TBSwiftComponent.TBStockProLiteConfigItemModel]?, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func marketQuoteOrders() -> [TBSwiftComponent.TBStockProLiteConfigItemModel]
+  @objc dynamic public class func setMarketQuoteOrders(_ orders: [TBSwiftComponent.TBStockProLiteConfigItemModel]?, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func currentPriceLine() -> Swift.Bool
+  @objc dynamic public class func setCurrentPriceLine(visible: Swift.Bool, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+}
+extension TBSwiftComponent.TBStockProLiteManager {
+  @objc dynamic public var communityDefaultTabIsNews: Swift.Bool {
+    @objc get
+  }
+}
+public enum PersonalizeConfigItemName : Swift.String {
+  case portfolioLiteFunctionsAppearCount
+  case portfolioMode
+  case stockLogoSwitch
+  case noDisturb
+  case ChartPrePostSwitch
+  case ChartOvernightSwitch
+  case OptionExpirationSwitch
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension TBSwiftComponent.TBStockProLiteManager {
+  @objc dynamic public class func configForPortfolioLiteFunctionsAppearCount() -> Swift.Int
+  @objc dynamic public class func configForName(name: Swift.String) -> TBSwiftComponent.TBBFFPersonalizeRuleConfigItemModel?
+  @objc dynamic public class func checkIsWithNoDisturb() -> Swift.Bool
+  @objc dynamic public class func updateExpireTimeIntervalWithNoDisturb()
+  @objc dynamic public class func updatePersonalizeRuleConfig(name: Swift.String, type: Swift.Int, data: Swift.String, success: ((Swift.Bool, (any Swift.Error)?) -> Swift.Void)? = nil)
+  @objc dynamic public class func updatePersonalizeRuleConfigs(items: [TBSwiftComponent.TBBFFPersonalizeRuleConfigItemModel], success: ((Swift.Bool, (any Swift.Error)?) -> Swift.Void)? = nil)
+  @objc dynamic public class func hasShownGuide(name: Swift.String) -> Swift.Bool
+  @objc dynamic public class func hideGuide(name: Swift.String)
+  @objc dynamic public class func getValueForConfig(_ name: Swift.String) -> Swift.String?
+  @objc dynamic public class func getBoolValueForConfig(_ name: Swift.String) -> Swift.Bool
+  @objc dynamic public class func setConfigForPortfolioMode(_ mode: Swift.String)
+  @objc dynamic public class func configForPortfolioMode() -> Swift.String
+  @objc(setWatchListLogo:success:failure:) dynamic public class func setWatchListLogo(_ isOn: Swift.Bool, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func watchListLogoState() -> Swift.Bool
+  @objc(setOptionExpirationSwitch:success:failure:) dynamic public class func setOptionExpirationSwitch(_ isOn: Swift.Bool, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func optionExpirationSwitch() -> Swift.Bool
+  @objc(setChartPrePostSwitch:success:failure:) dynamic public class func setChartPrePostSwitch(_ isOn: Swift.Bool, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func prePostState() -> Swift.Bool
+  @objc(setOvernightState:success:failure:) dynamic public class func setOvernightState(_ isOn: Swift.Bool, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func overnightState() -> Swift.Bool
+  @objc dynamic public class func shouldShowDiscoverFund() -> Swift.Bool
+  @objc dynamic public class func shouldShowFundMall() -> Swift.Bool
+  public static let enableWealthKey: Swift.String
+  public static let displayWealthTabKey: Swift.String
+  @objc dynamic public var enableWealth: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var displayWealthTab: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc dynamic public var tabNames: [Swift.String] {
+    @objc get
+  }
+  @objc dynamic public func tabNames(wealth: Swift.Bool) -> [Swift.String]
+}
+extension TBSwiftComponent.TBStockProLiteManager {
+  @objc dynamic public class func discoverIsLiteMode() -> Swift.Bool
+  public class func setDiscoverIsLiteMode(_ isLiteMode: Swift.Bool, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public func fetchCalendarFilterRegions(success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+}
+extension TBSwiftComponent.TBStockProLiteManager {
+  public class func homeModules() -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc(setHomeModules:success:failure:) dynamic public class func setHomeModules(_ configs: [TBSwiftComponent.TBStockProLiteConfigItemModel]?, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  public class func fetchHomePageConfig(success: (() -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func homePageEdition() -> Swift.Int
+  @objc(setHomePageEdition:success:failure:) dynamic public class func setHomePageEdition(_ index: Swift.Int, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func recommendConfigsModules() -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  public func updateHomeIndex()
+}
+extension TBSwiftComponent.TBStockProLiteManager {
+  @objc dynamic public class func placeOrderIsLiteMode() -> Swift.Bool
+  @objc(setPlaceOrderLiteMode:success:failure:) dynamic public class func setPlaceOrderLiteMode(_ isLiteMode: Swift.Bool, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func portfolioPageEdition() -> Swift.String
+  @objc dynamic public class func portfolioIsLiteMode() -> Swift.Bool
+  @objc dynamic public class func portfolioIsProMode() -> Swift.Bool
+  @objc(setPortfolioPageMode:success:failure:) dynamic public class func setPortfolioPageMode(_ isLiteMode: Swift.Bool, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func portfolioConfigs(_ accountCode: Swift.String) -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc dynamic public class func setPortfolioConfigs(_ configs: [TBSwiftComponent.TBStockProLiteConfigItemModel], accountCode: Swift.String, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func costType(_ accountType_SegType: Swift.String) -> TBSwiftComponent.TBStockProLiteConfigItemModel?
+  @objc dynamic public class func currencyOfUserPreference(_ accountType: Swift.String) -> Swift.String?
+  @objc dynamic public class func setCostType(_ accountType_SegType: Swift.String, costType: TBSwiftComponent.TBStockProLiteConfigItemModel, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func setCurrencyConfig(_ currencyConfigs: [TBSwiftComponent.TBStockProLiteConfigItemModel]?, success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func refreshCurrencyConfig(success: (([TBSwiftComponent.TBStockProLiteConfigItemModel]?) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+  @objc dynamic public class func portfolioMoreFunctions() -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc dynamic public class func portfolioRecommendFunctionsCount() -> ObjectiveC.NSInteger
+  @objc(portfolioFunctionModuleProWithOmnibusSegmentType:) dynamic public class func portfolioFunctionModulePro(_ omnibusSegmentType: Swift.String?) -> [TBSwiftComponent.TBStockProLiteConfigItemModel]?
+  @objc dynamic public class func resetPortfolioFunctionModulePro()
+  @objc dynamic public func fetchPortfolioFunctionModulePro(success: ((Swift.Bool) -> Swift.Void)?, failure: (((any Swift.Error)?) -> Swift.Void)?)
+}
+extension TBSwiftComponent.TBStockProLiteManager {
+  @objc dynamic public func selectedMainIndicator(period: TBSwiftComponent.TBStockProLiteIndicatorPeriod) -> Swift.String?
+  @objc dynamic public func setSelectedMainIndicator(name: Swift.String?, period: TBSwiftComponent.TBStockProLiteIndicatorPeriod)
+  @objc dynamic public func setSelectedSubIndicator(name: Swift.String, period: TBSwiftComponent.TBStockProLiteIndicatorPeriod)
+  @objc dynamic public func setSelectedSubIndicators(_ names: [Swift.String], period: TBSwiftComponent.TBStockProLiteIndicatorPeriod)
+  @objc dynamic public var mainChartIndicators: [Swift.String] {
+    @objc get
+  }
+  @objc dynamic public var visibleMainChartIndicators: [Swift.String] {
+    @objc get
+  }
+  @objc dynamic public var invisibleMainChartIndicators: [Swift.String] {
+    @objc get
+  }
+  @objc dynamic public var selectedMainChartIndicator: Swift.String? {
+    @objc get
+  }
+  @objc dynamic public func updateVisibleMainChartIndicators(_ names: [Swift.String])
+  @objc dynamic public func selectMainChartIndicator(_ name: Swift.String?)
+  @objc dynamic public var subChartIndicators: [Swift.String] {
+    @objc get
+  }
+  @objc dynamic public var isChartMinorVolSelected: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc dynamic public func visibleSubChartIndicators(volIncluded: Swift.Bool) -> [Swift.String]
+  @objc dynamic public var invisibleSubChartIndicators: [Swift.String] {
+    @objc get
+  }
+  @objc dynamic public var selectedSubChartIndicators: [Swift.String]? {
+    @objc get
+  }
+  @objc dynamic public func updateVisibleSubChartIndicators(_ names: [Swift.String])
+  @objc dynamic public func updateCheckedSubChartIndicators(_ names: [Swift.String])
+  @objc dynamic public func updateVolItem(addition: Swift.String)
+  @objc dynamic public func topSubChartIndicator(_ name: Swift.String)
+  @objc dynamic public func deleteSubChartIndicator(_ name: Swift.String)
+  @objc dynamic public func items(forIndicator name: Swift.String) -> [TBSwiftComponent.TBStockIndicatrixItemModel]?
+  @objc dynamic public func updateItems(_ items: [TBSwiftComponent.TBStockIndicatrixItemModel], forIndicator name: Swift.String)
+  @objc dynamic public var volChartIndicator: Swift.String {
+    @objc get
+  }
+  @objc dynamic public func updateVolChartIndicator(name: Swift.String)
+  @objc(indicatorParams:) dynamic public func indicator(_ key: Swift.String) -> [TBSwiftComponent.TBStockIndicatrixItemModel]?
+  @objc(maxMAIndicatorParams) dynamic public func maxMa() -> Swift.Int
+  @objc(indicatorValues:) dynamic public func indicatorValues(key: Swift.String) -> [Swift.Int]?
+  @objc dynamic public func indicator(index: Swift.Int, key: Swift.String) -> Swift.Int
+  @objc(minMaxValue:subName:) dynamic public func minMaxValue(_ key: Swift.String?, subName: Swift.String?) -> [Swift.String : Any]?
+}
+extension TBSwiftComponent.TBStockProLiteManager {
+  @objc dynamic public class func isHiddenModule(key: Swift.String) -> Swift.Bool
+  @objc dynamic public class func isExplanationEntryHide() -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class TBStockProLiteSwitchTableViewCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor(unsafe) public var subContentView: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) public var isOn: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var currentIndex: ObjectiveC.NSInteger?
+  @_Concurrency.MainActor(unsafe) public var switchCallBack: ((Swift.Bool, ObjectiveC.NSInteger?) -> Swift.Void)?
+  @objc(updateWithProImage:liteImg:) @_Concurrency.MainActor(unsafe) public func update(_ proImg: Swift.String, _ liteImg: Swift.String)
+  @objc(updateWithProImage:liteImg:hint:) @_Concurrency.MainActor(unsafe) public func update(_ proImg: Swift.String, _ liteImg: Swift.String, _ hint: Swift.String?)
+  @_Concurrency.MainActor(unsafe) public func animation(_ isLite: Swift.Bool)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBSwiftComponentLifeCycleModule) @_Concurrency.MainActor(unsafe) public class TBSwiftComponentLifeCycleModule : ObjectiveC.NSObject, TBBaseKit.TBModuleDelegate {
+  @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, didFinishLaunchingWithOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func tb_operations(afterLoginOrRegister model: TBBaseKit.TBOperationsModel)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum LanguageType : Swift.String, Swift.CustomStringConvertible {
+  case zh_Hans
+  case zh_Hant
+  case en
+  case en_AU
+  case en_SG
+  case en_NZ
+  case vi_VN
+  case th_TH
+  case id_ID
+  case es_ES
+  case es_LA
+  case ms_MY
+  case pt_BR
+  case pt_PT
+  case tr_TR
+  case auto
+  public var description: Swift.String {
+    get
+  }
+  public var isSimplifiedChinese: Swift.Bool {
+    get
+  }
+  public var isTraditionalChinese: Swift.Bool {
+    get
+  }
+  public var langSettingTitle: Swift.String {
+    get
+  }
+  public var langSave: Swift.String {
+    get
+  }
+  public var langParam: Swift.String {
+    get
+  }
+  public var saLang: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBSwiftLanguageManager) public class LanguageManager : ObjectiveC.NSObject {
+  @objc(localized:comment:) public class func localized(_ key: Swift.String, _ comment: Swift.String?) -> Swift.String
+  @objc(localized:comment:table:) public class func localized(_ key: Swift.String, _ comment: Swift.String?, _ table: Swift.String?) -> Swift.String
+  @objc(localized:comment:bundle:table:) public class func localized(_ key: Swift.String, _ comment: Swift.String?, _ bundle: Foundation.Bundle?, _ table: Swift.String?) -> Swift.String
+  @objc public static var sharedInstance: TBSwiftComponent.LanguageManager
+  @objc public var folderName: Swift.String {
+    @objc get
+  }
+  @objc public var languagesDes: [Swift.String] {
+    @objc get
+  }
+  @objc public var currentSelectedIndex: Swift.Int {
+    @objc get
+  }
+  @objc public func setSelected(_ language: Swift.Int)
+  @objc public class var availableLanguages: [Swift.String] {
+    @objc get
+  }
+  @objc deinit
+}
+extension TBSwiftComponent.LanguageManager {
+  @objc dynamic public class var isEnglish: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public class var isSysSimpleChinese: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public class var isSimpleChinese: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public class var isTraditionalChinese: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public class func saLangSetted() -> Swift.String
+  @objc dynamic public class func saSystemSetted() -> Swift.String
+  @objc dynamic public class func langParam() -> Swift.String
+  @objc dynamic public class var currentType: TBBaseKit.TBLanguageType {
+    @objc get
+  }
+  @objc dynamic public class func settingTitle(atIndex: Swift.Int) -> Swift.String
+  @objc dynamic public class func saveTitle(atIndex: Swift.Int) -> Swift.String
+  @objc dynamic public class func cryptoCurrencyTitle() -> Swift.String
+  @objc dynamic public class func cryptoAccountTitle() -> Swift.String
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBSwiftTableViewBaseViewController : TBUIKit.TBBaseViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func hasTBNavigationBar() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func enableDragBack() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func tbNavigationBarHeight() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func autoGenerateBackBarButtonItem() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var tableView: UIKit.UITableView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init!(navigatorURL URL: Foundation.URL!, query: [Swift.AnyHashable : Any]!)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension TBSwiftComponent.TBSwiftTableViewBaseViewController : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+}
+@objc public protocol TBSwiftTableViewCellDelegate {
+  @objc func handleEvent(eventId: Swift.String?, params: Any?)
+  @objc func reloadData(index: Swift.Int, isSection: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBSwiftTableViewCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open var indexPath: Foundation.IndexPath?
+  @objc @_Concurrency.MainActor(unsafe) open var dataSource: (any TBSwiftComponent.TBSwiftTableViewCellDataSource)? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) weak open var cellDelegate: (any TBSwiftComponent.TBSwiftTableViewCellDelegate)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc(TBSwiftTableViewCellDataSource) public protocol TBSwiftTableViewCellDataSource : ObjectiveC.NSObjectProtocol {
+  @objc var isNeedSectionHeader: Swift.Bool { get }
+  @objc optional var sectionHeaderView: UIKit.UIView? { get }
+  @objc var moduleName: Swift.String? { get }
+  @objc(sectionHeaderArrowHidden) optional var isArrowHidden: Swift.Bool { get }
+  @objc(isHeaderRightViewMore) optional var isHeaderRightViewMore: Swift.Bool { get }
+  @objc(sectionHeaderBackgroundColor) optional var sectionHeaderBackgroundColor: UIKit.UIColor { get }
+  @objc(sectionHeaderCornerRadious) optional var sectionHeaderCornerRadious: CoreFoundation.CGFloat { get }
+  @objc(sectionHeaderTitleFont) optional var sectionHeaderTitleFont: UIKit.UIFont { get }
+  @objc(sectionHeaderCustomHeight) optional var sectionHeaderCustomHeight: Foundation.NSNumber { get }
+  @objc func moduleAction(section: Swift.Int)
+  @objc var cellHeight: CoreFoundation.CGFloat { get }
+  @objc var cellSubView: UIKit.UIView { get }
+  @objc(handleModuleAction:) optional func handleModule(action: @escaping (_ eventId: Swift.String?, _ info: Any?) -> Swift.Void)
+  @objc(reloadDataCallBack:) func reloadData(callBack: @escaping ((_ isSection: Swift.Bool) -> Swift.Void))
+  @objc func moduleRefreshDataNeeded()
+  @objc optional func requestPolling()
+  @objc optional func moduleDidScroll()
+  @objc optional func superVCViewWillAppear()
+  @objc optional func superVCViewWillDisappear()
+  @objc optional func moduleWillAppear()
+  @objc optional func moduleDidDisappear()
+  @objc optional var impressionComponent: Swift.String? { get }
+  @objc optional var impressionPage: Swift.String? { get }
+  @objc optional var trackExtraParams: [Swift.String : Any]? { get }
+}
+@_inheritsConvenienceInitializers @objc(TBSwiftTableViewViewController) @_Concurrency.MainActor(unsafe) open class TBSwiftTableViewViewController : TBUIKit.TBBaseViewController {
+  @_Concurrency.MainActor(unsafe) open var items: [[any TBSwiftComponent.TBSwiftTableViewCellDataSource]]
+  @objc @_Concurrency.MainActor(unsafe) weak open var scrollDelegate: (any UIKit.UIScrollViewDelegate)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func changeAppColorStyle()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func hasTBNavigationBar() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var tableView: UIKit.UITableView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init!(navigatorURL URL: Foundation.URL!, query: [Swift.AnyHashable : Any]!)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension TBSwiftComponent.TBSwiftTableViewViewController : UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) public func scrollViewDidEndScrolling(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+}
+extension TBSwiftComponent.TBSwiftTableViewViewController : TBSwiftComponent.TBSwiftTableViewCellDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func handleEvent(eventId: Swift.String?, params: Any?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func reloadData(index: Swift.Int, isSection: Swift.Bool)
+}
+extension TBSwiftComponent.TBSwiftTableViewViewController : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+}
+public let control_margin: Swift.Double
+public let control_line_height: CoreFoundation.CGFloat
+public func TBSwiftResourcesLocalizedString(_ key: Swift.String, _ comment: Swift.String?) -> Swift.String
+public func color(_ colors: [UIKit.UIColor]) -> UIKit.UIColor
+public func rgbColor_HexString(_ string: Swift.String) -> UIKit.UIColor
+public func rgbColor_Hex(_ rgbValue: Swift.Int) -> UIKit.UIColor
+public func rgbColor_Hex(_ rgbValue: Swift.Int, _ alpha: Swift.Float) -> UIKit.UIColor
+public func HOME_PAGE_BG_COLOR() -> UIKit.UIColor
+public func fonto(_ value: Swift.Int) -> UIKit.UIFont
+public func fitSizeFonto(_ value: Swift.Int) -> UIKit.UIFont
+public func fitSmallSizeFonto(_ value: Swift.Int) -> UIKit.UIFont
+public func fitSmallSizeBoldFonto(_ value: Swift.Int) -> UIKit.UIFont
+public func boldFonto(_ value: Swift.Int) -> UIKit.UIFont
+public func medFonto(_ value: Swift.Int) -> UIKit.UIFont
+public func numFonto(_ value: Swift.Int) -> UIKit.UIFont
+public func numBoldFonto(_ value: Swift.Int) -> UIKit.UIFont
+public func statusBarHeight() -> CoreFoundation.CGFloat
+public func navBarHeight() -> CoreFoundation.CGFloat
+public func safeAreaTopHeight() -> CoreFoundation.CGFloat
+public func safeAreaBottomHeight() -> CoreFoundation.CGFloat
+public func screenHeight() -> CoreFoundation.CGFloat
+public func screentWidth() -> CoreFoundation.CGFloat
+public func realScreenHeight() -> CoreFoundation.CGFloat
+public func saTrackAction(_ component: Swift.String?, _ actionType: Swift.String?, _ page: Swift.String?, _ arriveFrom: Swift.String?, _ customizeParms: [Swift.String : Any]?)
+public func saTrackPageView(_ component: Swift.String?, _ actionType: Swift.String?, _ page: Swift.String?, _ arriveFrom: Swift.String?, _ customizeParms: [Swift.String : Any]?)
+public func saTrackHomePageAction(_ component: Swift.String?, _ actionType: Swift.String?, _ customizeParms: [Swift.String : Any]?)
+public func saTrackHomePageActionClick(_ component: Swift.String?, _ customizeParms: [Swift.String : Any]?)
+public func saTrackHomePageActionClick(_ component: Swift.String?, _ page: Swift.String, _ customizeParms: [Swift.String : Any]?)
+public func saTrackHomePageView(_ component: Swift.String?, _ arriveFrom: Swift.String?, _ customizeParms: [Swift.String : Any]?)
+public func saHomePageImpression(_ component: Swift.String?, _ showPosition: Swift.Int, _ customizeParms: [Swift.String : Any]?)
+public func saPageImpression(_ component: Swift.String?, _ page: Swift.String?, _ showPosition: Swift.Int, _ customizeParms: [Swift.String : Any]?)
+public func developLog(_ log: Swift.String)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class TBTagSelectorBaseCell : UIKit.UICollectionViewCell {
+  @objc @_Concurrency.MainActor(unsafe) public var isSelect: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public class func getCellSize(text: Foundation.NSString) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForReuse()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class TBTagSelectorCell : TBSwiftComponent.TBTagSelectorBaseCell {
+  @_Concurrency.MainActor(unsafe) @objc override public var isSelect: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override public var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override public class func getCellSize(text: Foundation.NSString) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForReuse()
+  @objc @_Concurrency.MainActor(unsafe) public func updateUI()
+  @_Concurrency.MainActor(unsafe) public var titleButton: UIKit.UIButton {
+    get
+    set
+  }
+  @objc deinit
+}
+@objc public protocol TBTagSelectorFlowLayoutDelegate : UIKit.UICollectionViewDelegateFlowLayout {
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class TBTagSelectorFlowLayout : UIKit.UICollectionViewFlowLayout {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any TBSwiftComponent.TBTagSelectorFlowLayoutDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) public var itemAttributes: [UIKit.UICollectionViewLayoutAttributes]
+  @objc @_Concurrency.MainActor(unsafe) public var contentHeight: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) public class func height(width: CoreFoundation.CGFloat, tags: [TBSwiftComponent.TBTagSelectorModel]) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepare()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var collectionViewContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func shouldInvalidateLayout(forBoundsChange newBounds: CoreFoundation.CGRect) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func invalidateLayout()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class TBTagSelectorModel : ObjectiveC.NSObject {
+  @objc public var isSelect: Swift.Bool
+  @objc public var text: Foundation.NSString
+  @objc public var cellClass: Swift.AnyClass?
+  @objc public var itemID: Foundation.NSString
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public typealias TBTagSelectorViewClosure = (_ category: [TBSwiftComponent.TBTagSelectorModel], _ selectedIndex: Swift.Int) -> Swift.Void
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class TBTagSelectorView : UIKit.UIView, TBSwiftComponent.TBTagSelectorFlowLayoutDelegate {
+  @objc @_Concurrency.MainActor(unsafe) public var flowLayout: TBSwiftComponent.TBTagSelectorFlowLayout
+  @objc @_Concurrency.MainActor(unsafe) public var maxSelectCount: Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) public var selectClosure: TBSwiftComponent.TBTagSelectorViewClosure?
+  @objc @_Concurrency.MainActor(unsafe) public var tags: [TBSwiftComponent.TBTagSelectorModel]
+  @objc @_Concurrency.MainActor(unsafe) public var contentWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var tagsView: UIKit.UICollectionView {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) public func reloadData()
+  @objc deinit
+}
+@objc extension TBSwiftComponent.TBTagSelectorView : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBV80GuideView) @_Concurrency.MainActor(unsafe) public class TBV80GuideView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(frame: CoreFoundation.CGRect, text: Swift.String?, guideAction: (() -> Swift.Void)?, closeAction: (() -> Swift.Void)?)
+  @objc @_Concurrency.MainActor(unsafe) public var guideImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension TBSwiftComponent.TBDateFormatter.DateFormatterStyle : Swift.Equatable {}
+extension TBSwiftComponent.TBDateFormatter.DateFormatterStyle : Swift.Hashable {}
+extension TBSwiftComponent.TBDateFormatter.DateFormatterStyle : Swift.RawRepresentable {}
+extension TBSwiftComponent.TBTabBarIndex : Swift.Equatable {}
+extension TBSwiftComponent.TBTabBarIndex : Swift.Hashable {}
+extension TBSwiftComponent.TBTabBarIndex : Swift.RawRepresentable {}
+extension TBSwiftComponent.TBPortfolioTabIndex : Swift.Equatable {}
+extension TBSwiftComponent.TBPortfolioTabIndex : Swift.Hashable {}
+extension TBSwiftComponent.TBPortfolioTabIndex : Swift.RawRepresentable {}
+extension TBSwiftComponent.ModuleName : Swift.Equatable {}
+extension TBSwiftComponent.ModuleName : Swift.Hashable {}
+extension TBSwiftComponent.ModuleName : Swift.RawRepresentable {}
+extension TBSwiftComponent.TBStockProLiteModuleRuleScene : Swift.Equatable {}
+extension TBSwiftComponent.TBStockProLiteModuleRuleScene : Swift.Hashable {}
+extension TBSwiftComponent.TBStockProLiteModuleRuleScene : Swift.RawRepresentable {}
+extension TBSwiftComponent.TBStockProLiteIndicatorPeriod : Swift.Equatable {}
+extension TBSwiftComponent.TBStockProLiteIndicatorPeriod : Swift.Hashable {}
+extension TBSwiftComponent.TBStockProLiteIndicatorPeriod : Swift.RawRepresentable {}
+extension TBSwiftComponent.PersonalizeConfigItemName : Swift.Equatable {}
+extension TBSwiftComponent.PersonalizeConfigItemName : Swift.Hashable {}
+extension TBSwiftComponent.PersonalizeConfigItemName : Swift.RawRepresentable {}
+extension TBSwiftComponent.LanguageType : Swift.Equatable {}
+extension TBSwiftComponent.LanguageType : Swift.Hashable {}
+extension TBSwiftComponent.LanguageType : Swift.RawRepresentable {}

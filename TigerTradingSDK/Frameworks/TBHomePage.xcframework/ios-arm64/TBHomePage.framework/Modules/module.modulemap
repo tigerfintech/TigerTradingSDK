@@ -1,0 +1,11 @@
+framework module TBHomePage {
+  umbrella header "TBHomePage-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TBHomePage.Swift {
+  header "TBHomePage-Swift.h"
+  requires objc
+}

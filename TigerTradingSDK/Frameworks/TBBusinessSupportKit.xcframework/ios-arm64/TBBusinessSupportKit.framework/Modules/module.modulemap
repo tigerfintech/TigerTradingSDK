@@ -1,0 +1,11 @@
+framework module TBBusinessSupportKit {
+  umbrella header "TBBusinessSupportKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TBBusinessSupportKit.Swift {
+  header "TBBusinessSupportKit-Swift.h"
+  requires objc
+}

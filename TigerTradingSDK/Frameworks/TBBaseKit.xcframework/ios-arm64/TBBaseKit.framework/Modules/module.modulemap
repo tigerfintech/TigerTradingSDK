@@ -1,0 +1,11 @@
+framework module TBBaseKit {
+  umbrella header "TBBaseKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TBBaseKit.Swift {
+  header "TBBaseKit-Swift.h"
+  requires objc
+}

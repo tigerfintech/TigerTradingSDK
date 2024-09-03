@@ -1,0 +1,4824 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBDefaultHomePageViewController",
+        "printedName": "TBDefaultHomePageViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "backView",
+            "printedName": "backView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TBHomePage013TBDefaultHomeB14ViewControllerC04backE0So6UIViewCvp",
+            "mangledName": "$s10TBHomePage013TBDefaultHomeB14ViewControllerC04backE0So6UIViewCvp",
+            "moduleName": "TBHomePage",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TBHomePage013TBDefaultHomeB14ViewControllerC04backE0So6UIViewCvg",
+                "mangledName": "$s10TBHomePage013TBDefaultHomeB14ViewControllerC04backE0So6UIViewCvg",
+                "moduleName": "TBHomePage",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBDefaultHomePageViewController(im)viewDidLoad",
+            "mangledName": "$s10TBHomePage013TBDefaultHomeB14ViewControllerC11viewDidLoadyyF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLayoutSubviews",
+            "printedName": "viewDidLayoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBDefaultHomePageViewController(im)viewDidLayoutSubviews",
+            "mangledName": "$s10TBHomePage013TBDefaultHomeB14ViewControllerC21viewDidLayoutSubviewsyyF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "viewDidLayoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasTBNavigationBar",
+            "printedName": "hasTBNavigationBar()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBDefaultHomePageViewController(im)hasTBNavigationBar",
+            "mangledName": "$s10TBHomePage013TBDefaultHomeB14ViewControllerC18hasTBNavigationBarSbyF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "hasTBNavigationBar",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableDragBack",
+            "printedName": "enableDragBack()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBDefaultHomePageViewController(im)enableDragBack",
+            "mangledName": "$s10TBHomePage013TBDefaultHomeB14ViewControllerC14enableDragBackSbyF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "enableDragBack",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "autoGenerateBackBarButtonItem",
+            "printedName": "autoGenerateBackBarButtonItem()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBDefaultHomePageViewController(im)autoGenerateBackBarButtonItem",
+            "mangledName": "$s10TBHomePage013TBDefaultHomeB14ViewControllerC29autoGenerateBackBarButtonItemSbyF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "autoGenerateBackBarButtonItem",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(navigatorURL:query:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TBHomePage.TBDefaultHomePageViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TBDefaultHomePageViewController",
+                    "printedName": "TBHomePage.TBDefaultHomePageViewController",
+                    "usr": "c:@M@TBHomePage@objc(cs)TBDefaultHomePageViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBHomePage@objc(cs)TBDefaultHomePageViewController(im)initWithNavigatorURL:query:",
+            "mangledName": "$s10TBHomePage013TBDefaultHomeB14ViewControllerC12navigatorURL5queryACSg10Foundation0H0VSg_SDys11AnyHashableVypGSgtcfc",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNavigatorURL:query:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBDefaultHomePageViewController",
+                "printedName": "TBHomePage.TBDefaultHomePageViewController",
+                "usr": "c:@M@TBHomePage@objc(cs)TBDefaultHomePageViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBHomePage@objc(cs)TBDefaultHomePageViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s10TBHomePage013TBDefaultHomeB14ViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TBHomePage.TBDefaultHomePageViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TBDefaultHomePageViewController",
+                    "printedName": "TBHomePage.TBDefaultHomePageViewController",
+                    "usr": "c:@M@TBHomePage@objc(cs)TBDefaultHomePageViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBHomePage@objc(cs)TBDefaultHomePageViewController(im)initWithCoder:",
+            "mangledName": "$s10TBHomePage013TBDefaultHomeB14ViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TBHomePage@objc(cs)TBDefaultHomePageViewController",
+        "mangledName": "$s10TBHomePage013TBDefaultHomeB14ViewControllerC",
+        "moduleName": "TBHomePage",
+        "objc_name": "TBDefaultHomePageViewController",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)TBBaseViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "TBUIKit.TBBaseViewController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBUIKit",
+        "printedName": "TBUIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "TBBaseKit",
+        "printedName": "TBBaseKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBHomePageConfig",
+        "printedName": "TBHomePageConfig",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sharedInstance",
+            "printedName": "sharedInstance()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBHomePageConfig",
+                "printedName": "TBHomePage.TBHomePageConfig",
+                "usr": "c:@M@TBHomePage@objc(cs)TBHomePageConfig"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomePageConfig(cm)sharedInstance",
+            "mangledName": "$s10TBHomePage0aB6ConfigC14sharedInstanceACyFZ",
+            "moduleName": "TBHomePage",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bffModels",
+            "printedName": "bffModels()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[TBSwiftComponent.TBStockProLiteConfigItemModel]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[TBSwiftComponent.TBStockProLiteConfigItemModel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TBStockProLiteConfigItemModel",
+                        "printedName": "TBSwiftComponent.TBStockProLiteConfigItemModel",
+                        "usr": "c:@M@TBSwiftComponent@objc(cs)TBStockProLiteConfigItemModel"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomePageConfig(im)bffModels",
+            "mangledName": "$s10TBHomePage0aB6ConfigC9bffModelsSay16TBSwiftComponent014TBStockProLiteC9ItemModelCGSgyF",
+            "moduleName": "TBHomePage",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bffModel",
+            "printedName": "bffModel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TBSwiftComponent.TBStockProLiteConfigItemModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TBStockProLiteConfigItemModel",
+                    "printedName": "TBSwiftComponent.TBStockProLiteConfigItemModel",
+                    "usr": "c:@M@TBSwiftComponent@objc(cs)TBStockProLiteConfigItemModel"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomePageConfig(im)bffModel:",
+            "mangledName": "$s10TBHomePage0aB6ConfigC8bffModely16TBSwiftComponent014TBStockProLitec4ItemE0CSgSSF",
+            "moduleName": "TBHomePage",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchHomePageConfig",
+            "printedName": "fetchHomePageConfig(success:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(((any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "((any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TBHomePage0aB6ConfigC09fetchHomebC07success7failureyyycSg_ys5Error_pSgcSgtF",
+            "mangledName": "$s10TBHomePage0aB6ConfigC09fetchHomebC07success7failureyyycSg_ys5Error_pSgcSgtF",
+            "moduleName": "TBHomePage",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(_:success:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[TBSwiftComponent.TBStockProLiteConfigItemModel]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TBStockProLiteConfigItemModel",
+                    "printedName": "TBSwiftComponent.TBStockProLiteConfigItemModel",
+                    "usr": "c:@M@TBSwiftComponent@objc(cs)TBStockProLiteConfigItemModel"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(((any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "((any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomePageConfig(im)update:success:failure:",
+            "mangledName": "$s10TBHomePage0aB6ConfigC6update_7success7failureySay16TBSwiftComponent014TBStockProLiteC9ItemModelCG_yycSgys5Error_pSgcSgtF",
+            "moduleName": "TBHomePage",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchHomePageDefaultConfig",
+            "printedName": "fetchHomePageDefaultConfig(_:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([TBSwiftComponent.TBStockProLiteConfigItemModel]?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([TBSwiftComponent.TBStockProLiteConfigItemModel]?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[TBSwiftComponent.TBStockProLiteConfigItemModel]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[TBSwiftComponent.TBStockProLiteConfigItemModel]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "TBStockProLiteConfigItemModel",
+                                "printedName": "TBSwiftComponent.TBStockProLiteConfigItemModel",
+                                "usr": "c:@M@TBSwiftComponent@objc(cs)TBStockProLiteConfigItemModel"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(((any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "((any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TBHomePage0aB6ConfigC09fetchHomeb7DefaultC0_7failureyySay16TBSwiftComponent014TBStockProLiteC9ItemModelCGSgcSg_ys5Error_pSgcSgtF",
+            "mangledName": "$s10TBHomePage0aB6ConfigC09fetchHomeb7DefaultC0_7failureyySay16TBSwiftComponent014TBStockProLiteC9ItemModelCGSgcSg_ys5Error_pSgcSgtF",
+            "moduleName": "TBHomePage",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "sortRecommendModules",
+            "printedName": "sortRecommendModules",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[TBSwiftComponent.TBStockProLiteConfigItemModel]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[TBSwiftComponent.TBStockProLiteConfigItemModel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TBStockProLiteConfigItemModel",
+                        "printedName": "TBSwiftComponent.TBStockProLiteConfigItemModel",
+                        "usr": "c:@M@TBSwiftComponent@objc(cs)TBStockProLiteConfigItemModel"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TBHomePage0aB6ConfigC20sortRecommendModulesSay16TBSwiftComponent014TBStockProLiteC9ItemModelCGSgvp",
+            "mangledName": "$s10TBHomePage0aB6ConfigC20sortRecommendModulesSay16TBSwiftComponent014TBStockProLiteC9ItemModelCGSgvp",
+            "moduleName": "TBHomePage",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[TBSwiftComponent.TBStockProLiteConfigItemModel]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[TBSwiftComponent.TBStockProLiteConfigItemModel]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TBStockProLiteConfigItemModel",
+                            "printedName": "TBSwiftComponent.TBStockProLiteConfigItemModel",
+                            "usr": "c:@M@TBSwiftComponent@objc(cs)TBStockProLiteConfigItemModel"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TBHomePage0aB6ConfigC20sortRecommendModulesSay16TBSwiftComponent014TBStockProLiteC9ItemModelCGSgvg",
+                "mangledName": "$s10TBHomePage0aB6ConfigC20sortRecommendModulesSay16TBSwiftComponent014TBStockProLiteC9ItemModelCGSgvg",
+                "moduleName": "TBHomePage",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TBHomePage@objc(cs)TBHomePageConfig",
+        "mangledName": "$s10TBHomePage0aB6ConfigC",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Var",
+        "name": "NOTIFICATION_UPDATE_HOME_PAGE_CONFIG_SUCCESS",
+        "printedName": "NOTIFICATION_UPDATE_HOME_PAGE_CONFIG_SUCCESS",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10TBHomePage44NOTIFICATION_UPDATE_HOME_PAGE_CONFIG_SUCCESSSSvp",
+        "mangledName": "$s10TBHomePage44NOTIFICATION_UPDATE_HOME_PAGE_CONFIG_SUCCESSSSvp",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10TBHomePage44NOTIFICATION_UPDATE_HOME_PAGE_CONFIG_SUCCESSSSvg",
+            "mangledName": "$s10TBHomePage44NOTIFICATION_UPDATE_HOME_PAGE_CONFIG_SUCCESSSSvg",
+            "moduleName": "TBHomePage",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "TBBaseKit",
+        "printedName": "TBBaseKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBUIKit",
+        "printedName": "TBUIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBHomePageTableViewCellDelegate",
+        "printedName": "TBHomePageTableViewCellDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "handleEvent",
+            "printedName": "handleEvent(eventId:params:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(pl)TBHomePageTableViewCellDelegate(im)handleEventWithEventId:params:",
+            "mangledName": "$s10TBHomePage0aB21TableViewCellDelegateP11handleEvent7eventId6paramsySSSg_ypSgtF",
+            "moduleName": "TBHomePage",
+            "genericSig": "<τ_0_0 where τ_0_0 : TBHomePage.TBHomePageTableViewCellDelegate>",
+            "sugared_genericSig": "<Self where Self : TBHomePage.TBHomePageTableViewCellDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reloadData",
+            "printedName": "reloadData(index:isSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(pl)TBHomePageTableViewCellDelegate(im)reloadDataWithIndex:isSection:",
+            "mangledName": "$s10TBHomePage0aB21TableViewCellDelegateP10reloadData5index9isSectionySi_SbtF",
+            "moduleName": "TBHomePage",
+            "genericSig": "<τ_0_0 where τ_0_0 : TBHomePage.TBHomePageTableViewCellDelegate>",
+            "sugared_genericSig": "<Self where Self : TBHomePage.TBHomePageTableViewCellDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@TBHomePage@objc(pl)TBHomePageTableViewCellDelegate",
+        "mangledName": "$s10TBHomePage0aB21TableViewCellDelegateP",
+        "moduleName": "TBHomePage",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "objc_name": "TBHomePageTableViewCellDelegate",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBHomePageTableViewCell",
+        "printedName": "TBHomePageTableViewCell",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "awakeFromNib",
+            "printedName": "awakeFromNib()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomePageTableViewCell(im)awakeFromNib",
+            "mangledName": "$s10TBHomePage0aB13TableViewCellC12awakeFromNibyyF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "awakeFromNib",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(style:reuseIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBHomePageTableViewCell",
+                "printedName": "TBHomePage.TBHomePageTableViewCell",
+                "usr": "c:@M@TBHomePage@objc(cs)TBHomePageTableViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CellStyle",
+                "printedName": "UIKit.UITableViewCell.CellStyle",
+                "usr": "c:@E@UITableViewCellStyle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomePageTableViewCell(im)initWithStyle:reuseIdentifier:",
+            "mangledName": "$s10TBHomePage0aB13TableViewCellC5style15reuseIdentifierACSo07UITabledE5StyleV_SSSgtcfc",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "initWithStyle:reuseIdentifier:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setSelected",
+            "printedName": "setSelected(_:animated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomePageTableViewCell(im)setSelected:animated:",
+            "mangledName": "$s10TBHomePage0aB13TableViewCellC11setSelected_8animatedySb_SbtF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "setSelected:animated:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "canBecomeFirstResponder",
+            "printedName": "canBecomeFirstResponder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomePageTableViewCell(py)canBecomeFirstResponder",
+            "mangledName": "$s10TBHomePage0aB13TableViewCellC23canBecomeFirstResponderSbvp",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "canBecomeFirstResponder",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBHomePage@objc(cs)TBHomePageTableViewCell(im)canBecomeFirstResponder",
+                "mangledName": "$s10TBHomePage0aB13TableViewCellC23canBecomeFirstResponderSbvg",
+                "moduleName": "TBHomePage",
+                "overriding": true,
+                "objc_name": "canBecomeFirstResponder",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "canPerformAction",
+            "printedName": "canPerformAction(_:withSender:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Selector",
+                "printedName": "ObjectiveC.Selector",
+                "usr": "s:10ObjectiveC8SelectorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomePageTableViewCell(im)canPerformAction:withSender:",
+            "mangledName": "$s10TBHomePage0aB13TableViewCellC16canPerformAction_10withSenderSb10ObjectiveC8SelectorV_ypSgtF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "canPerformAction:withSender:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(style:reuseIdentifier:config:notificationId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBHomePageTableViewCell",
+                "printedName": "TBHomePage.TBHomePageTableViewCell",
+                "usr": "c:@M@TBHomePage@objc(cs)TBHomePageTableViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CellStyle",
+                "printedName": "UIKit.UITableViewCell.CellStyle",
+                "usr": "c:@E@UITableViewCellStyle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TBExcelTableConfigOptions",
+                "printedName": "TBStockBusinessBaseKit.TBExcelTableConfigOptions",
+                "usr": "c:objc(cs)TBExcelTableConfigOptions"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomePageTableViewCell(im)initWithStyle:reuseIdentifier:config:notificationId:",
+            "mangledName": "$s10TBHomePage0aB13TableViewCellC5style15reuseIdentifier6config14notificationIdACSo07UITabledE5StyleV_SSSo07TBExcelC13ConfigOptionsCSStcfc",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithStyle:reuseIdentifier:config:notificationId:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TBHomePage@objc(cs)TBHomePageTableViewCell",
+        "mangledName": "$s10TBHomePage0aB13TableViewCellC",
+        "moduleName": "TBHomePage",
+        "objc_name": "TBHomePageTableViewCell",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)TBTableViewCell",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "TBUIKit.TBTableViewCell",
+          "UIKit.UITableViewCell",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConstraintRelatableTarget",
+            "printedName": "ConstraintRelatableTarget",
+            "usr": "s:12TBThirdParty25ConstraintRelatableTargetP",
+            "mangledName": "$s12TBThirdParty25ConstraintRelatableTargetP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LayoutConstraintItem",
+            "printedName": "LayoutConstraintItem",
+            "usr": "s:12TBThirdParty20LayoutConstraintItemP",
+            "mangledName": "$s12TBThirdParty20LayoutConstraintItemP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TBMarqueeViewCopyable",
+            "printedName": "TBMarqueeViewCopyable",
+            "usr": "c:@M@TBUIKit@objc(pl)TBMarqueeViewCopyable",
+            "mangledName": "$s7TBUIKit21TBMarqueeViewCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "TBBaseKit",
+        "printedName": "TBBaseKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBWebView",
+        "printedName": "TBWebView",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "TBUIKit",
+        "printedName": "TBUIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBHomePageViewController",
+        "printedName": "TBHomePageViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "homepageScrollViewDidScroll",
+            "printedName": "homepageScrollViewDidScroll",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIScrollView, Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIScrollView, Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(UIKit.UIScrollView, Swift.Bool)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIScrollView",
+                            "printedName": "UIKit.UIScrollView",
+                            "usr": "c:objc(cs)UIScrollView"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(py)homepageScrollViewDidScroll",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC014homepageScrollc3DidF0ySo08UIScrollC0C_SbtcSgvp",
+            "moduleName": "TBHomePage",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UIKit.UIScrollView, Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UIScrollView, Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(UIKit.UIScrollView, Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UIScrollView",
+                                "printedName": "UIKit.UIScrollView",
+                                "usr": "c:objc(cs)UIScrollView"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)homepageScrollViewDidScroll",
+                "mangledName": "$s10TBHomePage0aB14ViewControllerC014homepageScrollc3DidF0ySo08UIScrollC0C_SbtcSgvg",
+                "moduleName": "TBHomePage",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UIKit.UIScrollView, Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UIScrollView, Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(UIKit.UIScrollView, Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UIScrollView",
+                                "printedName": "UIKit.UIScrollView",
+                                "usr": "c:objc(cs)UIScrollView"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)setHomepageScrollViewDidScroll:",
+                "mangledName": "$s10TBHomePage0aB14ViewControllerC014homepageScrollc3DidF0ySo08UIScrollC0C_SbtcSgvs",
+                "moduleName": "TBHomePage",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TBHomePage0aB14ViewControllerC014homepageScrollc3DidF0ySo08UIScrollC0C_SbtcSgvM",
+                "mangledName": "$s10TBHomePage0aB14ViewControllerC014homepageScrollc3DidF0ySo08UIScrollC0C_SbtcSgvM",
+                "moduleName": "TBHomePage",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "scrollToTop",
+            "printedName": "scrollToTop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)scrollToTop",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC11scrollToTopyyF",
+            "moduleName": "TBHomePage",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillAppear",
+            "printedName": "viewWillAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)viewWillAppear:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC14viewWillAppearyySbF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "viewWillAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "preferredStatusBarStyle",
+            "printedName": "preferredStatusBarStyle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIStatusBarStyle",
+                "printedName": "UIKit.UIStatusBarStyle",
+                "usr": "c:@E@UIStatusBarStyle"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(py)preferredStatusBarStyle",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC23preferredStatusBarStyleSo08UIStatusgH0Vvp",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "preferredStatusBarStyle",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIStatusBarStyle",
+                    "printedName": "UIKit.UIStatusBarStyle",
+                    "usr": "c:@E@UIStatusBarStyle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)preferredStatusBarStyle",
+                "mangledName": "$s10TBHomePage0aB14ViewControllerC23preferredStatusBarStyleSo08UIStatusgH0Vvg",
+                "moduleName": "TBHomePage",
+                "overriding": true,
+                "objc_name": "preferredStatusBarStyle",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidAppear",
+            "printedName": "viewDidAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)viewDidAppear:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC13viewDidAppearyySbF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "viewDidAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillDisappear",
+            "printedName": "viewWillDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)viewWillDisappear:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC17viewWillDisappearyySbF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "viewWillDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBHomePageViewController",
+                "printedName": "TBHomePage.TBHomePageViewController",
+                "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)viewDidLoad",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC11viewDidLoadyyF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "observeValue",
+            "printedName": "observeValue(forKeyPath:of:change:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.NSKeyValueChangeKey : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Foundation.NSKeyValueChangeKey : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSKeyValueChangeKey",
+                        "printedName": "Foundation.NSKeyValueChangeKey",
+                        "usr": "c:@T@NSKeyValueChangeKey"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafeMutableRawPointer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafeMutableRawPointer",
+                    "printedName": "Swift.UnsafeMutableRawPointer",
+                    "usr": "s:Sv"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)observeValueForKeyPath:ofObject:change:context:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC12observeValue10forKeyPath2of6change7contextySSSg_ypSgSDySo05NSKeyf6ChangeH0aypGSgSvSgtF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "observeValueForKeyPath:ofObject:change:context:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "changeAppColorStyle",
+            "printedName": "changeAppColorStyle()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)changeAppColorStyle",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC19changeAppColorStyleyyF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "changeAppColorStyle",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasTBNavigationBar",
+            "printedName": "hasTBNavigationBar()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)hasTBNavigationBar",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC18hasTBNavigationBarSbyF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "hasTBNavigationBar",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "autoGenerateBackBarButtonItem",
+            "printedName": "autoGenerateBackBarButtonItem()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)autoGenerateBackBarButtonItem",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC29autoGenerateBackBarButtonItemSbyF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "autoGenerateBackBarButtonItem",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(navigatorURL:query:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TBHomePage.TBHomePageViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TBHomePageViewController",
+                    "printedName": "TBHomePage.TBHomePageViewController",
+                    "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController(im)initWithNavigatorURL:query:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC12navigatorURL5queryACSg10Foundation0F0VSg_SDys11AnyHashableVypGSgtcfc",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNavigatorURL:query:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidScroll",
+            "printedName": "scrollViewDidScroll(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)scrollViewDidScroll:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC06scrollC9DidScrollyySo08UIScrollC0CF",
+            "moduleName": "TBHomePage",
+            "objc_name": "scrollViewDidScroll:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewWillBeginDragging",
+            "printedName": "scrollViewWillBeginDragging(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)scrollViewWillBeginDragging:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC06scrollC17WillBeginDraggingyySo08UIScrollC0CF",
+            "moduleName": "TBHomePage",
+            "objc_name": "scrollViewWillBeginDragging:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidEndDragging",
+            "printedName": "scrollViewDidEndDragging(_:willDecelerate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)scrollViewDidEndDragging:willDecelerate:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC06scrollC14DidEndDragging_14willDecelerateySo08UIScrollC0C_SbtF",
+            "moduleName": "TBHomePage",
+            "objc_name": "scrollViewDidEndDragging:willDecelerate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidEndDecelerating",
+            "printedName": "scrollViewDidEndDecelerating(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)scrollViewDidEndDecelerating:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC06scrollC18DidEndDeceleratingyySo08UIScrollC0CF",
+            "moduleName": "TBHomePage",
+            "objc_name": "scrollViewDidEndDecelerating:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidEndScrollingAnimation",
+            "printedName": "scrollViewDidEndScrollingAnimation(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)scrollViewDidEndScrollingAnimation:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC06scrollC24DidEndScrollingAnimationyySo08UIScrollC0CF",
+            "moduleName": "TBHomePage",
+            "objc_name": "scrollViewDidEndScrollingAnimation:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidEndScrolling",
+            "printedName": "scrollViewDidEndScrolling(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TBHomePage0aB14ViewControllerC06scrollC15DidEndScrollingyySo08UIScrollC0CF",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC06scrollC15DidEndScrollingyySo08UIScrollC0CF",
+            "moduleName": "TBHomePage",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleEvent",
+            "printedName": "handleEvent(eventId:params:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)handleEventWithEventId:params:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC11handleEvent7eventId6paramsySSSg_ypSgtF",
+            "moduleName": "TBHomePage",
+            "objc_name": "handleEventWithEventId:params:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reloadData",
+            "printedName": "reloadData(index:isSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)reloadDataWithIndex:isSection:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC10reloadData5index9isSectionySi_SbtF",
+            "moduleName": "TBHomePage",
+            "objc_name": "reloadDataWithIndex:isSection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "numberOfSections",
+            "printedName": "numberOfSections(in:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)numberOfSectionsInTableView:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC16numberOfSections2inSiSo07UITableC0C_tF",
+            "moduleName": "TBHomePage",
+            "objc_name": "numberOfSectionsInTableView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:numberOfRowsInSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)tableView:numberOfRowsInSection:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC05tableC0_21numberOfRowsInSectionSiSo07UITableC0C_SitF",
+            "moduleName": "TBHomePage",
+            "objc_name": "tableView:numberOfRowsInSection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:cellForRowAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UITableViewCell",
+                "printedName": "UIKit.UITableViewCell",
+                "usr": "c:objc(cs)UITableViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)tableView:cellForRowAtIndexPath:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC05tableC0_12cellForRowAtSo07UITableC4CellCSo0jC0C_10Foundation9IndexPathVtF",
+            "moduleName": "TBHomePage",
+            "objc_name": "tableView:cellForRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:heightForRowAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)tableView:heightForRowAtIndexPath:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC05tableC0_14heightForRowAt12CoreGraphics7CGFloatVSo07UITableC0C_10Foundation9IndexPathVtF",
+            "moduleName": "TBHomePage",
+            "objc_name": "tableView:heightForRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:viewForHeaderInSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)tableView:viewForHeaderInSection:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC05tableC0_22viewForHeaderInSectionSo6UIViewCSgSo07UITableC0C_SitF",
+            "moduleName": "TBHomePage",
+            "objc_name": "tableView:viewForHeaderInSection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:heightForFooterInSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)tableView:heightForFooterInSection:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC05tableC0_24heightForFooterInSection12CoreGraphics7CGFloatVSo07UITableC0C_SitF",
+            "moduleName": "TBHomePage",
+            "objc_name": "tableView:heightForFooterInSection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:heightForHeaderInSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)tableView:heightForHeaderInSection:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC05tableC0_24heightForHeaderInSection12CoreGraphics7CGFloatVSo07UITableC0C_SitF",
+            "moduleName": "TBHomePage",
+            "objc_name": "tableView:heightForHeaderInSection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:willDisplay:forRowAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableViewCell",
+                "printedName": "UIKit.UITableViewCell",
+                "usr": "c:objc(cs)UITableViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)tableView:willDisplayCell:forRowAtIndexPath:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC05tableC0_11willDisplay8forRowAtySo07UITableC0C_So0kC4CellC10Foundation9IndexPathVtF",
+            "moduleName": "TBHomePage",
+            "objc_name": "tableView:willDisplayCell:forRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:didEndDisplaying:forRowAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableViewCell",
+                "printedName": "UIKit.UITableViewCell",
+                "usr": "c:objc(cs)UITableViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)tableView:didEndDisplayingCell:forRowAtIndexPath:",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC05tableC0_16didEndDisplaying8forRowAtySo07UITableC0C_So0lC4CellC10Foundation9IndexPathVtF",
+            "moduleName": "TBHomePage",
+            "objc_name": "tableView:didEndDisplayingCell:forRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateNetworkStatus",
+            "printedName": "updateNetworkStatus()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TBHomePage@objc(cs)TBHomeTabViewController(im)updateNetworkStatus",
+            "mangledName": "$s10TBHomePage0aB14ViewControllerC19updateNetworkStatusyyF",
+            "moduleName": "TBHomePage",
+            "overriding": true,
+            "objc_name": "updateNetworkStatus",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TBHomePage@objc(cs)TBHomeTabViewController",
+        "mangledName": "$s10TBHomePage0aB14ViewControllerC",
+        "moduleName": "TBHomePage",
+        "objc_name": "TBHomeTabViewController",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)TBBaseViewController",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "TBUIKit.TBBaseViewController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "TBHomePageTableViewCellDelegate",
+            "printedName": "TBHomePageTableViewCellDelegate",
+            "usr": "c:@M@TBHomePage@objc(pl)TBHomePageTableViewCellDelegate",
+            "mangledName": "$s10TBHomePage0aB21TableViewCellDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "TBUIKit",
+        "printedName": "TBUIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "TBUIKit",
+        "printedName": "TBUIKit",
+        "declKind": "Import",
+        "moduleName": "TBHomePage"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TBHomePage",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3966,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4049,
+      "length": 39,
+      "value": "\"mobile_ios_common_select_default_page\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4298,
+      "length": 28,
+      "value": "\"default_home_page_home_tab\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4391,
+      "length": 37,
+      "value": "\"default_home_page_home_tab_selected\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4467,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4662,
+      "length": 32,
+      "value": "\"default_TUP_home_page_home_tab\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4762,
+      "length": 41,
+      "value": "\"default_TUP_home_page_home_tab_selected\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4882,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4965,
+      "length": 24,
+      "value": "\"mobile_ios_common_home\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5123,
+      "length": 23,
+      "value": "\"icon_group_select_all\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5194,
+      "length": 28,
+      "value": "\"icon_group_selected_circle\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 5439,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5607,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5779,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5821,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6068,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6150,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 6351,
+      "length": 29,
+      "value": "\"default_home_page_quote_tab\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 6445,
+      "length": 38,
+      "value": "\"default_home_page_quote_tab_selected\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6522,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6682,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 6765,
+      "length": 27,
+      "value": "\"mobile_comm_common_quotes\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 6926,
+      "length": 23,
+      "value": "\"icon_group_select_all\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 6997,
+      "length": 28,
+      "value": "\"icon_group_selected_circle\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 7242,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7410,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7582,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7624,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7871,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7953,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8261,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 8344,
+      "length": 42,
+      "value": "\"mobile_comm_common_display_wealth_bottom\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8927,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9240,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 9963,
+      "length": 30,
+      "value": "\"TBInitializeComponentService\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10266,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBDefaultHomePageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10355,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomeConfigModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 780,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomeConfigModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1152,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomeConfigModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1239,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomeConfigModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1326,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomeConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1432,
+      "length": 9,
+      "value": "\"display\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomeConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1475,
+      "length": 11,
+      "value": "\"removable\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomeConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1519,
+      "length": 10,
+      "value": "\"moveable\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomeConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1432,
+      "length": 9,
+      "value": "\"display\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomeConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1475,
+      "length": 11,
+      "value": "\"removable\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomeConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1519,
+      "length": 10,
+      "value": "\"moveable\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomeConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1659,
+      "length": 12,
+      "value": "\"homeModule\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomeConfigModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1659,
+      "length": 12,
+      "value": "\"homeModule\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageAnnouncementView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2063,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageAnnouncementView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2095,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageAnnouncementView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2546,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 204,
+      "length": 29,
+      "value": "\"encode_user_home_tab_config\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 781,
+      "length": 10,
+      "value": "\"FRESHMAN\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 824,
+      "length": 9,
+      "value": "\"ACCOUNT\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 876,
+      "length": 11,
+      "value": "\"SHORTCUTS\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 930,
+      "length": 11,
+      "value": "\"PORTFOLIO\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 993,
+      "length": 20,
+      "value": "\"RECOMMEND_STRATEGY\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1056,
+      "length": 13,
+      "value": "\"TIGER_VAULT\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1106,
+      "length": 11,
+      "value": "\"WATCHLIST\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1154,
+      "length": 8,
+      "value": "\"BANNER\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1207,
+      "length": 6,
+      "value": "\"NEWS\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1258,
+      "length": 13,
+      "value": "\"OPPORTUNITY\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1321,
+      "length": 11,
+      "value": "\"COMMUNITY\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1374,
+      "length": 10,
+      "value": "\"CALENDAR\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1441,
+      "length": 9,
+      "value": "\"COLLEGE\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1525,
+      "length": 17,
+      "value": "\"WATCHLIST_FOCUS\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1615,
+      "length": 22,
+      "value": "\"WATCHLIST_DAILY_CALL\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1676,
+      "length": 10,
+      "value": "\"SCREENER\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1733,
+      "length": 16,
+      "value": "\"TRADIND_SPARKS\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1801,
+      "length": 17,
+      "value": "\"OPTION_SCREENER\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1866,
+      "length": 12,
+      "value": "\"TIGER_LIVE\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1912,
+      "length": 8,
+      "value": "\"STOCKS\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1963,
+      "length": 11,
+      "value": "\"HOTTHEMES\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2011,
+      "length": 13,
+      "value": "\"AUTO_INVEST\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2064,
+      "length": 16,
+      "value": "\"CRYPTOCURRENCY\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2115,
+      "length": 9,
+      "value": "\"OPTIONS\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2157,
+      "length": 7,
+      "value": "\"FUNDS\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2209,
+      "length": 11,
+      "value": "\"CAMPAIGNS\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2254,
+      "length": 8,
+      "value": "\"INVEST\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2302,
+      "length": 8,
+      "value": "\"BASICS\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2361,
+      "length": 14,
+      "value": "\"ORDER_REVIEW\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2417,
+      "length": 11,
+      "value": "\"DEBITCARD\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2480,
+      "length": 17,
+      "value": "\"STRUCTURE_NOTES\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2543,
+      "length": 13,
+      "value": "\"STRIKE_SAVE\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditItemCollectionViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1745,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditItemCollectionViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2295,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditSectionHeaderCollectionReusableView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1220,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditSectionHeaderCollectionReusableView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1392,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditSectionHeaderCollectionReusableView.swift",
+      "kind": "StringLiteral",
+      "offset": 1517,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditSectionHeaderCollectionReusableView.swift",
+      "kind": "StringLiteral",
+      "offset": 1740,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2658,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 3086,
+      "length": 32,
+      "value": "\"icon_content_unselected_circle\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 3183,
+      "length": 30,
+      "value": "\"icon_content_selected_circle\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 3275,
+      "length": 30,
+      "value": "\"icon_content_selected_circle\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 145,
+      "length": 27,
+      "value": "\"TBHomePage.TBHomePageEditTableViewCell\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 199,
+      "length": 29,
+      "value": "\"tb_config_home_page_success\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 386,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8565,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 8648,
+      "length": 29,
+      "value": "\"mobile_ios_common_edit_feed\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8921,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8964,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9019,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9052,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9062,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9395,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 9503,
+      "length": 38,
+      "value": "\"TBHomePageEditItemCollectionViewCell\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 9630,
+      "length": 22,
+      "value": "\"UICollectionViewCell\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 9834,
+      "length": 51,
+      "value": "\"TBHomePageEditSectionHeaderCollectionReusableView\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 14829,
+      "length": 26,
+      "value": "\"mobile_ios_common_done_1\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 14910,
+      "length": 3,
+      "value": "8.0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14942,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14988,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15088,
+      "length": 8,
+      "value": "0x8A7514"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15105,
+      "length": 8,
+      "value": "0xFEF4A5"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15221,
+      "length": 8,
+      "value": "0xFFE100"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15238,
+      "length": 8,
+      "value": "0xFFE100"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15303,
+      "length": 8,
+      "value": "0x2C2E3B"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15416,
+      "length": 8,
+      "value": "0xC2AB00"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15433,
+      "length": 8,
+      "value": "0xC2AB00"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15503,
+      "length": 8,
+      "value": "0x2C2E3B"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15573,
+      "length": 8,
+      "value": "0x2C2E3B"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 15602,
+      "length": 4,
+      "value": "0.35"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15745,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 15894,
+      "length": 18,
+      "value": "\"tb_icon_question\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 16186,
+      "length": 27,
+      "value": "\"mobile_ios_common_restore\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageEditViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16272,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageHttpManager.swift",
+      "kind": "StringLiteral",
+      "offset": 225,
+      "length": 20,
+      "value": "\"\/v2\/mobile\/hometab\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/TBHomePageHttpManager.swift",
+      "kind": "StringLiteral",
+      "offset": 300,
+      "length": 28,
+      "value": "\"\/v2\/mobile\/hometab\/restore\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/Manager\/itemModel\/TBHomePageItemModel.swift",
+      "kind": "StringLiteral",
+      "offset": 114,
+      "length": 19,
+      "value": "\"TBHomePage.TBHomePageItemModel\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageLogoView.swift",
+      "kind": "StringLiteral",
+      "offset": 2398,
+      "length": 20,
+      "value": "\"icon_homepage_logo\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageLogoView.swift",
+      "kind": "StringLiteral",
+      "offset": 2585,
+      "length": 15,
+      "value": "\"homepage_logo\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageLogoView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2616,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageLogoView.swift",
+      "kind": "StringLiteral",
+      "offset": 2991,
+      "length": 8,
+      "value": "\"_white\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 362,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 409,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 579,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 768,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 922,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1127,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "StringLiteral",
+      "offset": 4388,
+      "length": 16,
+      "value": "\"OnlineChatHide\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8739,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "StringLiteral",
+      "offset": 8880,
+      "length": 31,
+      "value": "\"common_customer_service_skin2\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9065,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9071,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9081,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9093,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9156,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9206,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9358,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9364,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9374,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9386,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9449,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9499,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9632,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9637,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9709,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9719,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9731,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9902,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9907,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9979,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9989,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10001,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageNavView.swift",
+      "kind": "StringLiteral",
+      "offset": 10092,
+      "length": 22,
+      "value": "\"common_refresh_skin2\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageSectionHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4035,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageSectionHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4207,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageSectionHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 4318,
+      "length": 30,
+      "value": "\"mobile_comm_common_view_more\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageSectionHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4501,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageSectionHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4674,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 156,
+      "length": 26,
+      "value": "\"tb_homepage_cell_edit_id\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 206,
+      "length": 28,
+      "value": "\"tb_homepage_cell_remove_id\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 480,
+      "length": 23,
+      "value": "\"TBHomePage.TBHomePageTableViewCell\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 230,
+      "length": 2,
+      "value": "36"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 265,
+      "length": 28,
+      "value": "\"HOME_PAGE_GUIDE_NOTICE_KEY\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1720,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2859,
+      "length": 17,
+      "value": "\"editFeed_关闭\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2878,
+      "length": 7,
+      "value": "\"slide\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2887,
+      "length": 16,
+      "value": "\"editFeed_layer\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 19884,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 22918,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27846,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 30199,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 30250,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 30301,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 30388,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 32517,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 32678,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 33194,
+      "length": 49,
+      "value": "\"mobile_ios_common_try_customizing_your_home_pag\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 33405,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 33560,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 33683,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 33955,
+      "length": 12,
+      "value": "\"arriveFrom\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 33970,
+      "length": 8,
+      "value": "\"首页\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34032,
+      "length": 8,
+      "value": "\"action\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34053,
+      "length": 28,
+      "value": "\"TigerGPT首页入口点击\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34095,
+      "length": 7,
+      "value": "\"click\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34110,
+      "length": 8,
+      "value": "\"首页\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34246,
+      "length": 12,
+      "value": "\"impression\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34271,
+      "length": 34,
+      "value": "\"TigerGPT首页入口隐藏曝光\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34319,
+      "length": 10,
+      "value": "\"exposure\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34337,
+      "length": 8,
+      "value": "\"首页\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34536,
+      "length": 8,
+      "value": "\"action\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34557,
+      "length": 34,
+      "value": "\"TigerGPT首页入口隐藏点击\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34605,
+      "length": 7,
+      "value": "\"click\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34620,
+      "length": 8,
+      "value": "\"首页\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 34704,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 665,
+      "length": 24,
+      "value": "\"TBHomePage.TBHomePageViewController\""
+    }
+  ]
+}

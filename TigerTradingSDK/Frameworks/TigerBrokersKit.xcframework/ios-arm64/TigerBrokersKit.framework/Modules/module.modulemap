@@ -1,0 +1,6 @@
+framework module TigerBrokersKit {
+  umbrella header "TigerBrokersKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module TBHostManager {
+  umbrella header "TBHostManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

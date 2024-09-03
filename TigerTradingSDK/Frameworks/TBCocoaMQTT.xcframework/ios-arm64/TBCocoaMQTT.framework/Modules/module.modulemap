@@ -1,0 +1,11 @@
+framework module TBCocoaMQTT {
+  umbrella header "TBCocoaMQTT-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TBCocoaMQTT.Swift {
+  header "TBCocoaMQTT-Swift.h"
+  requires objc
+}

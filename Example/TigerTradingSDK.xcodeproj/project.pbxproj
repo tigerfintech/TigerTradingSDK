@@ -319,7 +319,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TigerTradingSDK_Example/Pods-TigerTradingSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/AFNetworking.framework/AFNetworking",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/ChartKLineView.framework/ChartKLineView",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/FLAnimatedImage.framework/FLAnimatedImage",
@@ -357,7 +356,7 @@
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBUIKit.framework/TBUIKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TBWebView.framework/TBWebView",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TigerBrokersKit.framework/TigerBrokersKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TigerQuoteSDK.framework/TigerQuoteSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TigerTradingSDK/TigerTradingSDK.framework/TigerTradingSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/libpag/libpag.framework/libpag",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -399,7 +398,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBUIKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBWebView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TigerBrokersKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TigerQuoteSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TigerTradingSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libpag.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

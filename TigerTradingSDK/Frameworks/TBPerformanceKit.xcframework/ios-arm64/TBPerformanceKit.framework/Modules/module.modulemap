@@ -1,0 +1,6 @@
+framework module TBPerformanceKit {
+  umbrella header "TBPerformanceKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,848 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TBStockBusiness
+import ChartKLineView
+import Charts
+import CoreGraphics
+import Foundation
+import Swift
+import TBBaseKit
+@_exported import TBStockBusiness
+import TBSwiftComponent
+import TBUIKit
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(TBAllCombinedChartView) @_Concurrency.MainActor(unsafe) open class AllCombineChartView : TBStockBusiness.BaseCombineChartView {
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override open func notifyDataSetChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class AllXAxisRenderer : ChartKLineView.XAxisRenderer {
+  @objc override open func drawLabels(context: CoreGraphics.CGContext, pos: CoreFoundation.CGFloat, anchor: CoreFoundation.CGPoint)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, xAxis: ChartKLineView.XAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+extension ChartKLineView.LegendEntry {
+  @objc dynamic public func setupEntryColors(_ colors: [UIKit.UIColor])
+}
+@objc(ChartTrendType) public enum ChartTrendType : Swift.Int {
+  case upward
+  case volatileUp
+  case downward
+  case volatileDown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc(TBBaseCombinedChartView) @_Concurrency.MainActor(unsafe) open class BaseCombineChartView : ChartKLineView.CombinedChartView, ChartKLineView.IAxisValueFormatter, TBStockBusiness.CompareStockSelectedDelegate {
+  @objc @_Concurrency.MainActor(unsafe) open var realTimeTotalCount: Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) open var latestPrice: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) open var dayVolume: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) open var needScanning: Swift.Bool
+  @_Concurrency.MainActor(unsafe) weak open var _tbdelegate: (any TBUIKit.TBChartViewDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) weak open var tbdelegate: (any TBUIKit.TBChartViewDelegate)? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var isVolume: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var market: Swift.String
+  @objc @_Concurrency.MainActor(unsafe) public var secType: Swift.String
+  @objc @_Concurrency.MainActor(unsafe) public var maxScale: ObjectiveC.NSInteger {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var portraitPointCount: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) public var currentPointCount: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) public var _maxPointCount: Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) public var _longPressGestrues: UIKit.UILongPressGestureRecognizer!
+  @objc @_Concurrency.MainActor(unsafe) public var landScapeMode: ChartKLineView.LandScapeMode {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var preClose: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var strategyType: ChartKLineView.StockStrategyType {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var drawMarket: ChartKLineView.StockDrawType {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var lineType: ChartKLineView.LineType {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var isLoadMore: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var indicatorCandleData: ChartKLineView.CandleChartData?
+  @objc @_Concurrency.MainActor(unsafe) public var optionIVLineData: ChartKLineView.LineChartData?
+  @objc @_Concurrency.MainActor(unsafe) public var optionOpenIntData: ChartKLineView.LineChartData?
+  @objc @_Concurrency.MainActor(unsafe) open var isIndex: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var currentYAxisType: ChartKLineView.YAxisType {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var stockCompareData: ChartKLineView.LineChartData? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var actionSelectedIndex: Swift.Int
+  @_Concurrency.MainActor(unsafe) public var actionPositionRects: [CoreFoundation.CGRect]
+  @_Concurrency.MainActor(unsafe) public var actionPositionDesRect: CoreFoundation.CGRect
+  @_Concurrency.MainActor(unsafe) public var indicatorView: TBStockBusiness.IndicatorView! {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var subIndicatorView: TBStockBusiness.IndicatorView! {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var indicatorBtn: TBStockBusiness.IndicatorButton {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var topLine: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var lineView: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var compareView: TBStockBusiness.CompareStockChangeDisplayView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var animationView: TBStockBusiness.SpreadAnimationView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var pricePointView: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var ytmPointView: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) public func compareStockSelectedWith(symbol: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc public func stringForValue(_ value: Swift.Double, axis: ChartKLineView.AxisBase?) -> Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override open func gestureRecognizer(_ gestureRecognizer: ChartKLineView.NSUIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: ChartKLineView.NSUIGestureRecognizer) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) open func updateLineType()
+  @_Concurrency.MainActor(unsafe) @objc override open func notifyDataSetChanged()
+  @objc @_Concurrency.MainActor(unsafe) open func indicatorView(isHidden: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) open func updateIndicatorTitle(type: ChartKLineView.YAxisType)
+  @objc @_Concurrency.MainActor(unsafe) open func updateIndicatorView(klineItem: TBStockKit.TBKLineItem?)
+  @objc @_Concurrency.MainActor(unsafe) open func updateSubIndicatorView(klineItem: TBStockKit.TBKLineItem?)
+  @objc @_Concurrency.MainActor(unsafe) open func updateCompareDisplayView(compares: [[Swift.String : Any]])
+  @objc @_Concurrency.MainActor(unsafe) open func updateIndicatorData(type: ChartKLineView.YAxisType)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) open func combinedData(_ type: ChartKLineView.YAxisType) -> ChartKLineView.CombinedChartData
+  @objc @_Concurrency.MainActor(unsafe) public var zigzagPromptStr: ((TBStockBusiness.ChartTrendType) -> ())?
+  @objc @_Concurrency.MainActor(unsafe) public func clearCustomLineData()
+  @objc @_Concurrency.MainActor(unsafe) public func generateCustomLineData(data: ChartKLineView.CustomDrawChartData)
+  @objc @_Concurrency.MainActor(unsafe) public func resetCompareLineData()
+  @objc @_Concurrency.MainActor(unsafe) public func resetCustomDrawLineData()
+  @objc @_Concurrency.MainActor(unsafe) open func initialZoom()
+  @_Concurrency.MainActor(unsafe) @objc override open var data: ChartKLineView.ChartData? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open func initialScaleX(preScaleX: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) public var realTimeDayPointCount: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var realTime5DayPointCount: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var minScaleX: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var maxScaleX: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override open func calculateOffsets()
+  @objc @_Concurrency.MainActor(unsafe) open var xValCount: Swift.Double {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) open func reset()
+  @objc @_Concurrency.MainActor(unsafe) open func dragOffsetX() -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open func refreshScaleNewMatrx(locationX: CoreFoundation.CGFloat, locationY: CoreFoundation.CGFloat, newscaleX: CoreFoundation.CGFloat, newscaleY: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public var _isLongPress: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public func longpressGestureRecongnized(_ recognizer: UIKit.UILongPressGestureRecognizer)
+  @objc @_Concurrency.MainActor(unsafe) public func updateIntersectionPoint(_ index: Swift.Int, y: Swift.Double)
+  @objc @_Concurrency.MainActor(unsafe) public func hiddenIntersectionPoint()
+  @objc @_Concurrency.MainActor(unsafe) public func updateIndictor(_ index: Swift.Int, isLongPress: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override open func calcMinMax()
+  @objc @_Concurrency.MainActor(unsafe) open func layoutChartIndicatorContentView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override open func getHighlightByTouchPoint(_ pt: CoreFoundation.CGPoint) -> ChartKLineView.Highlight?
+  @objc @_Concurrency.MainActor(unsafe) open var isFirstLoad: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var onePageCount: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBCandleCombinedChartView) @_Concurrency.MainActor(unsafe) open class CandleCombineChartView : TBStockBusiness.BaseCombineChartView {
+  @objc @_Concurrency.MainActor(unsafe) open var drawGridBGModels: [TBStockBusiness.TBChartViewDrawGridBGModel]?
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override open func updateLineType()
+  @_Concurrency.MainActor(unsafe) @objc override open func notifyDataSetChanged()
+  @_Concurrency.MainActor(unsafe) @objc override open func drawGridBackground(context: CoreGraphics.CGContext)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override open func autoScale()
+  @_Concurrency.MainActor(unsafe) @objc override open func calcMinMax()
+  @objc @_Concurrency.MainActor(unsafe) open var leftYmin: Swift.Double {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var leftYMax: Swift.Double {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var hightVisibleIndex: Swift.Int {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) open func refreshTranslated(locationX: CoreFoundation.CGFloat, locationY: CoreFoundation.CGFloat)
+  @objc @_Concurrency.MainActor(unsafe) open func drag(draged: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public var hasDraged: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class CandleCombinedChartRenderer : ChartKLineView.CombinedChartRenderer {
+  @objc override open func createRenderers()
+  @objc override public init(chart: ChartKLineView.CombinedChartView, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class CandleXAxisRenderer : ChartKLineView.XAxisRenderer {
+  @objc open var gridValueIndexs: [CoreFoundation.CGFloat]?
+  @objc override open func computeAxis(min: Swift.Double, max: Swift.Double, inverted: Swift.Bool)
+  @objc open func resetOriginDiff()
+  @objc open func setXAxisArray(a: [[Swift.Int : Swift.String]])
+  @objc override public func drawLabels(context: CoreGraphics.CGContext, pos: CoreFoundation.CGFloat, anchor: CoreFoundation.CGPoint)
+  @objc override open func renderGridLines(context: CoreGraphics.CGContext)
+  @objc override open func computeAxisValues(min: Swift.Double, max: Swift.Double)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, xAxis: ChartKLineView.XAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBKLineChartYAxis) open class CandleYAxis : ChartKLineView.YAxis {
+  @objc open var yAxisType: ChartKLineView.YAxisType
+  @objc open var correctionPreClose: CoreFoundation.CGFloat
+  @objc override dynamic public init()
+  @objc override public init(position: ChartKLineView.YAxis.AxisDependency)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class CandleYAxisRenderer : ChartKLineView.YAxisRenderer {
+  @objc override open func computeAxisValues(min: Swift.Double, max: Swift.Double)
+  @objc override open func renderAxisLabels(context: CoreGraphics.CGContext)
+  override open func drawYLabels(context: CoreGraphics.CGContext, fixedPosition: CoreFoundation.CGFloat, positions: [CoreFoundation.CGPoint], offset: CoreFoundation.CGFloat, textAlign: UIKit.NSTextAlignment)
+  @objc override open func renderLimitLines(context: CoreGraphics.CGContext)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, yAxis: ChartKLineView.YAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class ColorUtils : ObjectiveC.NSObject {
+  @objc open class func increaseColor() -> ChartKLineView.NSUIColor!
+  @objc open class func decreaseColor() -> ChartKLineView.NSUIColor!
+  @objc open class func zeroColor() -> ChartKLineView.NSUIColor
+  @objc open class func MA1Color() -> ChartKLineView.NSUIColor
+  @objc open class func MA2Color() -> ChartKLineView.NSUIColor
+  @objc open class func MA3Color() -> ChartKLineView.NSUIColor
+  @objc open class func MA4Color() -> ChartKLineView.NSUIColor
+  @objc open class func MA5Color() -> ChartKLineView.NSUIColor
+  @objc open class func EMA1Color() -> ChartKLineView.NSUIColor
+  @objc open class func EMA2Color() -> ChartKLineView.NSUIColor
+  @objc open class func EMA3Color() -> ChartKLineView.NSUIColor
+  @objc open class func BOLLUpperColor() -> ChartKLineView.NSUIColor
+  @objc open class func BOLLMiDColor() -> ChartKLineView.NSUIColor
+  @objc open class func BOLLDownColor() -> ChartKLineView.NSUIColor
+  @objc open class func MACDLineColor() -> ChartKLineView.NSUIColor
+  @objc open class func MACDDemColor() -> ChartKLineView.NSUIColor
+  @objc open class func MACDDiffColor() -> ChartKLineView.NSUIColor
+  @objc open class func KDJKColor() -> ChartKLineView.NSUIColor
+  @objc open class func KDJDColor() -> ChartKLineView.NSUIColor
+  @objc open class func KDJJColor() -> ChartKLineView.NSUIColor
+  @objc open class func RSI1Color() -> ChartKLineView.NSUIColor
+  @objc open class func RSI2Color() -> ChartKLineView.NSUIColor
+  @objc open class func RSI3Color() -> ChartKLineView.NSUIColor
+  @objc open class func OBVColor() -> ChartKLineView.NSUIColor
+  @objc open class func CCIColor() -> ChartKLineView.NSUIColor
+  @objc open class func ARColor() -> ChartKLineView.NSUIColor
+  @objc open class func BRColor() -> ChartKLineView.NSUIColor
+  @objc open class func WR10Color() -> ChartKLineView.NSUIColor
+  @objc open class func WR6Color() -> ChartKLineView.NSUIColor
+  @objc open class func MFIColor() -> ChartKLineView.NSUIColor
+  @objc open class func EMVColor() -> ChartKLineView.NSUIColor
+  @objc open class func EMVAColor() -> ChartKLineView.NSUIColor
+  @objc open class func DDDColor() -> ChartKLineView.NSUIColor
+  @objc open class func AMAColor() -> ChartKLineView.NSUIColor
+  @objc open class func ATRColor() -> ChartKLineView.NSUIColor
+  @objc open class func textColor() -> ChartKLineView.NSUIColor
+  @objc open class func titleColor() -> ChartKLineView.NSUIColor
+  @objc open class func backColor() -> ChartKLineView.NSUIColor
+  @objc open class func lightBackColor() -> ChartKLineView.NSUIColor
+  @objc open class func clearColor() -> ChartKLineView.NSUIColor
+  @objc open class func realTimeLineColor() -> ChartKLineView.NSUIColor
+  @objc open class func realTimeGradientColor() -> [ChartKLineView.NSUIColor]
+  @objc open class func hourRealTimeGradientColor() -> [ChartKLineView.NSUIColor]
+  @objc open class func borderColor() -> ChartKLineView.NSUIColor
+  @objc open class func KLineLongPressColor() -> ChartKLineView.NSUIColor
+  @objc open class func contentBgColor() -> ChartKLineView.NSUIColor
+  @objc open class func valueTextColor() -> ChartKLineView.NSUIColor
+  @objc open class func dottedLineColor() -> ChartKLineView.NSUIColor
+  @objc open class func preCloseLineColor() -> ChartKLineView.NSUIColor
+  @objc open class func mainTitleColor() -> ChartKLineView.NSUIColor
+  @objc public class func lineColor(_ name: Swift.String, yAxisType: ChartKLineView.YAxisType) -> UIKit.UIColor
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol CompareStockSelectedDelegate : ObjectiveC.NSObjectProtocol {
+  func compareStockSelectedWith(symbol: Swift.String)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TBCompareStockChangeDisplayView) @_Concurrency.MainActor(unsafe) public class CompareStockChangeDisplayView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any TBStockBusiness.CompareStockSelectedDelegate)?
+  @_Concurrency.MainActor(unsafe) public var compareModels: [[Swift.String : Any]]
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) public func itemViewClick(_ sender: UIKit.UIButton)
+  @_Concurrency.MainActor(unsafe) public func updateCompareDisplayInfo(compareModel: [[Swift.String : Any]])
+  @_Concurrency.MainActor(unsafe) public func layoutSubContentViews()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) open class IndicatorButton : UIKit.UIControl {
+  @objc @_Concurrency.MainActor(unsafe) public var titleLabel: UIKit.UILabel {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var imageView: UIKit.UIImageView {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var type: ChartKLineView.YAxisType
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) open func updateTitle(type: ChartKLineView.YAxisType)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class IndicatorView : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public var isVolume: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func params(type: Swift.String) -> [ObjectiveC.NSInteger]
+  @objc @_Concurrency.MainActor(unsafe) open func updateTitle(type: ChartKLineView.YAxisType)
+  @objc @_Concurrency.MainActor(unsafe) open func updateContent(_ attributeString: Foundation.NSAttributedString)
+  @objc @_Concurrency.MainActor(unsafe) open func updateMaxVolumeContent(klineItem: TBStockKit.TBKLineItem?)
+  @objc deinit
+}
+@objc public protocol IRadarCircleChartDataSet : ChartKLineView.IRadarChartDataSet {
+  @objc var circleRadius: CoreFoundation.CGFloat { get set }
+  @objc var circleHoleRadius: CoreFoundation.CGFloat { get set }
+  @objc var circleColors: [ChartKLineView.NSUIColor] { get set }
+  @objc func getCircleColor(atIndex: Swift.Int) -> ChartKLineView.NSUIColor?
+  @objc func setCircleColor(_ color: ChartKLineView.NSUIColor)
+  @objc func resetCircleColors(_ index: Swift.Int)
+  @objc var drawCirclesEnabled: Swift.Bool { get set }
+  @objc var isDrawCirclesEnabled: Swift.Bool { get }
+  @objc var circleHoleColor: ChartKLineView.NSUIColor? { get set }
+  @objc var drawCircleHoleEnabled: Swift.Bool { get set }
+  @objc var isDrawCircleHoleEnabled: Swift.Bool { get }
+}
+@_inheritsConvenienceInitializers @objc(TBKLineXAxisManager) open class KLineXAxisManager : ObjectiveC.NSObject {
+  @objc open class func getXAxisResultArray(lineType: ChartKLineView.LineType, xAxisValues: [Swift.String]) -> [Swift.String]
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class RadarCircleChartDataSet : ChartKLineView.LineRadarChartDataSet, TBStockBusiness.IRadarCircleChartDataSet {
+  @objc required dynamic public init()
+  @objc required override public init(entries: [ChartKLineView.ChartDataEntry]?, label: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc open var drawHighlightCircleEnabled: Swift.Bool
+  @objc open var isDrawHighlightCircleEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc open var highlightCircleFillColor: ChartKLineView.NSUIColor?
+  @objc open var highlightCircleStrokeColor: ChartKLineView.NSUIColor?
+  @objc open var highlightCircleStrokeAlpha: CoreFoundation.CGFloat
+  @objc open var highlightCircleInnerRadius: CoreFoundation.CGFloat
+  @objc open var highlightCircleOuterRadius: CoreFoundation.CGFloat
+  @objc open var highlightCircleStrokeWidth: CoreFoundation.CGFloat
+  @objc open var circleRadius: CoreFoundation.CGFloat
+  @objc open var circleHoleRadius: CoreFoundation.CGFloat
+  @objc open var circleColors: [ChartKLineView.NSUIColor]
+  @objc open func getCircleColor(atIndex index: Swift.Int) -> ChartKLineView.NSUIColor?
+  @objc open func setCircleColor(_ color: ChartKLineView.NSUIColor)
+  open func setCircleColors(_ colors: ChartKLineView.NSUIColor...)
+  @objc open func resetCircleColors(_ index: Swift.Int)
+  @objc open var drawCirclesEnabled: Swift.Bool
+  @objc open var isDrawCirclesEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc open var circleHoleColor: ChartKLineView.NSUIColor?
+  @objc open var drawCircleHoleEnabled: Swift.Bool
+  @objc open var isDrawCircleHoleEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class RadarCircleChartRenderer : ChartKLineView.RadarChartRenderer {
+  @objc override open func drawData(context: CoreGraphics.CGContext)
+  open func drawDataSetCircles(context: CoreGraphics.CGContext, dataSet: any TBStockBusiness.IRadarCircleChartDataSet, mostEntries: Swift.Int)
+  @objc override public init(chart: ChartKLineView.RadarChartView, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RadarCircleChartView : ChartKLineView.RadarChartView {
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class RadarMarkerView : ChartKLineView.MarkerView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) public var imageView: UIKit.UIImageView {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var label: UIKit.UILabel {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override public func refreshContent(entry: ChartKLineView.ChartDataEntry, highlight: ChartKLineView.Highlight)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(TBStockTargetPriceMarkerView) @_Concurrency.MainActor(unsafe) public class TBStockTargetPriceMarkerView : ChartKLineView.MarkerView, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @objc @_Concurrency.MainActor(unsafe) open var titleFormatter: (any ChartKLineView.IAxisValueFormatter)?
+  @objc @_Concurrency.MainActor(unsafe) open var valueFormatter: any ChartKLineView.IAxisValueFormatter
+  @objc @_Concurrency.MainActor(unsafe) open var percentFormatter: Foundation.NumberFormatter?
+  @objc @_Concurrency.MainActor(unsafe) open var cornerRadius: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var textFont: UIKit.UIFont
+  @objc @_Concurrency.MainActor(unsafe) open var textColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor(unsafe) open var upColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor(unsafe) open var downColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor(unsafe) public init(titleFormatter: (any ChartKLineView.IAxisValueFormatter)?, valueFormatter: any ChartKLineView.IAxisValueFormatter, percentFormatter: Foundation.NumberFormatter?, backgroundColor: UIKit.UIColor, cornerRadius: CoreFoundation.CGFloat, textFont: UIKit.UIFont, textColor: UIKit.UIColor, upColor: UIKit.UIColor, downColor: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override public func offsetForDrawing(atPoint point: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
+  @_Concurrency.MainActor(unsafe) @objc override public func refreshContent(entry: ChartKLineView.ChartDataEntry, highlight: ChartKLineView.Highlight)
+  @_Concurrency.MainActor(unsafe) @objc override public func draw(context: CoreGraphics.CGContext, point: CoreFoundation.CGPoint)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class TBStockTargetPriceCell : UIKit.UITableViewCell {
+  @objc @_Concurrency.MainActor(unsafe) public var titleLabel: UIKit.UILabel {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var valueLabel: UIKit.UILabel {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBRealTimeCombinedChartView) @_Concurrency.MainActor(unsafe) open class RealTimeCombineChartView : TBStockBusiness.BaseCombineChartView {
+  @objc @_Concurrency.MainActor(unsafe) open var realTimeCurrentCount: Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) open var drawGridBGModels: [TBStockBusiness.TBChartViewDrawGridBGModel]?
+  @objc @_Concurrency.MainActor(unsafe) open var dayHigh: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) open var dayLow: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) open var hiddenVolumeIndicator: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override open func drawGridBackground(context: CoreGraphics.CGContext)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override open var lineType: ChartKLineView.LineType {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override open var drawMarket: ChartKLineView.StockDrawType {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override open func notifyDataSetChanged()
+  @_Concurrency.MainActor(unsafe) @objc override open func layoutChartIndicatorContentView()
+  @_Concurrency.MainActor(unsafe) @objc override open func updateIndicatorData(type: ChartKLineView.YAxisType)
+  @_Concurrency.MainActor(unsafe) @objc override open func calcMinMax()
+  @_Concurrency.MainActor(unsafe) @objc override open func autoScale()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class RealTimeXAxis : ChartKLineView.XAxis {
+  @objc open var valueIndexs: [CoreFoundation.CGFloat]?
+  @objc open var valuesForRealXAxis: [Swift.String]?
+  @objc open var topXAxisCount: Swift.Int
+  @objc open var indexVIX: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBRealTimeXAxisRenderer) open class RealTimeXAxisRenderer : ChartKLineView.XAxisRenderer {
+  @objc override open func renderAxisLabels(context: CoreGraphics.CGContext)
+  @objc open var gridValueIndexs: [CoreFoundation.CGFloat]?
+  @objc override open func drawLabels(context: CoreGraphics.CGContext, pos: CoreFoundation.CGFloat, anchor: CoreFoundation.CGPoint)
+  @objc override open func renderGridLines(context: CoreGraphics.CGContext)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, xAxis: ChartKLineView.XAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class RealTimeYAxisRenderer : ChartKLineView.YAxisRenderer {
+  @objc override open func computeAxisValues(min: Swift.Double, max: Swift.Double)
+  @objc override open func renderAxisLabels(context: CoreGraphics.CGContext)
+  override open func drawYLabels(context: CoreGraphics.CGContext, fixedPosition: CoreFoundation.CGFloat, positions: [CoreFoundation.CGPoint], offset: CoreFoundation.CGFloat, textAlign: UIKit.NSTextAlignment)
+  @objc override open func renderLimitLines(context: CoreGraphics.CGContext)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, yAxis: ChartKLineView.YAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SpreadAnimationView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public let MINUTE_COUNT_ONE_DAY_IN_ONE_US: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_DAY_IN_ONE_CN: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_DAY_IN_ONE_HK: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_DAY_IN_ONE_UK: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_DAY_IN_ONE_US_VIX: CoreFoundation.CGFloat
+public let MINUTE_COUNT_DAY_OVERNIGHT_MARKET_US: CoreFoundation.CGFloat
+public let MINUTE_COUNT_DAY_POST_MARKET_US: CoreFoundation.CGFloat
+public let MINUTE_COUNT_DAY_PRE_MARKET_US: CoreFoundation.CGFloat
+public let MINUTE_COUNT_DAY_LANDSCAPE_POST_MARKET_US: CoreFoundation.CGFloat
+public let MINUTE_COUNT_DAY_LANDSCAPE_PRE_MARKET_US: CoreFoundation.CGFloat
+public let TIME_US_STOCK_INTRA_DAY_MINS: CoreFoundation.CGFloat
+public let TIME_US_STOCK_INTRA_PRE_MINS: CoreFoundation.CGFloat
+public let TIME_US_STOCK_INTRA_POST_MINS: CoreFoundation.CGFloat
+public let TIME_CN_STOCK_INTRA_DAY_MINS: CoreFoundation.CGFloat
+public let TIME_HK_STOCK_INTRA_DAY_MINS: CoreFoundation.CGFloat
+public let TIME_SI_STOCK_INTRA_DAY_MINS: CoreFoundation.CGFloat
+public let TIME_UK_STOCK_INTRA_DAY_MINS: CoreFoundation.CGFloat
+public let TIME_UK_STOCK_VIX_INTRA_DAY_MINS: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_DAY_IN_FIVE_US: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_DAY_IN_FIVE_CN: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_DAY_IN_FIVE_HK: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_DAY_IN_FIVE_UK: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_DAY_IN_FIVE_US_VIX: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_DAY_IN_FIVE_CC: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_ONE_MONTH_US: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_ONE_MONTH_HK: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_ONE_MONTH_CN: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_ONE_MONTH_UK: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_SIXTY_COUNT: CoreFoundation.CGFloat
+public let MINUTE_COUNT_ONE_SIX_MONTH: CoreFoundation.CGFloat
+public let MAX_POINTS_IN_ONE_PAGE: CoreFoundation.CGFloat
+public let MIN_POINTS_IN_ONE_PAGE: CoreFoundation.CGFloat
+public let DEFAULT_POINT_COUNT_IN_ONE_PAGE_LANDSCAPE: CoreFoundation.CGFloat
+public let DEFAULT_POINT_COUNT_IN_ONE_PAGE_PORTRAIT: CoreFoundation.CGFloat
+public let DEFAULT_POINT_MAX_SCALE_COUNT_IN_TREND: CoreFoundation.CGFloat
+public let CHART_BORDER_LINE_WIDTH: CoreFoundation.CGFloat
+public let AXIS_FONT: UIKit.UIFont
+@_inheritsConvenienceInitializers @objc(TBChartKLineUtils) public class StockChartUtils : ObjectiveC.NSObject {
+  @objc public class func textAlign(valuePoint: CoreFoundation.CGPoint, viewPortHandler: ChartKLineView.ViewPortHandler) -> UIKit.NSTextAlignment
+  @objc public class func arrayElementAt(index: Swift.Int, arr: [Swift.String]) -> Swift.String
+  @objc public class func monthWith(timeStr: Swift.String) -> [Swift.String]
+  @objc public class func seperate(str: Swift.String) -> [Swift.String]
+  @objc public class func formatterPrice(price: Swift.Double) -> Swift.String
+  @objc public class func marketSting(type: ChartKLineView.StockDrawType) -> Swift.String
+  @objc public class func formatterCount(volumeStr: Swift.String?) -> Swift.String
+  @objc public class func formatVolumeDigitalCurrencyCount(volume: Swift.Double) -> Swift.String
+  @objc public class func formatterMultiplierCount(volumeStr: Swift.String?) -> Swift.String
+  @objc public class func actionIcon(actiontype: TBStockBusiness.TBChartActionType) -> Swift.String
+  @objc public class func bigActionIcon(actiontype: TBStockBusiness.TBChartActionType) -> Swift.String
+  @objc public class func actionColor(actiontype: TBStockBusiness.TBChartActionType) -> UIKit.UIColor
+  public class func reflectType(type: ChartKLineView.YAxisType) -> ChartKLineView.TBIndexType
+  @objc public class func chartMarketType(market: Swift.String) -> ChartKLineView.StockDrawType
+  open class var magic9IncreaseIcon: Swift.String {
+    get
+  }
+  open class var magic9DecreaseIcon: Swift.String {
+    get
+  }
+  open class var magicNumberIcon: [Swift.Int : Swift.String] {
+    get
+  }
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension ChartKLineView.LineChartData {
+  @objc dynamic open var drawAskBidHist: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var ask: [[Swift.Double]] {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var askHistColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var bid: [[Swift.Double]] {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var bidColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+}
+public let solidScreenHeight: CoreFoundation.CGFloat
+public let solidScreenWidth: CoreFoundation.CGFloat
+public func tipStatusBarHeight() -> CoreFoundation.CGFloat
+public func tipBottomHeight() -> CoreFoundation.CGFloat
+@_inheritsConvenienceInitializers @objc(TBStockDetailFloatingPanelBehavior) public class StockDetailFloatingPanelBehavior : ObjectiveC.NSObject, TBUIKit.FloatingPanelBehavior {
+  @objc final public let springDecelerationRate: CoreFoundation.CGFloat
+  @objc final public let springResponseTime: CoreFoundation.CGFloat
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBStockDetailFloatingPanelLayout) public class StockDetailFloatingPanelLayout : ObjectiveC.NSObject, TBUIKit.FloatingPanelLayout {
+  @objc final public let position: TBUIKit.FloatingPanelPosition
+  @objc final public let initialState: TBUIKit.FloatingPanelState
+  @objc final public let tipHeight: CoreFoundation.CGFloat
+  @objc final public let fullHeight: CoreFoundation.CGFloat
+  @objc public var anchors: [TBUIKit.FloatingPanelState : any TBUIKit.FloatingPanelLayoutAnchoring] {
+    @objc get
+  }
+  @objc public func backdropAlpha(for state: TBUIKit.FloatingPanelState) -> CoreFoundation.CGFloat
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBAnalysisCandleCombineChartView : TBStockBusiness.CandleCombineChartView {
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) override open func initialScaleX(preScaleX: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TBStockTargetPriceChartRightYAxisRenderer) open class TBStockTargetPriceChartRightYAxisRenderer : ChartKLineView.YAxisRenderer {
+  @objc override open func computeAxisValues(min: Swift.Double, max: Swift.Double)
+  @objc override open func renderAxisLine(context: CoreGraphics.CGContext)
+  @objc override open func renderAxisLabels(context: CoreGraphics.CGContext)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, yAxis: ChartKLineView.YAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBArrowLineRadarRenderer : ChartKLineView.LineChartRenderer {
+  open var notLimitCount: Swift.Bool
+  open var drawZeroCircle: Swift.Bool
+  @objc open var drawMaxValue: Swift.Bool
+  @objc open var drawMinValue: Swift.Bool
+  @objc open var drawVerticalLine: Swift.Bool
+  @objc override open func drawValues(context: CoreGraphics.CGContext)
+  @objc override open func drawHighlighted(context: CoreGraphics.CGContext, indices: [ChartKLineView.Highlight])
+  @objc override open func drawExtras(context: CoreGraphics.CGContext)
+  @objc override open func isDrawingValuesAllowed(dataProvider: (any ChartKLineView.ChartDataProvider)?) -> Swift.Bool
+  @objc override public init(dataProvider: any ChartKLineView.LineChartDataProvider, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBArrowXAxisRenderer : ChartKLineView.XAxisRenderer {
+  @objc override open func renderAxisLine(context: CoreGraphics.CGContext)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, xAxis: ChartKLineView.XAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBArrowYAxisRenderer : TBSwiftComponent.TBCustomChartYAxisRender {
+  @objc override open func renderAxisLine(context: CoreGraphics.CGContext)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, yAxis: ChartKLineView.YAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBChartImageLimitLine : ChartKLineView.ChartLimitLine {
+  @objc(TBChartLimitImagePosition) public enum ImagePosition : Swift.Int {
+    case left
+    case right
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc open var drawImageEnabled: Swift.Bool
+  @objc public var image: UIKit.UIImage?
+  @objc open var imagePosition: TBStockBusiness.TBChartImageLimitLine.ImagePosition
+  @objc open var imageMargin: Swift.Double
+  @objc override dynamic public init()
+  @objc override public init(limit: Swift.Double)
+  @objc override public init(limit: Swift.Double, label: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(TBChartViewDrawGridBGModel) public class TBChartViewDrawGridBGModel : TBBaseKit.JSONModel {
+  @objc public var beginIndex: Swift.Double
+  @objc public var endIndex: Swift.Double
+  @objc public var rgbHex: Swift.UInt32
+  @objc public var alpha: Swift.Double
+  @objc required override dynamic public init()
+  @objc override dynamic open class func propertyIsOptional(_ propertyName: Swift.String!) -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBCYQRatioView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var drawRadiusEnable: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var leftCount: Swift.Float
+  @objc @_Concurrency.MainActor(unsafe) public var rightCount: Swift.Float
+  @objc @_Concurrency.MainActor(unsafe) public func notifyDataChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBETFXAxisRendererHorizontalBarChart : ChartKLineView.XAxisRendererHorizontalBarChart {
+  @objc override open func renderAxisLabels(context: CoreGraphics.CGContext)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, xAxis: ChartKLineView.XAxis?, transformer: ChartKLineView.Transformer?, chart: ChartKLineView.BarChartView)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBETFHorizontalBarChartRenderer : ChartKLineView.HorizontalBarChartRenderer {
+  @objc override public init(dataProvider: any ChartKLineView.BarChartDataProvider, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc override open func initBuffers()
+  @objc override open func drawDataSet(context: CoreGraphics.CGContext, dataSet: any ChartKLineView.IBarChartDataSet, index: Swift.Int)
+  override open func prepareBarHighlight(x: Swift.Double, y1: Swift.Double, y2: Swift.Double, barWidthHalf: Swift.Double, trans: ChartKLineView.Transformer, rect: inout CoreFoundation.CGRect)
+  @objc override open func drawValues(context: CoreGraphics.CGContext)
+  @objc override open func isDrawingValuesAllowed(dataProvider: (any ChartKLineView.ChartDataProvider)?) -> Swift.Bool
+  @objc override open func setHighlightDrawPos(highlight high: ChartKLineView.Highlight, barRect: CoreFoundation.CGRect)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBETFHorizontalBarChartView : ChartKLineView.HorizontalBarChartView {
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class TBFundFlowTrendXAxisRenderer : ChartKLineView.XAxisRenderer {
+  @objc override public func renderAxisLabels(context: CoreGraphics.CGContext)
+  @objc override public func drawLabels(context: CoreGraphics.CGContext, pos: CoreFoundation.CGFloat, anchor: CoreFoundation.CGPoint)
+  @objc override public func renderGridLines(context: CoreGraphics.CGContext)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, xAxis: ChartKLineView.XAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBHKBrokersHoldDetailBarChart : ChartKLineView.BarChartView {
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension TBStockBusiness.TBHKBrokersHoldDetailBarChart : ChartKLineView.IAxisValueFormatter {
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func stringForValue(_ value: Swift.Double, axis: ChartKLineView.AxisBase?) -> Swift.String
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBHKBrokersHoldDetailCombinedChart : ChartKLineView.CombinedChartView {
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override open func calcMinMax()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBHKBrokersHoldDetailLineChart : ChartKLineView.LineChartView {
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class TBHKBrokersHoldDetailLineChartXRenerder : ChartKLineView.XAxisRenderer {
+  @objc override open func renderAxisLine(context: CoreGraphics.CGContext)
+  @objc override open func drawLabel(context: CoreGraphics.CGContext, formattedLabel: Swift.String, x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat, attributes: [Foundation.NSAttributedString.Key : Any], constrainedToSize: CoreFoundation.CGSize, anchor: CoreFoundation.CGPoint, angleRadians: CoreFoundation.CGFloat)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, xAxis: ChartKLineView.XAxis?, transformer: ChartKLineView.Transformer?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBHKIndexPERatioLineChart : ChartKLineView.LineChartView {
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TBHKStockMarketWideInFlowChartView : ChartKLineView.CombinedChartView {
+  @objc @_Concurrency.MainActor(unsafe) public var isDragYEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var realTimeTotalCount: Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) public var isRealTimeChart: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var xAxisMaxmum: Swift.Double
+  @_Concurrency.MainActor(unsafe) @objc override public func initialize()
+  @objc @_Concurrency.MainActor(unsafe) public var marketType: ChartKLineView.StockDrawType {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override public func calcMinMax()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TBHKStockQuoteWarrantStatRatioView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var leftCount: Swift.Float
+  @objc @_Concurrency.MainActor(unsafe) public var leftColor: UIKit.UIColor?
+  @objc @_Concurrency.MainActor(unsafe) public var rightCount: Swift.Float
+  @objc @_Concurrency.MainActor(unsafe) public var rightColor: UIKit.UIColor?
+  @objc @_Concurrency.MainActor(unsafe) public func notifyDataChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBOptionAnalysisChartView : ChartKLineView.CombinedChartView {
+  @objc @_Concurrency.MainActor(unsafe) open var bigGrideBorder: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override open func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override open func drawGridBackground(context: CoreGraphics.CGContext)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class TBStockAnalyzePERatioRenderer : ChartKLineView.PieChartRenderer {
+  @objc override public func drawValues(context: CoreGraphics.CGContext)
+  @objc override public init(chart: ChartKLineView.PieChartView, animator: ChartKLineView.Animator, viewPortHandler: ChartKLineView.ViewPortHandler)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TBStockChartViewBase : ChartKLineView.CombinedChartView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class XAxisRendererCircleRadarChart : ChartKLineView.XAxisRendererRadarChart {
+  @objc override open func renderAxisLabels(context: CoreGraphics.CGContext)
+  @objc open func drawsizeLabel(context: CoreGraphics.CGContext, formattedLabel: Swift.String, x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat, attributes: [Foundation.NSAttributedString.Key : Any], anchor: CoreFoundation.CGPoint, angleRadians: CoreFoundation.CGFloat, type: Swift.Int)
+  @objc override public init(viewPortHandler: ChartKLineView.ViewPortHandler, xAxis: ChartKLineView.XAxis?, chart: ChartKLineView.RadarChartView)
+  @objc deinit
+}
+extension ChartKLineView.ChartUtils {
+  open class func drawSizeText(context: CoreGraphics.CGContext, text: Swift.String, point: CoreFoundation.CGPoint, attributes: [Foundation.NSAttributedString.Key : Any]?, anchor: CoreFoundation.CGPoint, angleRadians: CoreFoundation.CGFloat, type: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers open class XCircleAxis : ChartKLineView.XAxis {
+  @objc open var subLabelFont: UIKit.UIFont
+  @objc open var subLabelTextColor: UIKit.UIColor
+  @objc override open func getLongestLabel() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension TBStockBusiness.ChartTrendType : Swift.Equatable {}
+extension TBStockBusiness.ChartTrendType : Swift.Hashable {}
+extension TBStockBusiness.ChartTrendType : Swift.RawRepresentable {}
+extension TBStockBusiness.TBChartImageLimitLine.ImagePosition : Swift.Equatable {}
+extension TBStockBusiness.TBChartImageLimitLine.ImagePosition : Swift.Hashable {}
+extension TBStockBusiness.TBChartImageLimitLine.ImagePosition : Swift.RawRepresentable {}

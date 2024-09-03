@@ -1,0 +1,6 @@
+framework module TBWebView {
+  umbrella header "TBWebView-umbrella.h"
+
+  export *
+  module * { export * }
+}

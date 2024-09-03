@@ -1,0 +1,6 @@
+framework module TBInitializeKit {
+  umbrella header "TBInitializeKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

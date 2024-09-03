@@ -8,7 +8,7 @@
 
 #import "TBAppDelegate.h"
 
-#import <TigerQuoteSDK/TigerQuoteSDKManager.h>
+#import <TigerTradingSDK/TigerTradingSDKManager.h>
 #import "TBViewController.h"
 
 #import <AFNetworking/AFNetworking.h>
@@ -22,7 +22,7 @@
     [self.window makeKeyAndVisible];
     
     // Setup SDK with options and clientId
-    [TigerQuoteSDKManager setupWithOption:launchOptions clientId:@"1012892644333"];
+    [TigerTradingSDKManager setupWithOption:launchOptions clientId:@"1012892644333"];
 
     // Initialize the root view controller
     TBViewController *vc = [[TBViewController alloc] init];

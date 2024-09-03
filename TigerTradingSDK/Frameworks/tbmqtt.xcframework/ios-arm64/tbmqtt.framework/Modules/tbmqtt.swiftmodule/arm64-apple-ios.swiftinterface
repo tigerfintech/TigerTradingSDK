@@ -1,0 +1,69 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name tbmqtt
+import Foundation
+import Swift
+import TBCocoaMQTT
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import tbmqtt
+public protocol TBMQTTClient {
+  func subscribe(_ topic: Swift.String, userProperty: [Swift.String : Swift.String]?)
+  func unsubscribe(_ topic: Swift.String, userProperty: [Swift.String : Swift.String]?)
+  func subscribe(_ topics: [Swift.String], userProperty: [Swift.String : Swift.String]?)
+  func unsubscribe(_ topics: [Swift.String], userProperty: [Swift.String : Swift.String]?)
+  func publish(_ topic: Swift.String, responseTopic: Swift.String, topicPayload: [Swift.String : Any], correlationData: Swift.String, userProperty: [Swift.String : Swift.String]?) -> Swift.Int?
+  func connect() -> Swift.Bool?
+  func publishConnect() -> Swift.Bool?
+  func connect(timeout: Foundation.TimeInterval) -> Swift.Bool?
+  func disconnect()
+  func ping()
+}
+public protocol TBMQTTClientDelegate {
+  func mqtt(_ mqtt: any TBCocoaMQTT.TBCocoaMqttClient, didStateChangeTo state: TBCocoaMQTT.CocoaMQTTConnState)
+  func mqtt(_ mqtt: any TBCocoaMQTT.TBCocoaMqttClient, didPublishStateChangeTo state: TBCocoaMQTT.CocoaMQTTConnState)
+  func mqtt(_ mqtt: any TBCocoaMQTT.TBCocoaMqttClient, didReceiveMessage message: TBCocoaMQTT.CocoaMQTT5Message, id: Swift.UInt16, publishData: TBCocoaMQTT.MqttDecodePublish?)
+  func mqtt(_ mqtt: any TBCocoaMQTT.TBCocoaMqttClient, didReceivePublishMessage message: TBCocoaMQTT.CocoaMQTT5Message, id: Swift.UInt16, publishData: TBCocoaMQTT.MqttDecodePublish?)
+}
+@objc public class TBMQTTClientManager : ObjectiveC.NSObject {
+  @objc public var subscribeStateChange: ((TBCocoaMQTT.CocoaMQTTConnState) -> Swift.Void)?
+  @objc public func connect()
+  @objc public func subscribeConnect()
+  @objc public func subcribeDisconnect()
+  @objc public func publishConnect()
+  @objc public func disconnect()
+  @objc public func paramModify()
+  @objc public init(config: (any tbmqtt.TBMQTTConfigProtocol)?)
+  @objc public func publish(_ topic: Swift.String, responseTopic: Swift.String, topicPayload: [Swift.String : Any], callBack: ((Foundation.Data?, Swift.String?, Swift.String?) -> Swift.Void)?, backup: (() -> Swift.Void)?)
+  @objc public func publish(_ topic: Swift.String, responseTopic: Swift.String, topicPayload: [Swift.String : Any], userProperty: [Swift.String : Swift.String]?, callBack: ((Foundation.Data?, Swift.String?, Swift.String?) -> Swift.Void)?, backup: (() -> Swift.Void)?)
+  @objc(subscribeTopic:userProperty:) public func subscribe(_ topic: Swift.String, userProperty: [Swift.String : Swift.String]?)
+  @objc(subscribeTopic:) public func subscribe(_ topic: Swift.String)
+  @objc(unsubscribeTopic:userProperty:) public func unsubscribe(_ topic: Swift.String, userProperty: [Swift.String : Swift.String]?)
+  @objc(unsubscribeTopic:) public func unsubscribe(_ topic: Swift.String)
+  @objc(subscribeTopics:userProperty:) public func subscribe(_ topics: [Swift.String], userProperty: [Swift.String : Swift.String]?)
+  @objc(subscribeTopics:) public func subscribe(_ topics: [Swift.String])
+  @objc(unsubscribeTopics:userProperty:) public func unsubscribe(_ topics: [Swift.String], userProperty: [Swift.String : Swift.String]?)
+  @objc(unsubscribeTopics:) public func unsubscribe(_ topics: [Swift.String])
+  @objc public var subscribeMessage: ((Foundation.Data, Swift.String, Swift.Bool) -> Swift.Void)?
+  @objc public var publishMessageCallback: ((Swift.String, Swift.Bool) -> Swift.Void)?
+  @objc deinit
+}
+extension tbmqtt.TBMQTTClientManager : tbmqtt.TBMQTTClientDelegate {
+  public func mqtt(_ mqtt: any TBCocoaMQTT.TBCocoaMqttClient, didStateChangeTo state: TBCocoaMQTT.CocoaMQTTConnState)
+  public func mqtt(_ mqtt: any TBCocoaMQTT.TBCocoaMqttClient, didPublishStateChangeTo state: TBCocoaMQTT.CocoaMQTTConnState)
+  public func mqtt(_ mqtt: any TBCocoaMQTT.TBCocoaMqttClient, didReceiveMessage message: TBCocoaMQTT.CocoaMQTT5Message, id: Swift.UInt16, publishData: TBCocoaMQTT.MqttDecodePublish?)
+  public func mqtt(_ mqtt: any TBCocoaMQTT.TBCocoaMqttClient, didReceivePublishMessage message: TBCocoaMQTT.CocoaMQTT5Message, id: Swift.UInt16, publishData: TBCocoaMQTT.MqttDecodePublish?)
+}
+@objc public protocol TBMQTTConfigProtocol {
+  @objc var host: Swift.String { get }
+  @objc var port: Swift.UInt16 { get }
+  @objc var enableSSL: Swift.Bool { get }
+  @objc var publishHost: Swift.String { get }
+  @objc var publishPort: Swift.UInt16 { get }
+  @objc var publishEnableSSL: Swift.Bool { get }
+  @objc var publishEnable: Swift.Bool { get }
+  @objc var username: Swift.String { get }
+  @objc var password: Swift.String { get }
+  @objc var userProperties: [Swift.String : Swift.String] { get }
+}

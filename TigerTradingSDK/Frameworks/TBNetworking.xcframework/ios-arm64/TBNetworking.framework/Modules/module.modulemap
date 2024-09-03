@@ -1,0 +1,6 @@
+framework module TBNetworking {
+  umbrella header "TBNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

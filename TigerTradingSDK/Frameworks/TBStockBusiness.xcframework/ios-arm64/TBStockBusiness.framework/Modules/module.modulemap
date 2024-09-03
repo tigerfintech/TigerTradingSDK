@@ -1,0 +1,11 @@
+framework module TBStockBusiness {
+  umbrella header "TBStockBusiness-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TBStockBusiness.Swift {
+  header "TBStockBusiness-Swift.h"
+  requires objc
+}

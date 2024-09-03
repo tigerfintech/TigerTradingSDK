@@ -1,0 +1,11 @@
+framework module TBSwiftComponent {
+  umbrella header "TBSwiftComponent-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TBSwiftComponent.Swift {
+  header "TBSwiftComponent-Swift.h"
+  requires objc
+}

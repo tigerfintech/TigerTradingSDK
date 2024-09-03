@@ -1,0 +1,11 @@
+framework module TBUIKit {
+  umbrella header "TBUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TBUIKit.Swift {
+  header "TBUIKit-Swift.h"
+  requires objc
+}

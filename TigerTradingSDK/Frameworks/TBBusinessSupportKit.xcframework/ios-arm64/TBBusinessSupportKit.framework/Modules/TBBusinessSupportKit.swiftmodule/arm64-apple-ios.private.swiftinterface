@@ -1,0 +1,27 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TBBusinessSupportKit
+import Foundation
+import Swift
+@_exported import TBBusinessSupportKit
+import TBSwiftComponent
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @objc(TBPaymentMethodListViewController) @_Concurrency.MainActor(unsafe) public class TBPaymentMethodListViewController : TBUIKit.TBBaseViewController {
+  @objc @_Concurrency.MainActor(unsafe) public var didSelectPayMethod: ((_ paymentMethod: Swift.String, _ bankCard: TBBusinessSupportKit.TBPaymentMethodBankCardModel?) -> ())?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(bottomText: Swift.String?)
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(bottomText: Swift.String?, addBankAccountHint: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @objc @_Concurrency.MainActor(unsafe) public func update(model: TBBusinessSupportKit.TBPaymentMethodModel, currency: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func updateSelectedPaymentWithPrimeAccount(model: TBBusinessSupportKit.TBPaymentMethodPrimeAccountModel?)
+  @objc @_Concurrency.MainActor(unsafe) public func updateSelectedWithBankCardModel(model: TBBusinessSupportKit.TBPaymentMethodBankCardModel?)
+  @objc deinit
+}
+extension TBBusinessSupportKit.TBPaymentMethodListViewController : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}

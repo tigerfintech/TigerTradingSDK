@@ -1,0 +1,27 @@
+{
+    "pop-message": {
+        "backgroundColor": "#f8cc00",
+        "opacity": 1,
+        "titleFontSize": 19,
+        "titleTextColor": "#000000",
+        "subTitleFontSize": 13,
+        "subTitleTextColor": "#000000",
+        "buttonTitleFontSize": 13,
+        "buttonTitleTextColor": "#000000"
+    },
+    "online-message": {
+        "backgroundColor": "#EBEBF5",
+        "opacity": 1,
+        "titleFontSize": 14,
+        "titleTextColor": "#333333",
+        "titleNumberOfLines": 1,
+        "subTitleFontSize": 12,
+        "subTitleTextColor": "#333333",
+        "subTitleNumberOfLines": 1,
+        "buttonTitleFontSize": 12,
+        "buttonTitleTextColor": "#333333",
+        "messageUnderStatusBar": 1,
+        "cornerRadius": 8,
+        "viewLeadingTrailingPadding": 5
+    }
+}

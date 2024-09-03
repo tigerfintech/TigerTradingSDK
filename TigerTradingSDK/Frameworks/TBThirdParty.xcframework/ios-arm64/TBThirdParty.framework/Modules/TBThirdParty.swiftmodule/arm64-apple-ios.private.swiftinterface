@@ -1,0 +1,1087 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TBThirdParty
+import Foundation
+import Swift
+@_exported import TBThirdParty
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers final public class Constraint {
+  final public var layoutConstraints: [TBThirdParty.LayoutConstraint]
+  final public var isActive: Swift.Bool {
+    get
+    set
+  }
+  @available(*, deprecated, renamed: "activate()")
+  final public func install()
+  @available(*, deprecated, renamed: "deactivate()")
+  final public func uninstall()
+  final public func activate()
+  final public func deactivate()
+  @discardableResult
+  final public func update(offset: any TBThirdParty.ConstraintOffsetTarget) -> TBThirdParty.Constraint
+  @discardableResult
+  final public func update(inset: any TBThirdParty.ConstraintInsetTarget) -> TBThirdParty.Constraint
+  @available(iOS 11.0, tvOS 11.0, *)
+  @discardableResult
+  final public func update(inset: any TBThirdParty.ConstraintDirectionalInsetTarget) -> TBThirdParty.Constraint
+  @discardableResult
+  final public func update(priority: any TBThirdParty.ConstraintPriorityTarget) -> TBThirdParty.Constraint
+  @discardableResult
+  final public func update(priority: TBThirdParty.ConstraintPriority) -> TBThirdParty.Constraint
+  @available(*, deprecated, renamed: "update(offset:)")
+  final public func updateOffset(amount: any TBThirdParty.ConstraintOffsetTarget)
+  @available(*, deprecated, renamed: "update(inset:)")
+  final public func updateInsets(amount: any TBThirdParty.ConstraintInsetTarget)
+  @available(*, deprecated, renamed: "update(priority:)")
+  final public func updatePriority(amount: any TBThirdParty.ConstraintPriorityTarget)
+  @available(*, deprecated, message: "Use update(priority: ConstraintPriorityTarget) instead.")
+  final public func updatePriorityRequired()
+  @available(*, deprecated, message: "Use update(priority: ConstraintPriorityTarget) instead.")
+  final public func updatePriorityHigh()
+  @available(*, deprecated, message: "Use update(priority: ConstraintPriorityTarget) instead.")
+  final public func updatePriorityMedium()
+  @available(*, deprecated, message: "Use update(priority: ConstraintPriorityTarget) instead.")
+  final public func updatePriorityLow()
+  @objc deinit
+}
+public typealias ConstraintInterfaceLayoutDirection = UIKit.UIUserInterfaceLayoutDirection
+public struct ConstraintConfig {
+  public static var interfaceLayoutDirection: TBThirdParty.ConstraintInterfaceLayoutDirection
+}
+public protocol ConstraintConstantTarget {
+}
+extension CoreFoundation.CGPoint : TBThirdParty.ConstraintConstantTarget {
+}
+extension CoreFoundation.CGSize : TBThirdParty.ConstraintConstantTarget {
+}
+extension UIKit.UIEdgeInsets : TBThirdParty.ConstraintConstantTarget {
+}
+@available(iOS 11.0, tvOS 11.0, *)
+extension UIKit.NSDirectionalEdgeInsets : TBThirdParty.ConstraintConstantTarget {
+}
+@_hasMissingDesignatedInitializers public class ConstraintDescription {
+  @objc deinit
+}
+@available(iOS 11.0, tvOS 11.0, *)
+public typealias ConstraintDirectionalInsets = UIKit.NSDirectionalEdgeInsets
+public protocol ConstraintDirectionalInsetTarget : TBThirdParty.ConstraintConstantTarget {
+}
+@available(iOS 11.0, tvOS 11.0, *)
+extension UIKit.NSDirectionalEdgeInsets : TBThirdParty.ConstraintDirectionalInsetTarget {
+}
+public protocol ConstraintDSL {
+  var target: Swift.AnyObject? { get }
+  func setLabel(_ value: Swift.String?)
+  func label() -> Swift.String?
+}
+extension TBThirdParty.ConstraintDSL {
+  public func setLabel(_ value: Swift.String?)
+  public func label() -> Swift.String?
+}
+public protocol ConstraintBasicAttributesDSL : TBThirdParty.ConstraintDSL {
+}
+extension TBThirdParty.ConstraintBasicAttributesDSL {
+  public var left: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var top: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var right: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var bottom: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var leading: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var trailing: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var width: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var height: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var centerX: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var centerY: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var edges: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var directionalEdges: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var horizontalEdges: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var verticalEdges: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var directionalHorizontalEdges: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var directionalVerticalEdges: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var size: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var center: TBThirdParty.ConstraintItem {
+    get
+  }
+}
+public protocol ConstraintAttributesDSL : TBThirdParty.ConstraintBasicAttributesDSL {
+}
+extension TBThirdParty.ConstraintAttributesDSL {
+  @available(*, deprecated, renamed: "lastBaseline")
+  public var baseline: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, macOS 10.11, *)
+  public var lastBaseline: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, macOS 10.11, *)
+  public var firstBaseline: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var leftMargin: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var topMargin: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var rightMargin: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var bottomMargin: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var leadingMargin: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var trailingMargin: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerXWithinMargins: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerYWithinMargins: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var margins: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var directionalMargins: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerWithinMargins: TBThirdParty.ConstraintItem {
+    get
+  }
+}
+public typealias ConstraintInsets = UIKit.UIEdgeInsets
+public protocol ConstraintInsetTarget : TBThirdParty.ConstraintConstantTarget {
+}
+extension Swift.Int : TBThirdParty.ConstraintInsetTarget {
+}
+extension Swift.UInt : TBThirdParty.ConstraintInsetTarget {
+}
+extension Swift.Float : TBThirdParty.ConstraintInsetTarget {
+}
+extension Swift.Double : TBThirdParty.ConstraintInsetTarget {
+}
+extension CoreFoundation.CGFloat : TBThirdParty.ConstraintInsetTarget {
+}
+extension UIKit.UIEdgeInsets : TBThirdParty.ConstraintInsetTarget {
+}
+@_hasMissingDesignatedInitializers final public class ConstraintItem {
+  @objc deinit
+}
+public func == (lhs: TBThirdParty.ConstraintItem, rhs: TBThirdParty.ConstraintItem) -> Swift.Bool
+@available(iOS 9.0, *)
+public typealias ConstraintLayoutGuide = UIKit.UILayoutGuide
+@available(iOS 9.0, macOS 10.11, *)
+extension UIKit.UILayoutGuide {
+  @_Concurrency.MainActor(unsafe) public var snp: TBThirdParty.ConstraintLayoutGuideDSL {
+    get
+  }
+}
+@available(iOS 9.0, macOS 10.11, *)
+public struct ConstraintLayoutGuideDSL : TBThirdParty.ConstraintAttributesDSL {
+  @discardableResult
+  public func prepareConstraints(_ closure: (_ make: TBThirdParty.ConstraintMaker) -> Swift.Void) -> [TBThirdParty.Constraint]
+  public func makeConstraints(_ closure: (_ make: TBThirdParty.ConstraintMaker) -> Swift.Void)
+  public func remakeConstraints(_ closure: (_ make: TBThirdParty.ConstraintMaker) -> Swift.Void)
+  public func updateConstraints(_ closure: (_ make: TBThirdParty.ConstraintMaker) -> Swift.Void)
+  public func removeConstraints()
+  public var target: Swift.AnyObject? {
+    get
+  }
+}
+@available(iOS 8.0, *)
+public typealias ConstraintLayoutSupport = UIKit.UILayoutSupport
+@available(iOS 8.0, *)
+public struct ConstraintLayoutSupportDSL : TBThirdParty.ConstraintDSL {
+  public var target: Swift.AnyObject? {
+    get
+  }
+  public var top: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var bottom: TBThirdParty.ConstraintItem {
+    get
+  }
+  public var height: TBThirdParty.ConstraintItem {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class ConstraintMaker {
+  public var left: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var top: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var bottom: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var right: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var leading: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var trailing: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var width: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var height: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var centerX: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var centerY: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(*, deprecated, renamed: "lastBaseline")
+  public var baseline: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var lastBaseline: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, macOS 10.11, *)
+  public var firstBaseline: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var leftMargin: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var rightMargin: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var topMargin: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var bottomMargin: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var leadingMargin: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var trailingMargin: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerXWithinMargins: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerYWithinMargins: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var edges: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var horizontalEdges: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var verticalEdges: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var directionalEdges: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var directionalHorizontalEdges: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var directionalVerticalEdges: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var size: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var center: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var margins: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var directionalMargins: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerWithinMargins: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  final public let item: any TBThirdParty.LayoutConstraintItem
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ConstraintMakerEditable : TBThirdParty.ConstraintMakerPrioritizable {
+  @discardableResult
+  public func multipliedBy(_ amount: any TBThirdParty.ConstraintMultiplierTarget) -> TBThirdParty.ConstraintMakerEditable
+  @discardableResult
+  public func dividedBy(_ amount: any TBThirdParty.ConstraintMultiplierTarget) -> TBThirdParty.ConstraintMakerEditable
+  @discardableResult
+  public func offset(_ amount: any TBThirdParty.ConstraintOffsetTarget) -> TBThirdParty.ConstraintMakerEditable
+  @discardableResult
+  public func inset(_ amount: any TBThirdParty.ConstraintInsetTarget) -> TBThirdParty.ConstraintMakerEditable
+  @available(iOS 11.0, tvOS 11.0, *)
+  @discardableResult
+  public func inset(_ amount: any TBThirdParty.ConstraintDirectionalInsetTarget) -> TBThirdParty.ConstraintMakerEditable
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ConstraintMakerExtendable : TBThirdParty.ConstraintMakerRelatable {
+  public var left: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var top: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var bottom: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var right: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var leading: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var trailing: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var width: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var height: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var centerX: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var centerY: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(*, deprecated, renamed: "lastBaseline")
+  public var baseline: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var lastBaseline: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, macOS 10.11, *)
+  public var firstBaseline: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var leftMargin: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var rightMargin: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var topMargin: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var bottomMargin: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var leadingMargin: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var trailingMargin: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerXWithinMargins: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerYWithinMargins: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var edges: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var horizontalEdges: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var verticalEdges: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var directionalEdges: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var directionalHorizontalEdges: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var directionalVerticalEdges: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  public var size: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var margins: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var directionalMargins: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @available(iOS 8.0, *)
+  public var centerWithinMargins: TBThirdParty.ConstraintMakerExtendable {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ConstraintMakerFinalizable {
+  @discardableResult
+  public func labeled(_ label: Swift.String) -> TBThirdParty.ConstraintMakerFinalizable
+  public var constraint: TBThirdParty.Constraint {
+    get
+  }
+  @objc deinit
+}
+@available(*, deprecated, message: "Use ConstraintMakerPrioritizable instead.")
+public typealias ConstraintMakerPriortizable = TBThirdParty.ConstraintMakerPrioritizable
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ConstraintMakerPrioritizable : TBThirdParty.ConstraintMakerFinalizable {
+  @discardableResult
+  public func priority(_ amount: TBThirdParty.ConstraintPriority) -> TBThirdParty.ConstraintMakerFinalizable
+  @discardableResult
+  public func priority(_ amount: any TBThirdParty.ConstraintPriorityTarget) -> TBThirdParty.ConstraintMakerFinalizable
+  @available(*, deprecated, message: "Use priority(.required) instead.")
+  @discardableResult
+  public func priorityRequired() -> TBThirdParty.ConstraintMakerFinalizable
+  @available(*, deprecated, message: "Use priority(.high) instead.")
+  @discardableResult
+  public func priorityHigh() -> TBThirdParty.ConstraintMakerFinalizable
+  @available(*, deprecated, message: "Use priority(.medium) instead.")
+  @discardableResult
+  public func priorityMedium() -> TBThirdParty.ConstraintMakerFinalizable
+  @available(*, deprecated, message: "Use priority(.low) instead.")
+  @discardableResult
+  public func priorityLow() -> TBThirdParty.ConstraintMakerFinalizable
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ConstraintMakerRelatable {
+  @discardableResult
+  public func equalTo(_ other: any TBThirdParty.ConstraintRelatableTarget, _ file: Swift.String = #file, _ line: Swift.UInt = #line) -> TBThirdParty.ConstraintMakerEditable
+  @discardableResult
+  public func equalToSuperview(_ file: Swift.String = #file, _ line: Swift.UInt = #line) -> TBThirdParty.ConstraintMakerEditable
+  @discardableResult
+  public func lessThanOrEqualTo(_ other: any TBThirdParty.ConstraintRelatableTarget, _ file: Swift.String = #file, _ line: Swift.UInt = #line) -> TBThirdParty.ConstraintMakerEditable
+  @discardableResult
+  public func lessThanOrEqualToSuperview(_ file: Swift.String = #file, _ line: Swift.UInt = #line) -> TBThirdParty.ConstraintMakerEditable
+  @discardableResult
+  public func greaterThanOrEqualTo(_ other: any TBThirdParty.ConstraintRelatableTarget, _ file: Swift.String = #file, line: Swift.UInt = #line) -> TBThirdParty.ConstraintMakerEditable
+  @discardableResult
+  public func greaterThanOrEqualToSuperview(_ file: Swift.String = #file, line: Swift.UInt = #line) -> TBThirdParty.ConstraintMakerEditable
+  @objc deinit
+}
+extension TBThirdParty.ConstraintMakerRelatable {
+  @discardableResult
+  public func equalToSuperview<T>(_ closure: (TBThirdParty.ConstraintView) -> T, _ file: Swift.String = #file, line: Swift.UInt = #line) -> TBThirdParty.ConstraintMakerEditable where T : TBThirdParty.ConstraintRelatableTarget
+  @discardableResult
+  public func lessThanOrEqualToSuperview<T>(_ closure: (TBThirdParty.ConstraintView) -> T, _ file: Swift.String = #file, line: Swift.UInt = #line) -> TBThirdParty.ConstraintMakerEditable where T : TBThirdParty.ConstraintRelatableTarget
+  @discardableResult
+  public func greaterThanOrEqualTo<T>(_ closure: (TBThirdParty.ConstraintView) -> T, _ file: Swift.String = #file, line: Swift.UInt = #line) -> TBThirdParty.ConstraintMakerEditable where T : TBThirdParty.ConstraintRelatableTarget
+}
+public protocol ConstraintMultiplierTarget {
+  var constraintMultiplierTargetValue: CoreFoundation.CGFloat { get }
+}
+extension Swift.Int : TBThirdParty.ConstraintMultiplierTarget {
+  public var constraintMultiplierTargetValue: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension Swift.UInt : TBThirdParty.ConstraintMultiplierTarget {
+  public var constraintMultiplierTargetValue: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension Swift.Float : TBThirdParty.ConstraintMultiplierTarget {
+  public var constraintMultiplierTargetValue: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension Swift.Double : TBThirdParty.ConstraintMultiplierTarget {
+  public var constraintMultiplierTargetValue: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension CoreFoundation.CGFloat : TBThirdParty.ConstraintMultiplierTarget {
+  public var constraintMultiplierTargetValue: CoreFoundation.CGFloat {
+    get
+  }
+}
+public protocol ConstraintOffsetTarget : TBThirdParty.ConstraintConstantTarget {
+}
+extension Swift.Int : TBThirdParty.ConstraintOffsetTarget {
+}
+extension Swift.UInt : TBThirdParty.ConstraintOffsetTarget {
+}
+extension Swift.Float : TBThirdParty.ConstraintOffsetTarget {
+}
+extension Swift.Double : TBThirdParty.ConstraintOffsetTarget {
+}
+extension CoreFoundation.CGFloat : TBThirdParty.ConstraintOffsetTarget {
+}
+public struct ConstraintPriority : Swift.ExpressibleByFloatLiteral, Swift.Equatable, Swift.Strideable {
+  public typealias FloatLiteralType = Swift.Float
+  public let value: Swift.Float
+  public init(floatLiteral value: Swift.Float)
+  public init(_ value: Swift.Float)
+  public static var required: TBThirdParty.ConstraintPriority {
+    get
+  }
+  public static var high: TBThirdParty.ConstraintPriority {
+    get
+  }
+  public static var medium: TBThirdParty.ConstraintPriority {
+    get
+  }
+  public static var low: TBThirdParty.ConstraintPriority {
+    get
+  }
+  public static func == (lhs: TBThirdParty.ConstraintPriority, rhs: TBThirdParty.ConstraintPriority) -> Swift.Bool
+  public func advanced(by n: TBThirdParty.ConstraintPriority.FloatLiteralType) -> TBThirdParty.ConstraintPriority
+  public func distance(to other: TBThirdParty.ConstraintPriority) -> TBThirdParty.ConstraintPriority.FloatLiteralType
+  public typealias Stride = TBThirdParty.ConstraintPriority.FloatLiteralType
+}
+public protocol ConstraintPriorityTarget {
+  var constraintPriorityTargetValue: Swift.Float { get }
+}
+extension Swift.Int : TBThirdParty.ConstraintPriorityTarget {
+  public var constraintPriorityTargetValue: Swift.Float {
+    get
+  }
+}
+extension Swift.UInt : TBThirdParty.ConstraintPriorityTarget {
+  public var constraintPriorityTargetValue: Swift.Float {
+    get
+  }
+}
+extension Swift.Float : TBThirdParty.ConstraintPriorityTarget {
+  public var constraintPriorityTargetValue: Swift.Float {
+    get
+  }
+}
+extension Swift.Double : TBThirdParty.ConstraintPriorityTarget {
+  public var constraintPriorityTargetValue: Swift.Float {
+    get
+  }
+}
+extension CoreFoundation.CGFloat : TBThirdParty.ConstraintPriorityTarget {
+  public var constraintPriorityTargetValue: Swift.Float {
+    get
+  }
+}
+extension UIKit.UILayoutPriority : TBThirdParty.ConstraintPriorityTarget {
+  public var constraintPriorityTargetValue: Swift.Float {
+    get
+  }
+}
+public protocol ConstraintRelatableTarget {
+}
+extension Swift.Int : TBThirdParty.ConstraintRelatableTarget {
+}
+extension Swift.UInt : TBThirdParty.ConstraintRelatableTarget {
+}
+extension Swift.Float : TBThirdParty.ConstraintRelatableTarget {
+}
+extension Swift.Double : TBThirdParty.ConstraintRelatableTarget {
+}
+extension CoreFoundation.CGFloat : TBThirdParty.ConstraintRelatableTarget {
+}
+extension CoreFoundation.CGSize : TBThirdParty.ConstraintRelatableTarget {
+}
+extension CoreFoundation.CGPoint : TBThirdParty.ConstraintRelatableTarget {
+}
+extension UIKit.UIEdgeInsets : TBThirdParty.ConstraintRelatableTarget {
+}
+@available(iOS 11.0, tvOS 11.0, *)
+extension UIKit.NSDirectionalEdgeInsets : TBThirdParty.ConstraintRelatableTarget {
+}
+extension TBThirdParty.ConstraintItem : TBThirdParty.ConstraintRelatableTarget {
+}
+extension UIKit.UIView : TBThirdParty.ConstraintRelatableTarget {
+}
+@available(iOS 9.0, macOS 10.11, *)
+extension UIKit.UILayoutGuide : TBThirdParty.ConstraintRelatableTarget {
+}
+public typealias ConstraintView = UIKit.UIView
+extension UIKit.UIView {
+  @available(*, deprecated, renamed: "snp.left")
+  @_Concurrency.MainActor(unsafe) public var snp_left: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.top")
+  @_Concurrency.MainActor(unsafe) public var snp_top: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.right")
+  @_Concurrency.MainActor(unsafe) public var snp_right: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.bottom")
+  @_Concurrency.MainActor(unsafe) public var snp_bottom: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.leading")
+  @_Concurrency.MainActor(unsafe) public var snp_leading: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.trailing")
+  @_Concurrency.MainActor(unsafe) public var snp_trailing: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.width")
+  @_Concurrency.MainActor(unsafe) public var snp_width: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.height")
+  @_Concurrency.MainActor(unsafe) public var snp_height: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.centerX")
+  @_Concurrency.MainActor(unsafe) public var snp_centerX: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.centerY")
+  @_Concurrency.MainActor(unsafe) public var snp_centerY: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.baseline")
+  @_Concurrency.MainActor(unsafe) public var snp_baseline: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, macOS 10.11, *)
+  @available(*, deprecated, renamed: "snp.lastBaseline")
+  @_Concurrency.MainActor(unsafe) public var snp_lastBaseline: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, macOS 10.11, *)
+  @available(iOS, deprecated, renamed: "snp.firstBaseline")
+  @_Concurrency.MainActor(unsafe) public var snp_firstBaseline: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated, renamed: "snp.leftMargin")
+  @_Concurrency.MainActor(unsafe) public var snp_leftMargin: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated, renamed: "snp.topMargin")
+  @_Concurrency.MainActor(unsafe) public var snp_topMargin: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated, renamed: "snp.rightMargin")
+  @_Concurrency.MainActor(unsafe) public var snp_rightMargin: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated, renamed: "snp.bottomMargin")
+  @_Concurrency.MainActor(unsafe) public var snp_bottomMargin: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated, renamed: "snp.leadingMargin")
+  @_Concurrency.MainActor(unsafe) public var snp_leadingMargin: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated, renamed: "snp.trailingMargin")
+  @_Concurrency.MainActor(unsafe) public var snp_trailingMargin: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated, renamed: "snp.centerXWithinMargins")
+  @_Concurrency.MainActor(unsafe) public var snp_centerXWithinMargins: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated, renamed: "snp.centerYWithinMargins")
+  @_Concurrency.MainActor(unsafe) public var snp_centerYWithinMargins: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.edges")
+  @_Concurrency.MainActor(unsafe) public var snp_edges: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.size")
+  @_Concurrency.MainActor(unsafe) public var snp_size: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.center")
+  @_Concurrency.MainActor(unsafe) public var snp_center: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated, renamed: "snp.margins")
+  @_Concurrency.MainActor(unsafe) public var snp_margins: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(iOS 8.0, *)
+  @available(iOS, deprecated, renamed: "snp.centerWithinMargins")
+  @_Concurrency.MainActor(unsafe) public var snp_centerWithinMargins: TBThirdParty.ConstraintItem {
+    get
+  }
+  @available(*, deprecated, renamed: "snp.prepareConstraints(_:)")
+  @_Concurrency.MainActor(unsafe) public func snp_prepareConstraints(_ closure: (_ make: TBThirdParty.ConstraintMaker) -> Swift.Void) -> [TBThirdParty.Constraint]
+  @available(*, deprecated, renamed: "snp.makeConstraints(_:)")
+  @_Concurrency.MainActor(unsafe) public func snp_makeConstraints(_ closure: (_ make: TBThirdParty.ConstraintMaker) -> Swift.Void)
+  @available(*, deprecated, renamed: "snp.remakeConstraints(_:)")
+  @_Concurrency.MainActor(unsafe) public func snp_remakeConstraints(_ closure: (_ make: TBThirdParty.ConstraintMaker) -> Swift.Void)
+  @available(*, deprecated, renamed: "snp.updateConstraints(_:)")
+  @_Concurrency.MainActor(unsafe) public func snp_updateConstraints(_ closure: (_ make: TBThirdParty.ConstraintMaker) -> Swift.Void)
+  @available(*, deprecated, renamed: "snp.removeConstraints()")
+  @_Concurrency.MainActor(unsafe) public func snp_removeConstraints()
+  @_Concurrency.MainActor(unsafe) public var snp: TBThirdParty.ConstraintViewDSL {
+    get
+  }
+}
+public struct ConstraintViewDSL : TBThirdParty.ConstraintAttributesDSL {
+  @discardableResult
+  public func prepareConstraints(_ closure: (_ make: TBThirdParty.ConstraintMaker) -> Swift.Void) -> [TBThirdParty.Constraint]
+  public func makeConstraints(_ closure: (_ make: TBThirdParty.ConstraintMaker) -> Swift.Void)
+  public func remakeConstraints(_ closure: (_ make: TBThirdParty.ConstraintMaker) -> Swift.Void)
+  public func updateConstraints(_ closure: (_ make: TBThirdParty.ConstraintMaker) -> Swift.Void)
+  public func removeConstraints()
+  public var contentHuggingHorizontalPriority: Swift.Float {
+    get
+    nonmutating set
+  }
+  public var contentHuggingVerticalPriority: Swift.Float {
+    get
+    nonmutating set
+  }
+  public var contentCompressionResistanceHorizontalPriority: Swift.Float {
+    get
+    nonmutating set
+  }
+  public var contentCompressionResistanceVerticalPriority: Swift.Float {
+    get
+    nonmutating set
+  }
+  public var target: Swift.AnyObject? {
+    get
+  }
+}
+extension TBThirdParty.LayoutConstraint {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+}
+public enum JXPagingListContainerType {
+  case scrollView
+  case collectionView
+  public static func == (a: TBThirdParty.JXPagingListContainerType, b: TBThirdParty.JXPagingListContainerType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol JXPagingViewListViewDelegate : ObjectiveC.NSObjectProtocol {
+  func listView() -> UIKit.UIView
+  func listScrollView() -> UIKit.UIScrollView
+  func listViewDidScrollCallback(callback: @escaping (UIKit.UIScrollView) -> ())
+  func listScrollViewWillResetContentOffset()
+  func listWillAppear()
+  func listDidAppear()
+  func listWillDisappear()
+  func listDidDisappear()
+}
+extension TBThirdParty.JXPagingViewListViewDelegate {
+  public func listScrollViewWillResetContentOffset()
+  public func listWillAppear()
+  public func listDidAppear()
+  public func listWillDisappear()
+  public func listDidDisappear()
+}
+public protocol JXPagingListContainerViewDataSource : ObjectiveC.NSObjectProtocol {
+  func numberOfLists(in listContainerView: TBThirdParty.JXPagingListContainerView) -> Swift.Int
+  func listContainerView(_ listContainerView: TBThirdParty.JXPagingListContainerView, initListAt index: Swift.Int) -> any TBThirdParty.JXPagingViewListViewDelegate
+  func listContainerView(_ listContainerView: TBThirdParty.JXPagingListContainerView, canInitListAt index: Swift.Int) -> Swift.Bool
+  func scrollViewClass(in listContainerView: TBThirdParty.JXPagingListContainerView) -> Swift.AnyClass?
+}
+extension TBThirdParty.JXPagingListContainerViewDataSource {
+  public func listContainerView(_ listContainerView: TBThirdParty.JXPagingListContainerView, canInitListAt index: Swift.Int) -> Swift.Bool
+  public func scrollViewClass(in listContainerView: TBThirdParty.JXPagingListContainerView) -> Swift.AnyClass?
+}
+@objc @_Concurrency.MainActor(unsafe) open class JXPagingListContainerView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var type: TBThirdParty.JXPagingListContainerType {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) weak public var dataSource: (any TBThirdParty.JXPagingListContainerViewDataSource)? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var scrollView: UIKit.UIScrollView! {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var isCategoryNestPagingEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var validListDict: [Swift.Int : any TBThirdParty.JXPagingViewListViewDelegate]
+  @_Concurrency.MainActor(unsafe) open var initListPercent: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var listCellBackgroundColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public var defaultSelectedIndex: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var currentIndex: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public init(dataSource: any TBThirdParty.JXPagingListContainerViewDataSource, type: TBThirdParty.JXPagingListContainerType = .collectionView)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func commonInit()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func willMove(toSuperview newSuperview: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func contentScrollView() -> UIKit.UIScrollView
+  @_Concurrency.MainActor(unsafe) public func scrolling(from leftIndex: Swift.Int, to rightIndex: Swift.Int, percent: CoreFoundation.CGFloat, selectedIndex: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func didClickSelectedItem(at index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func reloadData()
+  @objc deinit
+}
+extension TBThirdParty.JXPagingListContainerView : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class JXPagingListRefreshView : TBThirdParty.JXPagingView {
+  @_Concurrency.MainActor(unsafe) override public init(delegate: any TBThirdParty.JXPagingViewDelegate, listContainerType: TBThirdParty.JXPagingListContainerType = .collectionView)
+  @_Concurrency.MainActor(unsafe) override open func preferredProcessMainTableViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) override open func preferredProcessListViewDidScroll(scrollView: UIKit.UIScrollView)
+  @objc deinit
+}
+@objc public protocol JXPagingMainTableViewGestureDelegate {
+  @objc func mainTableViewGestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class JXPagingMainTableView : UIKit.UITableView, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) weak public var gestureDelegate: (any TBThirdParty.JXPagingMainTableViewGestureDelegate)?
+  @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect, style: UIKit.UITableView.Style)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public protocol JXPagingSmoothViewListViewDelegate {
+  @objc func listView() -> UIKit.UIView
+  @objc func listScrollView() -> UIKit.UIScrollView
+  @objc optional func listDidAppear()
+  @objc optional func listDidDisappear()
+}
+@objc public protocol JXPagingSmoothViewDataSource {
+  @objc func heightForPagingHeader(in pagingView: TBThirdParty.JXPagingSmoothView) -> CoreFoundation.CGFloat
+  @objc func viewForPagingHeader(in pagingView: TBThirdParty.JXPagingSmoothView) -> UIKit.UIView
+  @objc func heightForPinHeader(in pagingView: TBThirdParty.JXPagingSmoothView) -> CoreFoundation.CGFloat
+  @objc func viewForPinHeader(in pagingView: TBThirdParty.JXPagingSmoothView) -> UIKit.UIView
+  @objc func numberOfLists(in pagingView: TBThirdParty.JXPagingSmoothView) -> Swift.Int
+  @objc func pagingView(_ pagingView: TBThirdParty.JXPagingSmoothView, initListAtIndex index: Swift.Int) -> any TBThirdParty.JXPagingSmoothViewListViewDelegate
+}
+@objc public protocol JXPagingSmoothViewDelegate {
+  @objc optional func pagingSmoothViewDidScroll(_ scrollView: UIKit.UIScrollView)
+}
+@objc @_Concurrency.MainActor(unsafe) open class JXPagingSmoothView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var listDict: [Swift.Int : any TBThirdParty.JXPagingSmoothViewListViewDelegate] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public let listCollectionView: TBThirdParty.JXPagingSmoothCollectionView
+  @_Concurrency.MainActor(unsafe) public var defaultSelectedIndex: Swift.Int
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any TBThirdParty.JXPagingSmoothViewDelegate)?
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public init(dataSource: any TBThirdParty.JXPagingSmoothViewDataSource)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func reloadData()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+}
+extension TBThirdParty.JXPagingSmoothView : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class JXPagingSmoothCollectionView : UIKit.UICollectionView, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect, collectionViewLayout layout: UIKit.UICollectionViewLayout)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol JXPagingViewDelegate : ObjectiveC.NSObjectProtocol {
+  func tableHeaderViewHeight(in pagingView: TBThirdParty.JXPagingView) -> Swift.Int
+  func tableHeaderView(in pagingView: TBThirdParty.JXPagingView) -> UIKit.UIView
+  func heightForPinSectionHeader(in pagingView: TBThirdParty.JXPagingView) -> Swift.Int
+  func viewForPinSectionHeader(in pagingView: TBThirdParty.JXPagingView) -> UIKit.UIView
+  func numberOfLists(in pagingView: TBThirdParty.JXPagingView) -> Swift.Int
+  func pagingView(_ pagingView: TBThirdParty.JXPagingView, initListAtIndex index: Swift.Int) -> any TBThirdParty.JXPagingViewListViewDelegate
+  func pagingView(_ pagingView: TBThirdParty.JXPagingView, listIdentifierAtIndex index: Swift.Int) -> Swift.String?
+  @available(*, message: "Use pagingView(_ pagingView: JXPagingView, mainTableViewDidScroll scrollView: UIScrollView) method")
+  func mainTableViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  func pagingView(_ pagingView: TBThirdParty.JXPagingView, mainTableViewDidScroll scrollView: UIKit.UIScrollView)
+  func pagingView(_ pagingView: TBThirdParty.JXPagingView, mainTableViewWillBeginDragging scrollView: UIKit.UIScrollView)
+  func pagingView(_ pagingView: TBThirdParty.JXPagingView, mainTableViewDidEndDragging scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  func pagingView(_ pagingView: TBThirdParty.JXPagingView, mainTableViewDidEndDecelerating scrollView: UIKit.UIScrollView)
+  func pagingView(_ pagingView: TBThirdParty.JXPagingView, mainTableViewDidEndScrollingAnimation scrollView: UIKit.UIScrollView)
+  func scrollViewClassInListContainerView(in pagingView: TBThirdParty.JXPagingView) -> Swift.AnyClass?
+}
+extension TBThirdParty.JXPagingViewDelegate {
+  public func pagingView(_ pagingView: TBThirdParty.JXPagingView, listIdentifierAtIndex index: Swift.Int) -> Swift.String?
+  public func mainTableViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  public func pagingView(_ pagingView: TBThirdParty.JXPagingView, mainTableViewDidScroll scrollView: UIKit.UIScrollView)
+  public func pagingView(_ pagingView: TBThirdParty.JXPagingView, mainTableViewWillBeginDragging scrollView: UIKit.UIScrollView)
+  public func pagingView(_ pagingView: TBThirdParty.JXPagingView, mainTableViewDidEndDragging scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  public func pagingView(_ pagingView: TBThirdParty.JXPagingView, mainTableViewDidEndDecelerating scrollView: UIKit.UIScrollView)
+  public func pagingView(_ pagingView: TBThirdParty.JXPagingView, mainTableViewDidEndScrollingAnimation scrollView: UIKit.UIScrollView)
+  public func scrollViewClassInListContainerView(in pagingView: TBThirdParty.JXPagingView) -> Swift.AnyClass?
+}
+@objc @_Concurrency.MainActor(unsafe) open class JXPagingView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var defaultSelectedIndex: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var mainTableView: TBThirdParty.JXPagingMainTableView {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var listContainerView: TBThirdParty.JXPagingListContainerView {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var validListDict: [Swift.Int : any TBThirdParty.JXPagingViewListViewDelegate] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var pinSectionHeaderVerticalOffset: Swift.Int
+  @_Concurrency.MainActor(unsafe) public var isListHorizontalScrollEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var automaticallyDisplayListVerticalScrollIndicator: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var allowsCacheList: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var currentScrollingListView: UIKit.UIScrollView? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public init(delegate: any TBThirdParty.JXPagingViewDelegate, listContainerType: TBThirdParty.JXPagingListContainerType = .collectionView)
+  @available(*, unavailable)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) open func reloadData()
+  @_Concurrency.MainActor(unsafe) open func resizeTableHeaderViewHeight(animatable: Swift.Bool = false, duration: Foundation.TimeInterval = 0.25, curve: UIKit.UIView.AnimationCurve = .linear)
+  @_Concurrency.MainActor(unsafe) open func preferredProcessListViewDidScroll(scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) open func preferredProcessMainTableViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @objc deinit
+}
+extension TBThirdParty.JXPagingView : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+}
+extension TBThirdParty.JXPagingView : TBThirdParty.JXPagingListContainerViewDataSource {
+  @_Concurrency.MainActor(unsafe) public func numberOfLists(in listContainerView: TBThirdParty.JXPagingListContainerView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) public func listContainerView(_ listContainerView: TBThirdParty.JXPagingListContainerView, initListAt index: Swift.Int) -> any TBThirdParty.JXPagingViewListViewDelegate
+  @_Concurrency.MainActor(unsafe) public func scrollViewClass(in listContainerView: TBThirdParty.JXPagingListContainerView) -> Swift.AnyClass?
+}
+extension TBThirdParty.JXPagingView {
+  @_Concurrency.MainActor(unsafe) public func listContainerViewWillBeginDragging(_ listContainerView: TBThirdParty.JXPagingListContainerView)
+  @_Concurrency.MainActor(unsafe) public func listContainerViewDidEndScrolling(_ listContainerView: TBThirdParty.JXPagingListContainerView)
+  @_Concurrency.MainActor(unsafe) public func listContainerView(_ listContainerView: TBThirdParty.JXPagingListContainerView, listDidAppearAt index: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class LayoutConstraint : UIKit.NSLayoutConstraint {
+  @_Concurrency.MainActor(unsafe) public var label: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @objc deinit
+}
+public protocol LayoutConstraintItem : AnyObject {
+}
+@available(iOS 9.0, macOS 10.11, *)
+extension UIKit.UILayoutGuide : TBThirdParty.LayoutConstraintItem {
+}
+extension UIKit.UIView : TBThirdParty.LayoutConstraintItem {
+}
+@available(iOS 8.0, *)
+extension UIKit.UILayoutSupport {
+  @_Concurrency.MainActor(unsafe) public var snp: TBThirdParty.ConstraintLayoutSupportDSL {
+    get
+  }
+}
+extension TBThirdParty.JXPagingListContainerType : Swift.Equatable {}
+extension TBThirdParty.JXPagingListContainerType : Swift.Hashable {}

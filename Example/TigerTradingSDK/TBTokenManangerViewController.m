@@ -9,7 +9,7 @@
 #import "TBTokenManangerViewController.h"
 
 
-#import <TigerQuoteSDK/TigerQuoteSDKManager.h>
+#import <TigerTradingSDK/TigerTradingSDKManager.h>
 #import <TBUIKit/MBProgressHUD+Wrapper.h>
 
 
@@ -51,13 +51,13 @@
     NSString *clientId = self.clientIdTF.text;
     NSString *code = self.codeTF.text;
     
-    [TigerQuoteSDKManager setupBrokerClientId: clientId];
+    [TigerTradingSDKManager setupBrokerClientId: clientId];
     [self exchangeAutorizationCode:code];
     
 }
 
 - (void)exchangeAutorizationCode:(NSString *)autorizationCode {
-    [TigerQuoteSDKManager registerAccessToken:nil idToken:nil autorizationCode:autorizationCode state:nil callBack:^(BOOL callBack) {
+    [TigerTradingSDKManager registerAccessToken:nil idToken:nil autorizationCode:autorizationCode state:nil callBack:^(BOOL callBack) {
         if (callBack) {
             [self dismissAction];
         } else {

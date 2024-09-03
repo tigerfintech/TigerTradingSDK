@@ -1,0 +1,11 @@
+framework module ChartKLineView {
+  umbrella header "ChartKLineView-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module ChartKLineView.Swift {
+  header "ChartKLineView-Swift.h"
+  requires objc
+}

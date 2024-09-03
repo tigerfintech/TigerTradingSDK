@@ -1,0 +1,3138 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ChartKLineView",
+        "printedName": "ChartKLineView",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBAnalysisChartYAxisRenderer",
+        "printedName": "TBAnalysisChartYAxisRenderer",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "computeAxisValues",
+            "printedName": "computeAxisValues(min:max:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBAnalysisChartYAxisRenderer(im)computeAxisValuesWithMin:max:",
+            "mangledName": "$s15TBTradeBusiness28TBAnalysisChartYAxisRendererC17computeAxisValues3min3maxySd_SdtF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "computeAxisValuesWithMin:max:",
+            "declAttributes": [
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "drawYLabels",
+            "printedName": "drawYLabels(context:fixedPosition:positions:offset:textAlign:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGContext",
+                "printedName": "CoreGraphics.CGContext",
+                "usr": "c:@T@CGContextRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreFoundation.CGPoint]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPoint",
+                    "printedName": "CoreFoundation.CGPoint",
+                    "usr": "c:@S@CGPoint"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSTextAlignment",
+                "printedName": "UIKit.NSTextAlignment",
+                "usr": "c:@E@NSTextAlignment"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15TBTradeBusiness28TBAnalysisChartYAxisRendererC11drawYLabels7context13fixedPosition9positions6offset9textAlignySo12CGContextRefa_14CoreFoundation7CGFloatVSaySo7CGPointVGANSo15NSTextAlignmentVtF",
+            "mangledName": "$s15TBTradeBusiness28TBAnalysisChartYAxisRendererC11drawYLabels7context13fixedPosition9positions6offset9textAlignySo12CGContextRefa_12CoreGraphics7CGFloatVSaySo7CGPointVGANSo15NSTextAlignmentVtF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "isOpen": true,
+            "declAttributes": [
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(viewPortHandler:yAxis:transformer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBAnalysisChartYAxisRenderer",
+                "printedName": "TBTradeBusiness.TBAnalysisChartYAxisRenderer",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBAnalysisChartYAxisRenderer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ViewPortHandler",
+                "printedName": "ChartKLineView.ViewPortHandler",
+                "usr": "c:@M@ChartKLineView@objc(cs)ChartViewPortHandler"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ChartKLineView.YAxis?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "YAxis",
+                    "printedName": "ChartKLineView.YAxis",
+                    "usr": "c:@M@ChartKLineView@objc(cs)ChartYAxis"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ChartKLineView.Transformer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Transformer",
+                    "printedName": "ChartKLineView.Transformer",
+                    "usr": "c:@M@ChartKLineView@objc(cs)ChartTransformer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBAnalysisChartYAxisRenderer(im)initWithViewPortHandler:yAxis:transformer:",
+            "mangledName": "$s15TBTradeBusiness28TBAnalysisChartYAxisRendererC15viewPortHandler5yAxis11transformerAC0D9KLineView0mhI0C_AG0E0CSgAG11TransformerCSgtcfc",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithViewPortHandler:yAxis:transformer:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TBTradeBusiness@objc(cs)TBAnalysisChartYAxisRenderer",
+        "mangledName": "$s15TBTradeBusiness28TBAnalysisChartYAxisRendererC",
+        "moduleName": "TBTradeBusiness",
+        "isOpen": true,
+        "objc_name": "TBAnalysisChartYAxisRenderer",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@ChartKLineView@objc(cs)ChartYAxisRenderer",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ChartKLineView.YAxisRenderer",
+          "ChartKLineView.AxisRendererBase",
+          "ChartKLineView.Renderer",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnalysisYAxis",
+        "printedName": "AnalysisYAxis",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "avgCost",
+            "printedName": "avgCost",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)AnalysisYAxis(py)avgCost",
+            "mangledName": "$s15TBTradeBusiness13AnalysisYAxisC7avgCostSdvp",
+            "moduleName": "TBTradeBusiness",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)AnalysisYAxis(im)avgCost",
+                "mangledName": "$s15TBTradeBusiness13AnalysisYAxisC7avgCostSdvg",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)AnalysisYAxis(im)setAvgCost:",
+                "mangledName": "$s15TBTradeBusiness13AnalysisYAxisC7avgCostSdvs",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15TBTradeBusiness13AnalysisYAxisC7avgCostSdvM",
+                "mangledName": "$s15TBTradeBusiness13AnalysisYAxisC7avgCostSdvM",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isShort",
+            "printedName": "isShort",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)AnalysisYAxis(py)isShort",
+            "mangledName": "$s15TBTradeBusiness13AnalysisYAxisC7isShortSbvp",
+            "moduleName": "TBTradeBusiness",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)AnalysisYAxis(im)isShort",
+                "mangledName": "$s15TBTradeBusiness13AnalysisYAxisC7isShortSbvg",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)AnalysisYAxis(im)setIsShort:",
+                "mangledName": "$s15TBTradeBusiness13AnalysisYAxisC7isShortSbvs",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15TBTradeBusiness13AnalysisYAxisC7isShortSbvM",
+                "mangledName": "$s15TBTradeBusiness13AnalysisYAxisC7isShortSbvM",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getLongestLabel",
+            "printedName": "getLongestLabel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)AnalysisYAxis(im)getLongestLabel",
+            "mangledName": "$s15TBTradeBusiness13AnalysisYAxisC15getLongestLabelSSyF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "getLongestLabel",
+            "declAttributes": [
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalysisYAxis",
+                "printedName": "TBTradeBusiness.AnalysisYAxis",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)AnalysisYAxis"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)AnalysisYAxis(im)init",
+            "mangledName": "$s15TBTradeBusiness13AnalysisYAxisCACycfc",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(position:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalysisYAxis",
+                "printedName": "TBTradeBusiness.AnalysisYAxis",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)AnalysisYAxis"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AxisDependency",
+                "printedName": "ChartKLineView.YAxis.AxisDependency",
+                "usr": "s:14ChartKLineView5YAxisC14AxisDependencyO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)AnalysisYAxis(im)initWithPosition:",
+            "mangledName": "$s15TBTradeBusiness13AnalysisYAxisC8positionAC14ChartKLineView0D0C14AxisDependencyO_tcfc",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithPosition:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TBTradeBusiness@objc(cs)AnalysisYAxis",
+        "mangledName": "$s15TBTradeBusiness13AnalysisYAxisC",
+        "moduleName": "TBTradeBusiness",
+        "isOpen": true,
+        "objc_name": "AnalysisYAxis",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@ChartKLineView@objc(cs)ChartYAxis",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ChartKLineView.YAxis",
+          "ChartKLineView.AxisBase",
+          "ChartKLineView.ComponentBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ChartKLineView",
+        "printedName": "ChartKLineView",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness"
+      },
+      {
+        "kind": "Import",
+        "name": "TBUIKit",
+        "printedName": "TBUIKit",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBAnalysisLineChartView",
+        "printedName": "TBAnalysisLineChartView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBAnalysisLineChartView(im)initialize",
+            "mangledName": "$s15TBTradeBusiness23TBAnalysisLineChartViewC10initializeyyF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "initialize",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBAnalysisLineChartView",
+                "printedName": "TBTradeBusiness.TBAnalysisLineChartView",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBAnalysisLineChartView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBAnalysisLineChartView(im)initWithFrame:",
+            "mangledName": "$s15TBTradeBusiness23TBAnalysisLineChartViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TBTradeBusiness.TBAnalysisLineChartView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TBAnalysisLineChartView",
+                    "printedName": "TBTradeBusiness.TBAnalysisLineChartView",
+                    "usr": "c:@M@TBTradeBusiness@objc(cs)TBAnalysisLineChartView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBAnalysisLineChartView(im)initWithCoder:",
+            "mangledName": "$s15TBTradeBusiness23TBAnalysisLineChartViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TBTradeBusiness@objc(cs)TBAnalysisLineChartView",
+        "mangledName": "$s15TBTradeBusiness23TBAnalysisLineChartViewC",
+        "moduleName": "TBTradeBusiness",
+        "isOpen": true,
+        "objc_name": "TBAnalysisLineChartView",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@ChartKLineView@objc(cs)LineChartView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ChartKLineView.LineChartView",
+          "ChartKLineView.BarLineChartViewBase",
+          "ChartKLineView.ChartViewBase",
+          "ChartKLineView.NSUIView",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LineChartDataProvider",
+            "printedName": "LineChartDataProvider",
+            "usr": "c:@M@ChartKLineView@objc(pl)LineChartDataProvider",
+            "mangledName": "$s14ChartKLineView04LineA12DataProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BarLineScatterCandleBubbleChartDataProvider",
+            "printedName": "BarLineScatterCandleBubbleChartDataProvider",
+            "usr": "c:@M@ChartKLineView@objc(pl)BarLineScatterCandleBubbleChartDataProvider",
+            "mangledName": "$s14ChartKLineView026BarLineScatterCandleBubbleA12DataProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ChartDataProvider",
+            "printedName": "ChartDataProvider",
+            "usr": "c:@M@ChartKLineView@objc(pl)ChartDataProvider",
+            "mangledName": "$s14ChartKLineView0A12DataProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnimatorDelegate",
+            "printedName": "AnimatorDelegate",
+            "usr": "c:@M@ChartKLineView@objc(pl)ChartAnimatorDelegate",
+            "mangledName": "$s14ChartKLineView16AnimatorDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConstraintRelatableTarget",
+            "printedName": "ConstraintRelatableTarget",
+            "usr": "s:12TBThirdParty25ConstraintRelatableTargetP",
+            "mangledName": "$s12TBThirdParty25ConstraintRelatableTargetP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LayoutConstraintItem",
+            "printedName": "LayoutConstraintItem",
+            "usr": "s:12TBThirdParty20LayoutConstraintItemP",
+            "mangledName": "$s12TBThirdParty20LayoutConstraintItemP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TBMarqueeViewCopyable",
+            "printedName": "TBMarqueeViewCopyable",
+            "usr": "c:@M@TBUIKit@objc(pl)TBMarqueeViewCopyable",
+            "mangledName": "$s7TBUIKit21TBMarqueeViewCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ChartKLineView",
+        "printedName": "ChartKLineView",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBArrowChartXAxisRender",
+        "printedName": "TBArrowChartXAxisRender",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "arrowWidth",
+            "printedName": "arrowWidth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender(py)arrowWidth",
+            "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC10arrowWidthSdvp",
+            "moduleName": "TBTradeBusiness",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender(im)arrowWidth",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC10arrowWidthSdvg",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender(im)setArrowWidth:",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC10arrowWidthSdvs",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15TBTradeBusiness23TBArrowChartXAxisRenderC10arrowWidthSdvM",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC10arrowWidthSdvM",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "arrowHeight",
+            "printedName": "arrowHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender(py)arrowHeight",
+            "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC11arrowHeightSdvp",
+            "moduleName": "TBTradeBusiness",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender(im)arrowHeight",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC11arrowHeightSdvg",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender(im)setArrowHeight:",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC11arrowHeightSdvs",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15TBTradeBusiness23TBArrowChartXAxisRenderC11arrowHeightSdvM",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC11arrowHeightSdvM",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enableArrow",
+            "printedName": "enableArrow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender(py)enableArrow",
+            "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC11enableArrowSbvp",
+            "moduleName": "TBTradeBusiness",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender(im)enableArrow",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC11enableArrowSbvg",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender(im)setEnableArrow:",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC11enableArrowSbvs",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15TBTradeBusiness23TBArrowChartXAxisRenderC11enableArrowSbvM",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC11enableArrowSbvM",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "renderAxisLine",
+            "printedName": "renderAxisLine(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGContext",
+                "printedName": "CoreGraphics.CGContext",
+                "usr": "c:@T@CGContextRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender(im)renderAxisLineWithContext:",
+            "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC14renderAxisLine7contextySo12CGContextRefa_tF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "objc_name": "renderAxisLineWithContext:",
+            "declAttributes": [
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "computeAxisValues",
+            "printedName": "computeAxisValues(min:max:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender(im)computeAxisValuesWithMin:max:",
+            "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC17computeAxisValues3min3maxySd_SdtF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "objc_name": "computeAxisValuesWithMin:max:",
+            "declAttributes": [
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(viewPortHandler:xAxis:transformer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBArrowChartXAxisRender",
+                "printedName": "TBTradeBusiness.TBArrowChartXAxisRender",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ViewPortHandler",
+                "printedName": "ChartKLineView.ViewPortHandler",
+                "usr": "c:@M@ChartKLineView@objc(cs)ChartViewPortHandler"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ChartKLineView.XAxis?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XAxis",
+                    "printedName": "ChartKLineView.XAxis",
+                    "usr": "c:@M@ChartKLineView@objc(cs)ChartXAxis"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ChartKLineView.Transformer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Transformer",
+                    "printedName": "ChartKLineView.Transformer",
+                    "usr": "c:@M@ChartKLineView@objc(cs)ChartTransformer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender(im)initWithViewPortHandler:xAxis:transformer:",
+            "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC15viewPortHandler5xAxis11transformerAC0D9KLineView0mhI0C_AG0E0CSgAG11TransformerCSgtcfc",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithViewPortHandler:xAxis:transformer:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartXAxisRender",
+        "mangledName": "$s15TBTradeBusiness23TBArrowChartXAxisRenderC",
+        "moduleName": "TBTradeBusiness",
+        "objc_name": "TBArrowChartXAxisRender",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@ChartKLineView@objc(cs)ChartXAxisRenderer",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ChartKLineView.XAxisRenderer",
+          "ChartKLineView.AxisRendererBase",
+          "ChartKLineView.Renderer",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ChartKLineView",
+        "printedName": "ChartKLineView",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBArrowChartYAxisRender",
+        "printedName": "TBArrowChartYAxisRender",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "arrowWidth",
+            "printedName": "arrowWidth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender(py)arrowWidth",
+            "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC10arrowWidthSdvp",
+            "moduleName": "TBTradeBusiness",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender(im)arrowWidth",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC10arrowWidthSdvg",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender(im)setArrowWidth:",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC10arrowWidthSdvs",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15TBTradeBusiness23TBArrowChartYAxisRenderC10arrowWidthSdvM",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC10arrowWidthSdvM",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "arrowHeight",
+            "printedName": "arrowHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender(py)arrowHeight",
+            "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC11arrowHeightSdvp",
+            "moduleName": "TBTradeBusiness",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender(im)arrowHeight",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC11arrowHeightSdvg",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender(im)setArrowHeight:",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC11arrowHeightSdvs",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15TBTradeBusiness23TBArrowChartYAxisRenderC11arrowHeightSdvM",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC11arrowHeightSdvM",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enableArrow",
+            "printedName": "enableArrow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender(py)enableArrow",
+            "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC11enableArrowSbvp",
+            "moduleName": "TBTradeBusiness",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender(im)enableArrow",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC11enableArrowSbvg",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender(im)setEnableArrow:",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC11enableArrowSbvs",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15TBTradeBusiness23TBArrowChartYAxisRenderC11enableArrowSbvM",
+                "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC11enableArrowSbvM",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "renderAxisLine",
+            "printedName": "renderAxisLine(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGContext",
+                "printedName": "CoreGraphics.CGContext",
+                "usr": "c:@T@CGContextRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender(im)renderAxisLineWithContext:",
+            "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC14renderAxisLine7contextySo12CGContextRefa_tF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "objc_name": "renderAxisLineWithContext:",
+            "declAttributes": [
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "computeAxisValues",
+            "printedName": "computeAxisValues(min:max:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender(im)computeAxisValuesWithMin:max:",
+            "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC17computeAxisValues3min3maxySd_SdtF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "objc_name": "computeAxisValuesWithMin:max:",
+            "declAttributes": [
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(viewPortHandler:yAxis:transformer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBArrowChartYAxisRender",
+                "printedName": "TBTradeBusiness.TBArrowChartYAxisRender",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ViewPortHandler",
+                "printedName": "ChartKLineView.ViewPortHandler",
+                "usr": "c:@M@ChartKLineView@objc(cs)ChartViewPortHandler"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ChartKLineView.YAxis?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "YAxis",
+                    "printedName": "ChartKLineView.YAxis",
+                    "usr": "c:@M@ChartKLineView@objc(cs)ChartYAxis"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ChartKLineView.Transformer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Transformer",
+                    "printedName": "ChartKLineView.Transformer",
+                    "usr": "c:@M@ChartKLineView@objc(cs)ChartTransformer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender(im)initWithViewPortHandler:yAxis:transformer:",
+            "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC15viewPortHandler5yAxis11transformerAC0D9KLineView0mhI0C_AG0E0CSgAG11TransformerCSgtcfc",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithViewPortHandler:yAxis:transformer:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TBTradeBusiness@objc(cs)TBArrowChartYAxisRender",
+        "mangledName": "$s15TBTradeBusiness23TBArrowChartYAxisRenderC",
+        "moduleName": "TBTradeBusiness",
+        "objc_name": "TBArrowChartYAxisRender",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@ChartKLineView@objc(cs)ChartYAxisRenderer",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ChartKLineView.YAxisRenderer",
+          "ChartKLineView.AxisRendererBase",
+          "ChartKLineView.Renderer",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TBSwiftComponent",
+        "printedName": "TBSwiftComponent",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness"
+      },
+      {
+        "kind": "Import",
+        "name": "TBUIKit",
+        "printedName": "TBUIKit",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBPortfolioLiteViewController",
+        "printedName": "TBPortfolioLiteViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "portfolioItems",
+            "printedName": "portfolioItems",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any TBSwiftComponent.TBSwiftTableViewCellDataSource]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TBSwiftTableViewCellDataSource",
+                    "printedName": "any TBSwiftComponent.TBSwiftTableViewCellDataSource",
+                    "usr": "c:@M@TBSwiftComponent@objc(pl)TBSwiftTableViewCellDataSource"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15TBTradeBusiness29TBPortfolioLiteViewControllerC14portfolioItemsSay16TBSwiftComponent0i5TableE14CellDataSource_pGvp",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC14portfolioItemsSay16TBSwiftComponent0i5TableE14CellDataSource_pGvp",
+            "moduleName": "TBTradeBusiness",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any TBSwiftComponent.TBSwiftTableViewCellDataSource]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TBSwiftTableViewCellDataSource",
+                        "printedName": "any TBSwiftComponent.TBSwiftTableViewCellDataSource",
+                        "usr": "c:@M@TBSwiftComponent@objc(pl)TBSwiftTableViewCellDataSource"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15TBTradeBusiness29TBPortfolioLiteViewControllerC14portfolioItemsSay16TBSwiftComponent0i5TableE14CellDataSource_pGvg",
+                "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC14portfolioItemsSay16TBSwiftComponent0i5TableE14CellDataSource_pGvg",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any TBSwiftComponent.TBSwiftTableViewCellDataSource]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TBSwiftTableViewCellDataSource",
+                        "printedName": "any TBSwiftComponent.TBSwiftTableViewCellDataSource",
+                        "usr": "c:@M@TBSwiftComponent@objc(pl)TBSwiftTableViewCellDataSource"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15TBTradeBusiness29TBPortfolioLiteViewControllerC14portfolioItemsSay16TBSwiftComponent0i5TableE14CellDataSource_pGvs",
+                "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC14portfolioItemsSay16TBSwiftComponent0i5TableE14CellDataSource_pGvs",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15TBTradeBusiness29TBPortfolioLiteViewControllerC14portfolioItemsSay16TBSwiftComponent0i5TableE14CellDataSource_pGvM",
+                "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC14portfolioItemsSay16TBSwiftComponent0i5TableE14CellDataSource_pGvM",
+                "moduleName": "TBTradeBusiness",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "contentTableView",
+            "printedName": "contentTableView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)contentTableView",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC012contentTableE0So07UITableE0CyF",
+            "moduleName": "TBTradeBusiness",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "displayedModules",
+            "printedName": "displayedModules()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[any TBSwiftComponent.TBSwiftTableViewCellDataSource]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any TBSwiftComponent.TBSwiftTableViewCellDataSource]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TBSwiftTableViewCellDataSource",
+                        "printedName": "any TBSwiftComponent.TBSwiftTableViewCellDataSource",
+                        "usr": "c:@M@TBSwiftComponent@objc(pl)TBSwiftTableViewCellDataSource"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)displayedModules",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC16displayedModulesSay16TBSwiftComponent0i5TableE14CellDataSource_pGSgyF",
+            "moduleName": "TBTradeBusiness",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "indexPathOf",
+            "printedName": "indexPathOf(moduleIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSIndexPath?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSIndexPath",
+                    "printedName": "Foundation.NSIndexPath",
+                    "usr": "c:objc(cs)NSIndexPath"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)indexPathOfModuleIdentifier:",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC11indexPathOf16moduleIdentifierSo07NSIndexH0CSgSSSg_tF",
+            "moduleName": "TBTradeBusiness",
+            "objc_name": "indexPathOfModuleIdentifier:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableViewTopRoundedEnabled",
+            "printedName": "tableViewTopRoundedEnabled(enabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)tableViewTopRoundedEnabledWithEnabled:",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC05tableE17TopRoundedEnabled7enabledySb_tF",
+            "moduleName": "TBTradeBusiness",
+            "objc_name": "tableViewTopRoundedEnabledWithEnabled:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)viewDidLoad",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC11viewDidLoadyyF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidAppear",
+            "printedName": "viewDidAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)viewDidAppear:",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC13viewDidAppearyySbF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "objc_name": "viewDidAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "changeAppColorStyle",
+            "printedName": "changeAppColorStyle()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)changeAppColorStyle",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC19changeAppColorStyleyyF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "objc_name": "changeAppColorStyle",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateDataSourcesWithPortfolioIds",
+            "printedName": "updateDataSourcesWithPortfolioIds(portfolioIds:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSNumber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)updateDataSourcesWithPortfolioIdsWithPortfolioIds:",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC33updateDataSourcesWithPortfolioIds09portfolioL0ySaySo8NSNumberCG_tF",
+            "moduleName": "TBTradeBusiness",
+            "objc_name": "updateDataSourcesWithPortfolioIdsWithPortfolioIds:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refreshPageData",
+            "printedName": "refreshPageData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)refreshPageData",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC15refreshPageDatayyF",
+            "moduleName": "TBTradeBusiness",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configModule",
+            "printedName": "configModule(modules:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any TBSwiftComponent.TBSwiftTableViewCellDataSource]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TBSwiftTableViewCellDataSource",
+                    "printedName": "any TBSwiftComponent.TBSwiftTableViewCellDataSource",
+                    "usr": "c:@M@TBSwiftComponent@objc(pl)TBSwiftTableViewCellDataSource"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15TBTradeBusiness29TBPortfolioLiteViewControllerC12configModule7modulesSay16TBSwiftComponent0j5TableE14CellDataSource_pGSaySSG_tF",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC12configModule7modulesSay16TBSwiftComponent0j5TableE14CellDataSource_pGSaySSG_tF",
+            "moduleName": "TBTradeBusiness",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reflectVC",
+            "printedName": "reflectVC(name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15TBTradeBusiness29TBPortfolioLiteViewControllerC9reflectVC4nameSo06UIViewF0CSgSS_tF",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC9reflectVC4nameSo06UIViewF0CSgSS_tF",
+            "moduleName": "TBTradeBusiness",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasTBNavigationBar",
+            "printedName": "hasTBNavigationBar()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)hasTBNavigationBar",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC18hasTBNavigationBarSbyF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "objc_name": "hasTBNavigationBar",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:cellForRowAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UITableViewCell",
+                "printedName": "UIKit.UITableViewCell",
+                "usr": "c:objc(cs)UITableViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)tableView:cellForRowAtIndexPath:",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC05tableE0_12cellForRowAtSo07UITableE4CellCSo0lE0C_10Foundation9IndexPathVtF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "tableView:cellForRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(navigatorURL:query:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TBTradeBusiness.TBPortfolioLiteViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TBPortfolioLiteViewController",
+                    "printedName": "TBTradeBusiness.TBPortfolioLiteViewController",
+                    "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)initWithNavigatorURL:query:",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC12navigatorURL5queryACSg10Foundation0H0VSg_SDys11AnyHashableVypGSgtcfc",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNavigatorURL:query:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBPortfolioLiteViewController",
+                "printedName": "TBTradeBusiness.TBPortfolioLiteViewController",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TBTradeBusiness.TBPortfolioLiteViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TBPortfolioLiteViewController",
+                    "printedName": "TBTradeBusiness.TBPortfolioLiteViewController",
+                    "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController(im)initWithCoder:",
+            "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TBTradeBusiness@objc(cs)TBPortfolioLiteViewController",
+        "mangledName": "$s15TBTradeBusiness29TBPortfolioLiteViewControllerC",
+        "moduleName": "TBTradeBusiness",
+        "isOpen": true,
+        "objc_name": "TBPortfolioLiteViewController",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@TBSwiftComponent@objc(cs)TBSwiftTableViewViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "TBSwiftComponent.TBSwiftTableViewViewController",
+          "TBUIKit.TBBaseViewController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TBSwiftTableViewCellDelegate",
+            "printedName": "TBSwiftTableViewCellDelegate",
+            "usr": "c:@M@TBSwiftComponent@objc(pl)TBSwiftTableViewCellDelegate",
+            "mangledName": "$s16TBSwiftComponent0A21TableViewCellDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ChartKLineView",
+        "printedName": "ChartKLineView",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TBStockPositionSharePieRenderer",
+        "printedName": "TBStockPositionSharePieRenderer",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "drawValues",
+            "printedName": "drawValues(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGContext",
+                "printedName": "CoreGraphics.CGContext",
+                "usr": "c:@T@CGContextRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBStockPositionSharePieRenderer(im)drawValuesWithContext:",
+            "mangledName": "$s15TBTradeBusiness31TBStockPositionSharePieRendererC10drawValues7contextySo12CGContextRefa_tF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "objc_name": "drawValuesWithContext:",
+            "declAttributes": [
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(chart:animator:viewPortHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TBStockPositionSharePieRenderer",
+                "printedName": "TBTradeBusiness.TBStockPositionSharePieRenderer",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TBStockPositionSharePieRenderer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PieChartView",
+                "printedName": "ChartKLineView.PieChartView",
+                "usr": "c:@M@ChartKLineView@objc(cs)PieChartView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Animator",
+                "printedName": "ChartKLineView.Animator",
+                "usr": "c:@M@ChartKLineView@objc(cs)ChartAnimator"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ViewPortHandler",
+                "printedName": "ChartKLineView.ViewPortHandler",
+                "usr": "c:@M@ChartKLineView@objc(cs)ChartViewPortHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TBStockPositionSharePieRenderer(im)initWithChart:animator:viewPortHandler:",
+            "mangledName": "$s15TBTradeBusiness31TBStockPositionSharePieRendererC5chart8animator15viewPortHandlerAC14ChartKLineView0fmO0C_AG8AnimatorCAG0okL0Ctcfc",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithChart:animator:viewPortHandler:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TBTradeBusiness@objc(cs)TBStockPositionSharePieRenderer",
+        "mangledName": "$s15TBTradeBusiness31TBStockPositionSharePieRendererC",
+        "moduleName": "TBTradeBusiness",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@ChartKLineView@objc(cs)PieChartRenderer",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ChartKLineView.PieChartRenderer",
+          "ChartKLineView.DataRenderer",
+          "ChartKLineView.Renderer",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ChartKLineView",
+        "printedName": "ChartKLineView",
+        "declKind": "Import",
+        "moduleName": "TBTradeBusiness"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TUPPieChartColorLineRenderer",
+        "printedName": "TUPPieChartColorLineRenderer",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "drawValues",
+            "printedName": "drawValues(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGContext",
+                "printedName": "CoreGraphics.CGContext",
+                "usr": "c:@T@CGContextRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TUPPieChartColorLineRenderer(im)drawValuesWithContext:",
+            "mangledName": "$s15TBTradeBusiness28TUPPieChartColorLineRendererC10drawValues7contextySo12CGContextRefa_tF",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "drawValuesWithContext:",
+            "declAttributes": [
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(chart:animator:viewPortHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TUPPieChartColorLineRenderer",
+                "printedName": "TBTradeBusiness.TUPPieChartColorLineRenderer",
+                "usr": "c:@M@TBTradeBusiness@objc(cs)TUPPieChartColorLineRenderer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PieChartView",
+                "printedName": "ChartKLineView.PieChartView",
+                "usr": "c:@M@ChartKLineView@objc(cs)PieChartView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Animator",
+                "printedName": "ChartKLineView.Animator",
+                "usr": "c:@M@ChartKLineView@objc(cs)ChartAnimator"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ViewPortHandler",
+                "printedName": "ChartKLineView.ViewPortHandler",
+                "usr": "c:@M@ChartKLineView@objc(cs)ChartViewPortHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TBTradeBusiness@objc(cs)TUPPieChartColorLineRenderer(im)initWithChart:animator:viewPortHandler:",
+            "mangledName": "$s15TBTradeBusiness28TUPPieChartColorLineRendererC5chart8animator15viewPortHandlerAC0D9KLineView03PiedN0C_AG8AnimatorCAG0nkL0Ctcfc",
+            "moduleName": "TBTradeBusiness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithChart:animator:viewPortHandler:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TBTradeBusiness@objc(cs)TUPPieChartColorLineRenderer",
+        "mangledName": "$s15TBTradeBusiness28TUPPieChartColorLineRendererC",
+        "moduleName": "TBTradeBusiness",
+        "isOpen": true,
+        "objc_name": "TUPPieChartColorLineRenderer",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@ChartKLineView@objc(cs)PieChartRenderer",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ChartKLineView.PieChartRenderer",
+          "ChartKLineView.DataRenderer",
+          "ChartKLineView.Renderer",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/TBAnalysisChartYAxisRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 2514,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/TBAnalysisChartYAxisRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2554,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/TBArrowChartXAxisRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 252,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/TBArrowChartXAxisRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 289,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/TBArrowChartXAxisRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 326,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/TBArrowChartYAxisRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 252,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/TBArrowChartYAxisRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 289,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/TBArrowChartYAxisRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 326,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/Position\/Lite\/TBPortfolioLiteViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 219,
+      "length": 44,
+      "value": "\"TBPortfolioLitePowerAndLimitViewController\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/Position\/Lite\/TBPortfolioLiteViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4013,
+      "length": 36,
+      "value": "\"TBPortfolioLiteAssetViewController\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/Position\/Lite\/TBPortfolioLiteViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4334,
+      "length": 50,
+      "value": "\"TBPortfolioLiteSecuritiesPortfolioViewController\""
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/Position\/Lite\/TBPortfolioLiteViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 8457,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBTradeBusiness\/TBTradeBusiness\/Classes\/TBTradeBusinessSwift\/Classes\/Position\/Lite\/TBPortfolioLiteViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8605,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

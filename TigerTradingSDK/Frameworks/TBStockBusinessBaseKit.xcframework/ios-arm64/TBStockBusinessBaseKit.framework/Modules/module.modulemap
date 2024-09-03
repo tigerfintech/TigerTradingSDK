@@ -1,0 +1,6 @@
+framework module TBStockBusinessBaseKit {
+  umbrella header "TBStockBusinessBaseKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
