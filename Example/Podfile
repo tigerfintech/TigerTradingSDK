@@ -3,7 +3,8 @@ use_frameworks!
 platform :ios, '13.0'
 
 target 'TigerTradingSDK_Example' do
-  pod 'TigerTradingSDK', :path => '../'
+#  pod 'TigerTradingSDK', :path => '../'
+  pod 'TigerTradingSDK', :git => 'https://github.com/tigerfintech/TigerTradingSDK.git', :branch => 'dev'
 
   target 'TigerTradingSDK_Tests' do
     inherit! :search_paths
