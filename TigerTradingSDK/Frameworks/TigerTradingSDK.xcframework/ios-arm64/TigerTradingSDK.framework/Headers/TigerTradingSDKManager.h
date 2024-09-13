@@ -21,8 +21,8 @@ UIKIT_EXTERN NSNotificationName const TigerTradingSDKLoginTokenExpiredNotificati
 ///   - completion: 用户输入密码回调
 ///   - info: 用户输入的密码信息
 ///   定义key：
-///   isSucc：是否成功获取tradetoken
-///   encryptionPWD: tradetoken值
+///   isSucc：是否成功获取encryptionPWD
+///   encryptionPWD: encryptionPWD值
 ///   message：如果失败，错误信息
 - (void)requestTradePassword:(UIViewController *)viewcontroller completion:(void (^)(NSDictionary *info))completion;
 
@@ -57,6 +57,10 @@ UIKIT_EXTERN NSNotificationName const TigerTradingSDKLoginTokenExpiredNotificati
 ///   - callBack: 成功回调，BOOL为YES表示成功，NO表示失败
 + (void)registerAccessToken:(nullable NSString *)accesstoken idToken:(nullable NSString *)idToken autorizationCode:(nullable NSString *)autorizationCode state:(nullable NSString *)state callBack:(nonnull void (^)(BOOL))callBack;
 
+/// 注册用户openId，SDK不会缓存用户信息，每次启动SDK都需要注册openId
+/// - Parameter openId: 用户openId，需要加盟商app提供
++ (void)registerUserOpenId:(NSString *)openId;
+
 
 /// 获取老虎股票SDK首页，该方法会初始化一个首页控制器
 + (UIViewController *)homePageViewController;
@@ -76,6 +80,13 @@ UIKIT_EXTERN NSNotificationName const TigerTradingSDKLoginTokenExpiredNotificati
 
 /// SDK退出登录
 + (void)sdkLogout;
+
+
+/// SDK当前client id
++ (NSString *)currentClientId;
+
+/// SDK当前用户的openId
++ (NSString *)currentUserOpenId;
 
 @end
 

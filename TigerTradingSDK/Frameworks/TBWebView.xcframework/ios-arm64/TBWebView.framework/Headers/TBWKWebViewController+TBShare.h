@@ -6,12 +6,15 @@
 //
 
 #import "TBWKWebViewController.h"
+#if __has_include(<TBShareKit/TBShareToolbar.h>)
 #import <TBShareKit/TBShareToolbar.h> // for TBShareToolbarDelegate
-
+#endif
 NS_ASSUME_NONNULL_BEGIN
-
+#if __has_include(<TBShareKit/TBShareToolbar.h>)
 @interface TBWKWebViewController (TBShare) <TBShareToolbarDelegate, WKScriptMessageHandler>
-
+#else
+@interface TBWKWebViewController (TBShare) <WKScriptMessageHandler>
+#endif
 // 处理分享通知
 - (void)handleShareBack:(NSNotification *)noti;
 

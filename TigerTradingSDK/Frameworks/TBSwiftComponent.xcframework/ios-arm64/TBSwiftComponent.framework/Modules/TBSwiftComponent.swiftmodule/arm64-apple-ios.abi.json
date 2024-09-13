@@ -52640,41 +52640,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Transferable",
-            "printedName": "Transferable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Representation",
-                "printedName": "Representation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some CoreTransferable.TransferRepresentation",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransferRepresentation",
-                        "printedName": "CoreTransferable.TransferRepresentation",
-                        "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:16CoreTransferable0B0P",
-            "mangledName": "$s16CoreTransferable0B0P"
-          },
-          {
-            "kind": "Conformance",
             "name": "EntityIdentifierConvertible",
             "printedName": "EntityIdentifierConvertible",
             "usr": "s:10AppIntents27EntityIdentifierConvertibleP",
@@ -52758,6 +52723,41 @@
             ],
             "usr": "s:10AppIntents12_IntentValueP",
             "mangledName": "$s10AppIntents12_IntentValueP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       },
@@ -54033,105 +54033,105 @@
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "Dictionary",
-      "offset": 6450,
+      "offset": 6465,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6719,
+      "offset": 6734,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7226,
+      "offset": 7241,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7233,
+      "offset": 7248,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9293,
+      "offset": 9308,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "StringLiteral",
-      "offset": 11398,
+      "offset": 11413,
       "length": 16,
       "value": "\"UP_DOWN_RED_UP\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11530,
+      "offset": 11545,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11638,
+      "offset": 11653,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "StringLiteral",
-      "offset": 11698,
+      "offset": 11713,
       "length": 12,
       "value": "\"yyyy\/MM\/dd\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "StringLiteral",
-      "offset": 11840,
+      "offset": 11855,
       "length": 34,
       "value": "\"DEFAULT_SIGNUP_PAGE_SIGNUP_LOGIN\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "StringLiteral",
-      "offset": 12896,
+      "offset": 12911,
       "length": 17,
       "value": "\"CHART_TYPE_LINE\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "StringLiteral",
-      "offset": 11240,
+      "offset": 11255,
       "length": 25,
       "value": "\"TBSwiftComponent.TBMoibleLocalizationModel\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "StringLiteral",
-      "offset": 11240,
+      "offset": 11255,
       "length": 25,
       "value": "\"TBSwiftComponent.TBMoibleLocalizationModel\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "StringLiteral",
-      "offset": 11240,
+      "offset": 11255,
       "length": 25,
       "value": "\"TBSwiftComponent.TBMoibleLocalizationModel\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBSwiftComponent\/sources\/classes\/ToolsComponent\/localization\/TBMobileLocalizationManager.swift",
       "kind": "StringLiteral",
-      "offset": 11240,
+      "offset": 11255,
       "length": 25,
       "value": "\"TBSwiftComponent.TBMoibleLocalizationModel\""
     },

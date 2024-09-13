@@ -21,6 +21,9 @@ typedef void (^TBTradeTokenFetchCompletion)(BOOL success, NSString *errorMsg);
 @interface TBTradeTokenManager : NSObject
 
 @property (atomic, copy) NSString *tradeToken;
+@property (atomic, copy) NSString *sdkTradeToken;
+
+- (void)clearSDKTradeToken;
 
 @property (atomic, assign) BOOL onlyVerifyTradePassword;  //!< 只是校验交易密码
 

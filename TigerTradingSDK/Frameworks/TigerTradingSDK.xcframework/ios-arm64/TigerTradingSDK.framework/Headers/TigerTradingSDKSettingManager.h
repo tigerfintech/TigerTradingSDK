@@ -10,11 +10,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, TigerTradingSDKAppearType) {
-    TigerTradingSDKAppearTypeDark,   // 黑金皮肤
+    TigerTradingSDKAppearTypeDark,   // 深色皮肤
     TigerTradingSDKAppearTypeLight,   // 浅色皮肤
 };
 
-/// TigerQuoteSDK 支持语言类型
+/// TigerTradingSDK 支持语言类型
 typedef NS_ENUM(NSUInteger, TigerTradingLanguageType) {
     TigerTradingLanguageTypeAuto = 0,         // 自动，随系统设置
     TigerTradingLanguageTypeEnglish,          // 英文
@@ -22,7 +22,7 @@ typedef NS_ENUM(NSUInteger, TigerTradingLanguageType) {
     TigerTradingLanguageTypeZhHant,           // 中文繁体
 };
 
-/// TigerQuoteSDK 涨跌颜色类型
+/// TigerTradingSDK 涨跌颜色类型
 typedef NS_ENUM(NSUInteger, TigerTradingSDKIncreaseColorType) {
     TigerTradingSDKIncreaseColorTypeGreen,   // 绿涨红跌，默认
     TigerTradingSDKIncreaseColorTypeRed,   // 红涨绿跌

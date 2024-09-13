@@ -201,6 +201,12 @@ NS_ASSUME_NONNULL_BEGIN
 ///   message：如果失败，错误信息
 - (void)tbShell_requestTradePassword:(UIViewController *)viewcontroller Completion:(void (^)(NSDictionary *info))completion;
 
+
+- (NSString *)tbShell_brokerClientId;
+- (NSString *)tbShell_userOpenId;
+
+- (BOOL)tbShell_appTradePasswordEnabled;
+
 @end
 
 NS_ASSUME_NONNULL_END

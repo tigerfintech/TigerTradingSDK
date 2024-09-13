@@ -182,7 +182,6 @@
 #import "PGPickerColumnView.h"
 #import "PGPickerTableView.h"
 #import "PGPickerView.h"
-#import "SGQRCodeScanningVC.h"
 #import "TBAPPColorMacro.h"
 #import "TBColorObject.h"
 #import "TBColorTool.h"

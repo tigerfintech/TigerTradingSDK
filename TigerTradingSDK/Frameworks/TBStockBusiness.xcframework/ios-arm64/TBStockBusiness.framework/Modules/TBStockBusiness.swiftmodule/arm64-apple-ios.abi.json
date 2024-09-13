@@ -34481,1498 +34481,1498 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 466,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 486,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 504,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 466,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 486,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 504,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "StringLiteral",
       "offset": 546,
       "length": 8,
       "value": "\"Candle\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "StringLiteral",
       "offset": 581,
       "length": 8,
       "value": "\"Volume\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 774,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "FloatLiteral",
       "offset": 824,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "FloatLiteral",
       "offset": 875,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 920,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 1349,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "StringLiteral",
       "offset": 1400,
       "length": 4,
       "value": "\"US\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "StringLiteral",
       "offset": 1446,
       "length": 5,
       "value": "\"STK\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 1490,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 1847,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 1892,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "FloatLiteral",
       "offset": 2349,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 3954,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 4569,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 5885,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 6025,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 6158,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 6193,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 6203,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 6214,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 6392,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 6427,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 6437,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 6448,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 6686,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 7295,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 7526,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 7586,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 7731,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 7766,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 7776,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 7787,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 7890,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 7895,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 7906,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 7918,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 8026,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 8031,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 8042,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 8054,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "FloatLiteral",
       "offset": 8221,
       "length": 3,
       "value": "1.6"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 8259,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 8285,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 8419,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 8424,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 8435,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 8447,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 8496,
       "length": 8,
       "value": "0xFFA84B"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "FloatLiteral",
       "offset": 8606,
       "length": 3,
       "value": "1.6"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 8644,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 8670,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 49627,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/BaseCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 56475,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CandleCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CandleCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 2575,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CandleCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CandleCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 15796,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CandleXAxisRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CandleXAxisRenderer.swift",
       "kind": "IntegerLiteral",
       "offset": 1101,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CandleXAxisRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CandleXAxisRenderer.swift",
       "kind": "FloatLiteral",
       "offset": 1141,
       "length": 6,
       "value": "-0.001"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CandleYAxis.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CandleYAxis.swift",
       "kind": "IntegerLiteral",
       "offset": 345,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/ColorUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/ColorUtils.swift",
       "kind": "StringLiteral",
       "offset": 214,
       "length": 8,
       "value": "\"common\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CompareStockChangeDisplayView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CompareStockChangeDisplayView.swift",
       "kind": "StringLiteral",
       "offset": 3306,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CompareStockChangeDisplayView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/CompareStockChangeDisplayView.swift",
       "kind": "BooleanLiteral",
       "offset": 4332,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "FloatLiteral",
       "offset": 257,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "IntegerLiteral",
       "offset": 424,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "BooleanLiteral",
       "offset": 593,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "StringLiteral",
       "offset": 837,
       "length": 20,
       "value": "\"icon_deep_up_arrow\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "BooleanLiteral",
       "offset": 7391,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "StringLiteral",
       "offset": 7710,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "StringLiteral",
       "offset": 7818,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "StringLiteral",
       "offset": 7331,
       "length": 13,
       "value": "\"TBStockBusiness.IndicatorView\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "StringLiteral",
       "offset": 7331,
       "length": 13,
       "value": "\"TBStockBusiness.IndicatorView\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "StringLiteral",
       "offset": 7331,
       "length": 13,
       "value": "\"TBStockBusiness.IndicatorView\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "StringLiteral",
       "offset": 7331,
       "length": 13,
       "value": "\"TBStockBusiness.IndicatorView\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "StringLiteral",
       "offset": 7331,
       "length": 13,
       "value": "\"TBStockBusiness.IndicatorView\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/IndicatorView.swift",
       "kind": "StringLiteral",
       "offset": 7331,
       "length": 13,
       "value": "\"TBStockBusiness.IndicatorView\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/KLineXAxisManager.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/KLineXAxisManager.swift",
       "kind": "StringLiteral",
       "offset": 8983,
       "length": 4,
       "value": "\"-1\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/KLineXAxisManager.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/KLineXAxisManager.swift",
       "kind": "StringLiteral",
       "offset": 9891,
       "length": 4,
       "value": "\"-1\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/KLineXAxisManager.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/KLineXAxisManager.swift",
       "kind": "StringLiteral",
       "offset": 10990,
       "length": 4,
       "value": "\"-1\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/KLineXAxisManager.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/KLineXAxisManager.swift",
       "kind": "StringLiteral",
       "offset": 12069,
       "length": 4,
       "value": "\"-1\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/KLineXAxisManager.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/KLineXAxisManager.swift",
       "kind": "StringLiteral",
       "offset": 13144,
       "length": 4,
       "value": "\"-1\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
       "kind": "BooleanLiteral",
       "offset": 1146,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
       "kind": "FloatLiteral",
       "offset": 1595,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
       "kind": "FloatLiteral",
       "offset": 1655,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
       "kind": "FloatLiteral",
       "offset": 1715,
       "length": 3,
       "value": "5.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
       "kind": "FloatLiteral",
       "offset": 1775,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
       "kind": "FloatLiteral",
       "offset": 1861,
       "length": 3,
       "value": "2.5"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
       "kind": "FloatLiteral",
       "offset": 1956,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
       "kind": "BooleanLiteral",
       "offset": 3149,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartDataSet.swift",
       "kind": "BooleanLiteral",
       "offset": 3546,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarCircleChartRenderer.swift",
       "kind": "Array",
       "offset": 296,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "IntegerLiteral",
       "offset": 900,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "IntegerLiteral",
       "offset": 906,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "IntegerLiteral",
       "offset": 916,
       "length": 2,
       "value": "66"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "IntegerLiteral",
       "offset": 928,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "BooleanLiteral",
       "offset": 978,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "BooleanLiteral",
       "offset": 1239,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "StringLiteral",
       "offset": 1286,
       "length": 18,
       "value": "\"radar_marker.png\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "FloatLiteral",
       "offset": 1435,
       "length": 4,
       "value": "25.5"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "FloatLiteral",
       "offset": 1444,
       "length": 3,
       "value": "5.5"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "FloatLiteral",
       "offset": 1456,
       "length": 4,
       "value": "15.5"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "FloatLiteral",
       "offset": 1470,
       "length": 4,
       "value": "15.5"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "BooleanLiteral",
       "offset": 1502,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "BooleanLiteral",
       "offset": 1549,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "IntegerLiteral",
       "offset": 1843,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "BooleanLiteral",
       "offset": 1954,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "StringLiteral",
       "offset": 1981,
       "length": 5,
       "value": "\"val\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "FloatLiteral",
       "offset": 2639,
       "length": 5,
       "value": "135.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "FloatLiteral",
       "offset": 2677,
       "length": 4,
       "value": "80.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "FloatLiteral",
       "offset": 2715,
       "length": 3,
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "FloatLiteral",
       "offset": 2749,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "FloatLiteral",
       "offset": 2787,
       "length": 3,
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "FloatLiteral",
       "offset": 2827,
       "length": 3,
       "value": "6.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "Array",
       "offset": 2861,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "Array",
       "offset": 2891,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "Array",
       "offset": 2948,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "IntegerLiteral",
       "offset": 3532,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RadarMarkerView.swift",
       "kind": "StringLiteral",
       "offset": 2516,
       "length": 28,
       "value": "\"TBStockBusiness.TBStockTargetPriceMarkerView\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeCombineChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 358,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeCombineChartView.swift",
       "kind": "FloatLiteral",
       "offset": 476,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeCombineChartView.swift",
       "kind": "FloatLiteral",
       "offset": 524,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeCombineChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeCombineChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 581,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeXAxis.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeXAxis.swift",
       "kind": "IntegerLiteral",
       "offset": 389,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeXAxis.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeXAxis.swift",
       "kind": "BooleanLiteral",
       "offset": 427,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeXAxisRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeXAxisRenderer.swift",
       "kind": "IntegerLiteral",
       "offset": 917,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeXAxisRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/RealTimeXAxisRenderer.swift",
       "kind": "IntegerLiteral",
       "offset": 957,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/SpreadAnimationView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/SpreadAnimationView.swift",
       "kind": "BooleanLiteral",
       "offset": 343,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 276,
       "length": 3,
       "value": "390"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 333,
       "length": 3,
       "value": "242"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 390,
       "length": 3,
       "value": "330"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 447,
       "length": 3,
       "value": "510"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 509,
       "length": 3,
       "value": "765"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 637,
       "length": 3,
       "value": "480"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 696,
       "length": 3,
       "value": "240"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 754,
       "length": 3,
       "value": "330"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 853,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 920,
       "length": 2,
       "value": "66"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 999,
       "length": 3,
       "value": "181"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1096,
       "length": 3,
       "value": "181"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1211,
       "length": 3,
       "value": "121"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1324,
       "length": 3,
       "value": "121"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1427,
       "length": 3,
       "value": "151"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1532,
       "length": 3,
       "value": "211"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1643,
       "length": 3,
       "value": "240"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1752,
       "length": 3,
       "value": "765"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1885,
       "length": 2,
       "value": "99"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1986,
       "length": 2,
       "value": "49"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2086,
       "length": 2,
       "value": "84"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2187,
       "length": 3,
       "value": "102"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2294,
       "length": 3,
       "value": "192"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2395,
       "length": 3,
       "value": "346"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2597,
       "length": 3,
       "value": "140"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2654,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2711,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2767,
       "length": 3,
       "value": "180"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2824,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2877,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2985,
       "length": 3,
       "value": "600"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 3036,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 3200,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 3269,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 3335,
       "length": 3,
       "value": "180"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 3388,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "FloatLiteral",
       "offset": 3465,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "StringLiteral",
       "offset": 15427,
       "length": 16,
       "value": "\"drawAskBidHist\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "StringLiteral",
       "offset": 15486,
       "length": 14,
       "value": "\"askHistArray\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "StringLiteral",
       "offset": 15543,
       "length": 14,
       "value": "\"askHistColor\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "StringLiteral",
       "offset": 15600,
       "length": 15,
       "value": "\" bidHistArray\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/StockChartUtils.swift",
       "kind": "StringLiteral",
       "offset": 15658,
       "length": 15,
       "value": "\" bidHistColor\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/tools\/StockDetailFloatingPanelBehavior.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/tools\/StockDetailFloatingPanelBehavior.swift",
       "kind": "FloatLiteral",
       "offset": 1006,
       "length": 4,
       "value": "0.08"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/tools\/StockDetailFloatingPanelBehavior.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/tools\/StockDetailFloatingPanelBehavior.swift",
       "kind": "IntegerLiteral",
       "offset": 1286,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/tools\/StockDetailFloatingPanelBehavior.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/tools\/StockDetailFloatingPanelBehavior.swift",
       "kind": "IntegerLiteral",
       "offset": 1383,
       "length": 2,
       "value": "64"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBArrowLineRadarRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBArrowLineRadarRenderer.swift",
       "kind": "BooleanLiteral",
       "offset": 297,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBArrowLineRadarRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBArrowLineRadarRenderer.swift",
       "kind": "BooleanLiteral",
       "offset": 338,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBArrowLineRadarRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBArrowLineRadarRenderer.swift",
       "kind": "BooleanLiteral",
       "offset": 384,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBArrowLineRadarRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBArrowLineRadarRenderer.swift",
       "kind": "BooleanLiteral",
       "offset": 430,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBArrowLineRadarRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBArrowLineRadarRenderer.swift",
       "kind": "BooleanLiteral",
       "offset": 480,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBCandleStickChartRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBCandleStickChartRenderer.swift",
       "kind": "IntegerLiteral",
       "offset": 9477,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBCandleStickChartRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBCandleStickChartRenderer.swift",
       "kind": "IntegerLiteral",
       "offset": 9550,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBCandleStickChartRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBCandleStickChartRenderer.swift",
       "kind": "IntegerLiteral",
       "offset": 9622,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBCandleStickChartRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBCandleStickChartRenderer.swift",
       "kind": "IntegerLiteral",
       "offset": 9695,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBCandleStickChartRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBCandleStickChartRenderer.swift",
       "kind": "IntegerLiteral",
       "offset": 9806,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBCandleStickChartRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBCandleStickChartRenderer.swift",
       "kind": "FloatLiteral",
       "offset": 9847,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBChartImageLimitLine.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBChartImageLimitLine.swift",
       "kind": "IntegerLiteral",
       "offset": 405,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBChartImageLimitLine.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBChartImageLimitLine.swift",
       "kind": "IntegerLiteral",
       "offset": 405,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBChartImageLimitLine.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBChartImageLimitLine.swift",
       "kind": "BooleanLiteral",
       "offset": 493,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBChartImageLimitLine.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBChartImageLimitLine.swift",
       "kind": "FloatLiteral",
       "offset": 624,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
       "kind": "FloatLiteral",
       "offset": 281,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
       "kind": "FloatLiteral",
       "offset": 325,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
       "kind": "IntegerLiteral",
       "offset": 367,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
       "kind": "FloatLiteral",
       "offset": 406,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
       "kind": "StringLiteral",
       "offset": 199,
       "length": 26,
       "value": "\"TBStockBusiness.TBChartViewDrawGridBGModel\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
       "kind": "StringLiteral",
       "offset": 199,
       "length": 26,
       "value": "\"TBStockBusiness.TBChartViewDrawGridBGModel\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/tools\/TBChartViewDrawGridBGModel.swift",
       "kind": "StringLiteral",
       "offset": 199,
       "length": 26,
       "value": "\"TBStockBusiness.TBChartViewDrawGridBGModel\""
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBCYQRatioView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBCYQRatioView.swift",
       "kind": "BooleanLiteral",
       "offset": 278,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBCYQRatioView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBCYQRatioView.swift",
       "kind": "IntegerLiteral",
       "offset": 331,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBCYQRatioView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBCYQRatioView.swift",
       "kind": "IntegerLiteral",
       "offset": 386,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBFundFlowTrendXAxisRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBFundFlowTrendXAxisRenderer.swift",
       "kind": "IntegerLiteral",
       "offset": 6564,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKBrokersHoldDetailLineChartXRenerder.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKBrokersHoldDetailLineChartXRenerder.swift",
       "kind": "IntegerLiteral",
       "offset": 363,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKBrokersHoldDetailLineChartXRenerder.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKBrokersHoldDetailLineChartXRenerder.swift",
       "kind": "IntegerLiteral",
       "offset": 453,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKStockMarketWideInFlowChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKStockMarketWideInFlowChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 500,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKStockMarketWideInFlowChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKStockMarketWideInFlowChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 557,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKStockMarketWideInFlowChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKStockMarketWideInFlowChartView.swift",
       "kind": "IntegerLiteral",
       "offset": 1303,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKStockQuoteWarrantStatRatioView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKStockQuoteWarrantStatRatioView.swift",
       "kind": "IntegerLiteral",
       "offset": 303,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKStockQuoteWarrantStatRatioView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBHKStockQuoteWarrantStatRatioView.swift",
       "kind": "IntegerLiteral",
       "offset": 411,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBOptionAnalysisChartView.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBOptionAnalysisChartView.swift",
       "kind": "BooleanLiteral",
       "offset": 1028,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBOptionAnalysisLineChartRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBOptionAnalysisLineChartRenderer.swift",
       "kind": "IntegerLiteral",
       "offset": 348,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBRealTimeLineChartRenderer.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/TBRealTimeLineChartRenderer.swift",
       "kind": "IntegerLiteral",
       "offset": 2171,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/XCircleAxis.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBStockBusiness\/TBStockBusinessSwift\/TBChart\/XCircleAxis.swift",
       "kind": "FloatLiteral",
       "offset": 270,
       "length": 4,

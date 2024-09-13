@@ -2420,7 +2420,7 @@
   "assetPageEdition": "",
   "tradeBtnStyle": "BuySell",
   "currencyConfig": [{
-    "name": "AUD",
+    "name": "USD",
     "brokerAccountType": "OMNIBUS"
   }],
   "portfolioFunctionModule": [{

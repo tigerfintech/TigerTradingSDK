@@ -12,6 +12,7 @@
 
 #import "TigerTradingSDKManager.h"
 #import "TigerTradingSDKSettingManager.h"
+#import "TigerQuoteDebugMananger.h"
 
 FOUNDATION_EXPORT double TigerTradingSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char TigerTradingSDKVersionString[];
