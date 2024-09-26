@@ -57,13 +57,13 @@
 }
 
 - (void)exchangeAutorizationCode:(NSString *)autorizationCode {
-//    [TigerTradingSDKManager registerAccessToken:nil idToken:nil autorizationCode:autorizationCode state:nil callBack:^(BOOL callBack) {
-//        if (callBack) {
-//            [self dismissAction];
-//        } else {
-//            NSLog(@"token exchange fail");
-//        }
-//    }];
+    [TigerTradingSDKManager registerAccessToken:nil idToken:nil autorizationCode:autorizationCode state:nil callBack:^(BOOL callBack, NSNumber *code, NSString *msg) {
+        if (callBack) {
+            [self dismissAction];
+        } else {
+            NSLog(@"token exchange fail");
+        }
+    }];
 }
 
 /*

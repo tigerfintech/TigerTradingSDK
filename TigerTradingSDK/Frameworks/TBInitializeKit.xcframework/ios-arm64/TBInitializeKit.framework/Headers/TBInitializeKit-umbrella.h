@@ -10,13 +10,13 @@
 #endif
 #endif
 
-#import "AppDelegate+TBApplePay.h"
-#import "AppDelegate+TBBootingProtection.h"
-#import "AppDelegate+TBDebugTool.h"
-#import "AppDelegate+TBNetworking.h"
-#import "AppDelegate+URLMap.h"
-#import "AppDelegate.h"
 #import "UIWindow+TBShake.h"
+#import "TBSDKAppDelegate+TBApplePay.h"
+#import "TBSDKAppDelegate+TBBootingProtection.h"
+#import "TBSDKAppDelegate+TBDebugTool.h"
+#import "TBSDKAppDelegate+TBNetworking.h"
+#import "TBSDKAppDelegate+URLMap.h"
+#import "TBSDKAppDelegate.h"
 #import "TBApplePayActionManager.h"
 #import "TBApplePayOrderIdManager.h"
 #import "TBCommonToolsHelper+MQTTHelper.h"

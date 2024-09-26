@@ -26,6 +26,8 @@
 		C050395D2C81AAC300CDCBB6 /* TBCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C05039582C81AAC200CDCBB6 /* TBCellModel.m */; };
 		C050395E2C81AAC300CDCBB6 /* TBTokenManangerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C050395A2C81AAC300CDCBB6 /* TBTokenManangerViewController.m */; };
 		C050395F2C81AAC300CDCBB6 /* TBTokenManangerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C050395C2C81AAC300CDCBB6 /* TBTokenManangerViewController.xib */; };
+		C0B55F1F2CA55A5F00AA1EFC /* TBPlaceOrderDemoViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B55F1B2CA55A5D00AA1EFC /* TBPlaceOrderDemoViewViewController.m */; };
+		C0B55F202CA55A5F00AA1EFC /* TBQuoteTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B55F1C2CA55A5D00AA1EFC /* TBQuoteTabViewController.m */; };
 		DB0E0F0C122E2A6AD44721FF /* Pods_TigerTradingSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B543505DE220875F3C20563 /* Pods_TigerTradingSDK_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,10 @@
 		C050395B2C81AAC300CDCBB6 /* TBCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCellModel.h; sourceTree = "<group>"; };
 		C050395C2C81AAC300CDCBB6 /* TBTokenManangerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBTokenManangerViewController.xib; sourceTree = "<group>"; };
 		C053DB3C2C86EB0200223044 /* TigerTradingSDK_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TigerTradingSDK_Example.entitlements; sourceTree = "<group>"; };
+		C0B55F1B2CA55A5D00AA1EFC /* TBPlaceOrderDemoViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBPlaceOrderDemoViewViewController.m; sourceTree = "<group>"; };
+		C0B55F1C2CA55A5D00AA1EFC /* TBQuoteTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBQuoteTabViewController.m; sourceTree = "<group>"; };
+		C0B55F1D2CA55A5E00AA1EFC /* TBPlaceOrderDemoViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBPlaceOrderDemoViewViewController.h; sourceTree = "<group>"; };
+		C0B55F1E2CA55A5E00AA1EFC /* TBQuoteTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBQuoteTabViewController.h; sourceTree = "<group>"; };
 		E657DDEFE980500A3D24F3E2 /* Pods_TigerTradingSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TigerTradingSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C72B70289D23EE976C6AFC /* Pods-TigerTradingSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TigerTradingSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-TigerTradingSDK_Example/Pods-TigerTradingSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +166,10 @@
 				6003F5A6195388D20070C39A /* TBViewController.m */,
 				C050395B2C81AAC300CDCBB6 /* TBCellModel.h */,
 				C05039582C81AAC200CDCBB6 /* TBCellModel.m */,
+				C0B55F1D2CA55A5E00AA1EFC /* TBPlaceOrderDemoViewViewController.h */,
+				C0B55F1B2CA55A5D00AA1EFC /* TBPlaceOrderDemoViewViewController.m */,
+				C0B55F1E2CA55A5E00AA1EFC /* TBQuoteTabViewController.h */,
+				C0B55F1C2CA55A5D00AA1EFC /* TBQuoteTabViewController.m */,
 				C05039592C81AAC200CDCBB6 /* TBTokenManangerViewController.h */,
 				C050395A2C81AAC300CDCBB6 /* TBTokenManangerViewController.m */,
 				C050395C2C81AAC300CDCBB6 /* TBTokenManangerViewController.xib */,
@@ -459,6 +469,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* TBAppDelegate.m in Sources */,
+				C0B55F1F2CA55A5F00AA1EFC /* TBPlaceOrderDemoViewViewController.m in Sources */,
+				C0B55F202CA55A5F00AA1EFC /* TBQuoteTabViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* TBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				C050395D2C81AAC300CDCBB6 /* TBCellModel.m in Sources */,

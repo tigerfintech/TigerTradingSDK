@@ -84,11 +84,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIViewController *)optionPageController;
 
 
-/// 下单页行情视图，iOS通过UIViewController 实现
+/// 下单页行情视图，iOS通过UIViewController 实现，高度42+48
 /// - Parameters:
 ///   - symbol: 合约symbol
 ///   - secType: 合约类型
 ///   - market: 合约所属市场
+///   建议通过fetchContractBriefInfo请求行情，自己实现展示简要行情
 + (UIViewController *)placeOrderBriefQuoteViewWithSymbol:(NSString *)symbol secType:(NSString *)secType market:(NSString *)market;
 
 @end

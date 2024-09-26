@@ -14,6 +14,12 @@
 
 #import "TBTokenManangerViewController.h"
 
+#import <TigerTradingSDK/TigerTradingQuoteManager.h>
+
+#import "TBPlaceOrderDemoViewViewController.h"
+#import "TBQuoteTabViewController.h"
+
+
 @interface TBViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -218,6 +224,35 @@
         
     }];
     
+    
+    TBCellModel *detailModel = [[TBCellModel alloc] initWithTitle:@"跳转Apple 详情页" action:^{
+        NSLog(@"Tapped on Item 5");
+        [TigerTradingQuoteManager openStockDetailPageWithSymbol:@"AAPL" market:@"US" fromViewController:self];
+        
+    }];
+    
+    TBCellModel *priceModel = [[TBCellModel alloc] initWithTitle:@"跳转Apple 下单报价" action:^{
+        TBPlaceOrderDemoViewViewController *vc = [[TBPlaceOrderDemoViewViewController alloc] init];
+        if (self.navigationController) {
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        else {
+            [self presentViewController:vc animated:YES completion:nil];
+        }
+        
+    }];
+    
+    TBCellModel *quoteModel = [[TBCellModel alloc] initWithTitle:@"跳转行情Tab" action:^{
+        TBQuoteTabViewController *vc = [[TBQuoteTabViewController alloc] init];
+        if (self.navigationController) {
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        else {
+            [self presentViewController:vc animated:YES completion:nil];
+        }
+        
+    }];
+    
     self.dataSource = @[
         model1,
         langModel,
@@ -226,7 +261,10 @@
         tokenModel,
         model4,
         model3,
-        model5
+        model5,
+        detailModel,
+        priceModel,
+        quoteModel,
     ];
 }
 
