@@ -34,7 +34,17 @@ TODO: Add long description of the pod here.
   
   s.vendored_frameworks = "TigerTradingSDK/Frameworks/*.xcframework"
   s.dependency 'libpag', '4.3.33'
-  
+  s.dependency 'AFNetworking'
+  s.dependency 'MJRefresh'
+  s.dependency 'Masonry'
+  s.dependency 'Mantle'
+  s.dependency 'SDWebImage'
+  s.dependency 'MBProgressHUD'
+  s.dependency 'FMDB'
+  s.dependency 'Protobuf'
+  s.dependency 'FLAnimatedImage'
+  s.dependency 'ReactiveObjC'
+  s.dependency 'MqttCocoaAsyncSocket'
   # s.resource_bundles = {
   #   'TigerTradingSDK' => ['TigerTradingSDK/Assets/*.png']
   # }

@@ -199,13 +199,48 @@ NS_ASSUME_NONNULL_BEGIN
 ///   isSucc：是否成功获取tradetoken
 ///   encryptionPWD: tradetoken值
 ///   message：如果失败，错误信息
-- (void)tbShell_requestTradePassword:(UIViewController *)viewcontroller Completion:(void (^)(NSDictionary *info))completion;
+- (void)tbShell_requestTradePassword:(UIViewController *)viewcontroller tradeInfo:(NSDictionary *)tradeInfo orderInfo:(NSDictionary *)orderInfo Completion:(void (^)(NSDictionary *info))completion;
 
 
 - (NSString *)tbShell_brokerClientId;
 - (NSString *)tbShell_userOpenId;
 
 - (BOOL)tbShell_appTradePasswordEnabled;
+
+/// 合约添加/删除自选
+/// - Parameters:
+///   - symbol: 合约symbol
+///   - market: 合约所属市场
+///   - secType: 合约类型：e.g STK(正股),OPT(期权)
+///   - completion: 添加结果回调
+- (void)tbShell_requestAddOrRemoveWatchlist:(NSString *)symbol market:(NSString *)market secType:(NSString *)secType completion:(void (^)(BOOL isSucc, NSNumber *code, NSString *msg))completion;
+
+/// 合约是否在自选列表
+/// - Parameters:
+///   - symbol: 合约symbol
+///   - market: 合约所属市场
+///   - secType: 合约类型：e.g STK(正股),OPT(期权)
+- (BOOL)tbShell_requestContractIsInWatchlist:(NSString *)symbol market:(NSString *)market secType:(NSString *)secType;
+
+/// SDK 内是否展示自选按钮
+- (BOOL)tbShell_showWatchlistButton;
+
+
+/// 用户请求交易
+/// - Parameter type: 交易类型：买、卖、平
+/// - Parameter symbol:  合约symbol
+/// - Parameter market: 合约所属市场
+/// - Parameter secType: 合约类型：e.g STK(正股),OPT(期权)
+- (void)tbShell_requestContractTrade:(NSInteger)type symbol:(NSString *)symbol market:(NSString *)market secType:(NSString *)secType;
+
+- (BOOL)tbShell_appPlaceOrderMode;
+
+/// 查询合约是否在持仓
+/// - Parameters:
+///   - symbol: 合约symbol
+///   - market: 合约市场
+///   - secType: 合约类型：e.g STK(正股),OPT(期权)
+- (BOOL)tbShell_requestContractIsInPosition:(NSString *)symbol market:(NSString *)market secType:(NSString *)secType;
 
 @end
 
