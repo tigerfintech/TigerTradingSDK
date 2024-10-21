@@ -20,7 +20,7 @@
 #import "TBQuoteTabViewController.h"
 
 
-@interface TBViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface TBViewController () <UITableViewDelegate, UITableViewDataSource, TigerTradingSDKDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray<TBCellModel *> *dataSource;
@@ -41,6 +41,26 @@
     
     // 初始化TableView
     [self setupTableView];
+    
+    TigerTradingSDKManager.delegate = self;
+
+}
+
+- (BOOL)showWatchlistButton {
+    return YES;
+}
+
+- (void)requestAddOrRemoveWatchlist:(NSString *)symbol market:(NSString *)market secType:(NSString *)secType completion:(void (^)(BOOL isSucc, NSNumber *code, NSString *msg))completion {
+    
+}
+
+- (BOOL)requestContractIsInWatchlist:(NSString *)symbol market:(NSString *)market secType:(NSString *)secTyp {
+    // 测试全部返回在自选
+    return YES;
+}
+
+- (void)requestContractTrade:(TigerTradingSDKTradeType)type symbol:(NSString *)symbol market:(NSString *)market secType:(NSString *)secType {
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

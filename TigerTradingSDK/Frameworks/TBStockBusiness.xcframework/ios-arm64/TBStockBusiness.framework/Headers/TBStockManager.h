@@ -12,10 +12,10 @@
 
 @class TBWatchListParamObject;
 
-//typedef void(^SuccessedBlock)(void);
-//typedef void(^SuccessedWithResultBlock)(id result);
-//typedef void(^SuccessedWithResultAndStringBlock)(id result,NSString * string);
-//typedef void(^FailedBlock)(NSError * error) ;
+typedef void(^SuccessedBlock)(void);
+typedef void(^SuccessedWithResultBlock)(id result);
+typedef void(^SuccessedWithResultAndStringBlock)(id result,NSString * string);
+typedef void(^FailedBlock)(NSError * error) ;
 
 @class TBWatchListGroup;
 @interface TBStockManager : NSObject

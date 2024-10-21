@@ -84,6 +84,14 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIViewController *)optionPageController;
 
 
+/// 期权链列表页
+/// - Parameters:
+///   - optionSymbol: 期权symbol
+///   - market: 期权链市场
+///   - latestPrice: 最新价
++ (UIViewController *)optionChainPage:(NSString *)optionSymbol market:(NSString *)market latestPrice:(NSNumber *)latestPrice;
+
+
 /// 下单页行情视图，iOS通过UIViewController 实现，高度42+48
 /// - Parameters:
 ///   - symbol: 合约symbol

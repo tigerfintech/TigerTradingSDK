@@ -222,6 +222,9 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - secType: 合约类型：e.g STK(正股),OPT(期权)
 - (BOOL)tbShell_requestContractIsInWatchlist:(NSString *)symbol market:(NSString *)market secType:(NSString *)secType;
 
+/// 是否使用App自选
+- (BOOL)tbShell_watchlistAppMode;
+
 /// SDK 内是否展示自选按钮
 - (BOOL)tbShell_showWatchlistButton;
 

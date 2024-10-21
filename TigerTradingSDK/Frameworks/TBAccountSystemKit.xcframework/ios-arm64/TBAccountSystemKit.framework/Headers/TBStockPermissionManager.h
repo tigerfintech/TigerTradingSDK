@@ -119,6 +119,7 @@ DECLARE_SHARED_INSTANCE(TBStockPermissionManager);
 @property (nonatomic, readonly) TBStockQuotePromptType hkOptionQuoteType;
 @property (nonatomic, readonly) BOOL hasHKOptionQuotePermission; //L1
 @property (nonatomic, readonly) BOOL hasHKOptionL2QuotePermission;
+@property (nonatomic, readonly) BOOL isHKQuoteDelayPermission;
 
 /// TUP marsco 期权权限等级
 @property (nonatomic, assign) BOOL  hasMarscoLVOptionPermission;   // 是否下发了 marsco lv 的期权等级信息

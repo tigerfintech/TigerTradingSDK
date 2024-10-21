@@ -34,6 +34,8 @@ UIKIT_EXTERN NSString *const ukStockQuoteLv1;
 UIKIT_EXTERN NSString *const hkStockQuoteLv0;
 /// 港股股票行情Level1权限
 UIKIT_EXTERN NSString *const kTBhkStockQuoteLv1;
+/// 港股股票行情Level1延迟
+UIKIT_EXTERN NSString *const kHKStockQuoteLv1Delay;
 /// 港股股票行情Level2权限
 UIKIT_EXTERN NSString *const hkStockQuoteLv2;
 /// 港股股票行情Level2 Limited权限
