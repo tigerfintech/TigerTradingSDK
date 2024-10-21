@@ -8,7 +8,9 @@
 @import TBUIKit;
 #import "TBWebViewDebugToolbar.h"
 #import "TBWebViewProgressView.h"
+#if __has_include(<TBShareKit/TBShareKit.h>)
 #import <TBShareKit/TBShareKit.h>
+#endif
 #import <TBUIKit/TBBaseViewController.h>
 #import <TBThirdParty/DWKWebView.h>
 
@@ -39,8 +41,9 @@ extern NSString *const kTBNotifyMyInfoResultNotification;
 
 // 期权测试跳转相关数据
 @property (nonatomic, copy) NSDictionary *optionQueryDictionary;
-
+#if __has_include(<TBShareKit/TBShareKit.h>)
 @property (nonatomic, strong) TBShareInfoModel *shareInfo; // 分享信息
+#endif
 @property (nonatomic, assign) BOOL shareInfoByTigerBridge; // 根据h5中TigerBridge的回调设置分享信息
 @property (nonatomic, copy) NSString *shareSuccessCallback; // 分享成功回调，通知html页面
 @property (nonatomic, copy) NSString *shareFailCallback; // 分享失败回调，包括取消分享

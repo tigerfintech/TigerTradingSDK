@@ -18,6 +18,7 @@ static NSString *AUTHORIZATION_KEY                                              
 static NSString *TOKEN_TYPE_KEY                                                               = @"token_type";
 
 static NSString *UUID_KEY                                                                     = @"uuid";
+static NSString *OPENID_KEY                                                                     = @"open_id";
 
 
 #pragma mark --- hk
@@ -26,6 +27,9 @@ static NSString *USER_DEFAULT_ALLOW_AUDIO_NOTIFICATION                          
 static NSString *USER_DEFAULT_ALLOW_EXPONENTITEM_NOTIFICATION                                 = @"userDefaultKeyAllowExponentitemNotification";//phone绑定.
 static NSString *USER_NEW_STOCK_PRIORITY                                                      = @"userNewStockPriority";                         //phone绑定.
 static NSString *USER_DEFAULT_STOCK_PRIORITY                                                  = @"userDefaultStockPriority";                    // 股票优先级
+
+static NSString *USER_DEFAULT_STOCK_OPENID_KEY                                                                     = @"tigerbroker_ocid_open_id";
+
 
 static NSString *USER_DEFAULT_KEY_NUMBER_THOUSAND_DISPLAY                                    = @"userDefaultKeyNumberThousandDisplay";
 static NSString *USER_DEFAULT_KEY_ORDER_ALERT_VIBRATE = @"userDefaultOrderAlertVibrate";//为了跟Andorid适配添加

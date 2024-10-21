@@ -278,4 +278,6 @@ extern NSString * const kTBNetworkingReachabilityDidChangeNotification;
 // 对部分加密的响应数据进行解密处理
 - (id)decryptedResponseObjectWithResponseObject:(id)responseObject;
 
+- (NSDictionary *)sdkOrdersHeader;
+
 @end

@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Photos/Photos.h>
+//#import <Photos/Photos.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL isGIF;///< 是否是 GIF 图片
 @property (nonatomic, copy) NSData *imageData;///< 图片数据
 ///
-@property (nonatomic, assign) PHAssetMediaType mediaType; ///< 区分视频还是图片
+//@property (nonatomic, assign) PHAssetMediaType mediaType; ///< 区分视频还是图片
 @property (nonatomic, copy) NSString *videoURL; //上传后的服务器视频地址
 
 // 区分是持仓或订单分享图片还是普通图片

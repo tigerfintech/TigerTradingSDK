@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#if __has_include("TBTwoFactorAuthKey.h")
 #import "TBTwoFactorAuthKey.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,11 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)fetchStatus:(void(^)(BOOL status, BOOL signin, BOOL trade))success
             failure:(void(^)(NSString * message))failure;
 
+#if __has_include("TBTwoFactorAuthKey.h")
+
 /// 生成两步验证秘钥
 + (void)generateKeyWithLoginPassword:(NSString *)loginPassword
                              success:(void(^)(TBTwoFactorAuthKey *key))success
                              failure:(void(^)(NSString *message))failure;
-
+#endif
 /// 启用两步验证
 + (void)turnOn:(NSDictionary *)params
        success:(void(^)(void))success

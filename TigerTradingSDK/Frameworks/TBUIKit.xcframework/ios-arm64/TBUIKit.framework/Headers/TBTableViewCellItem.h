@@ -9,6 +9,7 @@
 #import <TBBaseKit/TBObject.h>
 #import "TTHeader.h"
 
+
 typedef enum : NSUInteger {
     TBTableViewCellItemTypeNone,
     TBTableViewCellItemTypeContainedArray,

@@ -4620,196 +4620,196 @@
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19884,
+      "offset": 18914,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22918,
+      "offset": 21948,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 27846,
+      "offset": 26876,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 30199,
+      "offset": 29229,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 30250,
+      "offset": 29280,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 30301,
+      "offset": 29331,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 30388,
+      "offset": 29418,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 32517,
+      "offset": 31547,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 32678,
+      "offset": 31708,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33194,
+      "offset": 32224,
       "length": 49,
       "value": "\"mobile_ios_common_try_customizing_your_home_pag\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 33405,
+      "offset": 32435,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 33560,
+      "offset": 32590,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 33683,
+      "offset": 32713,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33955,
+      "offset": 32985,
       "length": 12,
       "value": "\"arriveFrom\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33970,
+      "offset": 33000,
       "length": 8,
       "value": "\"首页\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34032,
+      "offset": 33062,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34053,
+      "offset": 33083,
       "length": 28,
       "value": "\"TigerGPT首页入口点击\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34095,
+      "offset": 33125,
       "length": 7,
       "value": "\"click\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34110,
+      "offset": 33140,
       "length": 8,
       "value": "\"首页\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34246,
+      "offset": 33276,
       "length": 12,
       "value": "\"impression\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34271,
+      "offset": 33301,
       "length": 34,
       "value": "\"TigerGPT首页入口隐藏曝光\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34319,
+      "offset": 33349,
       "length": 10,
       "value": "\"exposure\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34337,
+      "offset": 33367,
       "length": 8,
       "value": "\"首页\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34536,
+      "offset": 33566,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34557,
+      "offset": 33587,
       "length": 34,
       "value": "\"TigerGPT首页入口隐藏点击\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34605,
+      "offset": 33635,
       "length": 7,
       "value": "\"click\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34620,
+      "offset": 33650,
       "length": 8,
       "value": "\"首页\""
     },
     {
       "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBHomePage\/Sources\/HomePage\/TBHomePageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34704,
+      "offset": 33734,
       "length": 4,
       "value": "true"
     },

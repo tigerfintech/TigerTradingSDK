@@ -58,7 +58,9 @@
 //#import "TBHomePageAccountViewController.h"
 //#import "TBHomePageCalendarViewController.h"
 //#import "TBHomePageBannerViewController.h"
-//#import <TBStockBusiness/TBHomePageOptionsViewController.h>
+#if __has_include(<TBStockBusiness/TBHomePageOptionsViewController.h>)
+#import <TBStockBusiness/TBHomePageOptionsViewController.h>
+#endif
 //#import "TBHomePageFundMallViewController.h"
 //#import "TBHomePageRewardsViewController.h"
 //#import "TBHomePageBasicsViewController.h"

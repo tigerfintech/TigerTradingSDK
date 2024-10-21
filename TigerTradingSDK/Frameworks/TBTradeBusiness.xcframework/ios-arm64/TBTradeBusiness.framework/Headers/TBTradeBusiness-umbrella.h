@@ -21,6 +21,7 @@
 #import "TBHomePageSwitchAccountView.h"
 #import "TBOrderListSummaryViewController.h"
 #import "TBOrderUtil.h"
+#import "TBPlaceOrderBriefQuoteViewController.h"
 #import "TBPnLAnalysisConstants.h"
 #import "TBPortfolioLiteBondPortfolioViewController.h"
 #import "TBPortfolioLiteFundPortfolioViewController.h"

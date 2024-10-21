@@ -332,7 +332,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TBBaseKit\/Sources\/TBBaseKitSwift\/TBBaseKitTest.swift",
+      "filePath": "\/Users\/luopengfei\/Documents\/devCode\/client\/TigerQuoteSDK\/Example\/Pods\/TBBaseKit\/Sources\/TBBaseKitSwift\/TBBaseKitTest.swift",
       "kind": "IntegerLiteral",
       "offset": 172,
       "length": 2,
