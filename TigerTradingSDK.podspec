@@ -28,13 +28,24 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/luopengfei/TigerTradingSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'TigerTradingSDK/Classes/**/*'
   
-  s.vendored_frameworks = "TigerTradingSDK/Frameworks/*.xcframework"
+  s.vendored_frameworks = "TigerTradingSDK/Frameworks/*.{xcframework,framework}"
   s.dependency 'libpag', '4.3.33'
-  
+  s.dependency 'AFNetworking'
+  s.dependency 'MJRefresh'
+  s.dependency 'Masonry'
+  s.dependency 'Mantle'
+  s.dependency 'SDWebImage'
+  s.dependency 'MBProgressHUD'
+  s.dependency 'FMDB'
+  s.dependency 'Protobuf'
+  s.dependency 'FLAnimatedImage'
+  s.dependency 'ReactiveObjC'
+  s.dependency 'MqttCocoaAsyncSocket'
+  s.dependency 'PromisesObjC'
   # s.resource_bundles = {
   #   'TigerTradingSDK' => ['TigerTradingSDK/Assets/*.png']
   # }

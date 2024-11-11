@@ -1,14 +1,39 @@
 use_frameworks!
 
-platform :ios, '13.0'
+platform :ios, '12.0'
 
 target 'TigerTradingSDK_Example' do
-#  pod 'TigerTradingSDK', :path => '../'
-  pod 'TigerTradingSDK', :git => 'https://github.com/tigerfintech/TigerTradingSDK.git', :branch => 'dev'
+  pod 'TigerTradingSDK', :path => '../'
+#  pod 'TigerTradingSDK', :git => 'https://github.com/tigerfintech/TigerTradingSDK.git', :branch => 'dev'
 
   target 'TigerTradingSDK_Tests' do
     inherit! :search_paths
 
     
+  end
+end
+
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    flutter_post_install(installer) if defined?(flutter_post_install)
+    target.build_configurations.each do |config|
+#      config.build_settings["DEVELOPMENT_TEAM"] = "322YC97D83"
+#      config.build_settings['COMPILER_INDEX_STORE_ENABLE'] = "NO"
+#      config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = "NO"
+#      config.build_settings['WARNING_CFLAGS'] = "-Wno-documentation"
+#      config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+#      config.build_settings['ARCHS'] = ['$(ARCHS_STANDARD)']
+#      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+##      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+#
+#      if target.name == "TigerQuoteSDK_13_Framework_Example"
+#        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+#      else
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      end
+
+      
+
   end
 end
