@@ -223,6 +223,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				3E3F371C8481A3BCE38C1E0B /* [CP] Embed Pods Frameworks */,
+				85A2956857E5A784F1D858C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,7 +264,7 @@
 				ORGANIZATIONNAME = luopengfei;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 6F4WWKT2BZ;
+						DevelopmentTeam = 322YC97D83;
 						ProvisioningStyle = Automatic;
 					};
 					6003F5AD195388D20070C39A = {
@@ -333,12 +334,14 @@
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/RecaptchaInterop/RecaptchaInterop.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/ChartKLineView.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBAccountSystemKit.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBAuthBusiness.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBBaseKit.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBBusinessSupportKit.framework",
+				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBChatKit.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBCocoaMQTT.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBHomePage.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBHostManager.framework",
@@ -347,6 +350,7 @@
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBNetworking.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBPerformanceKit.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBServiceProtocolKit.framework",
+				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBShareKit.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBStockBusiness.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBStockBusinessBaseKit.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBStockKit.framework",
@@ -360,6 +364,7 @@
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TBWebView.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TigerBrokersKit.framework",
 				"${PODS_ROOT}/../../TigerTradingSDK/Frameworks/TigerTradingSDK.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Intercom/Intercom.framework/Intercom",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/libpag/libpag.framework/libpag",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -375,12 +380,14 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RecaptchaInterop.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartKLineView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBAccountSystemKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBAuthBusiness.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBBaseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBBusinessSupportKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBChatKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBCocoaMQTT.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBHomePage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBHostManager.framework",
@@ -389,6 +396,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBPerformanceKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBServiceProtocolKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBStockBusiness.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBStockBusinessBaseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBStockKit.framework",
@@ -402,6 +410,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBWebView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TigerBrokersKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TigerTradingSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Intercom.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libpag.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +460,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85A2956857E5A784F1D858C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TigerTradingSDK_Example/Pods-TigerTradingSDK_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RecaptchaEnterpriseSDK/RecaptchaEnterpriseSDKResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RecaptchaEnterpriseSDKResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TigerTradingSDK_Example/Pods-TigerTradingSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -547,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -580,7 +607,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -591,18 +618,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54E6932FFEE46C4D1556AA83 /* Pods-TigerTradingSDK_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TigerTradingSDK_Example.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F4WWKT2BZ;
+				DEVELOPMENT_TEAM = 322YC97D83;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TigerTradingSDK/TigerTradingSDK-Prefix.pch";
 				INFOPLIST_FILE = "TigerTradingSDK/TigerTradingSDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "org.cocoapods.demo.TigerTradingSDK-Example1";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "org.cocoapods.TigerQuoteSDK-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -614,18 +642,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9C72B70289D23EE976C6AFC /* Pods-TigerTradingSDK_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TigerTradingSDK_Example.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F4WWKT2BZ;
+				DEVELOPMENT_TEAM = 322YC97D83;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TigerTradingSDK/TigerTradingSDK-Prefix.pch";
 				INFOPLIST_FILE = "TigerTradingSDK/TigerTradingSDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "org.cocoapods.demo.TigerTradingSDK-Example1";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "org.cocoapods.TigerQuoteSDK-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

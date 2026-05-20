@@ -22,18 +22,24 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/luopengfei/TigerTradingSDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'luopengfei' => 'luopengfei@itiger.com' }
   s.source           = { :git => 'https://github.com/luopengfei/TigerTradingSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
 
   s.source_files = 'TigerTradingSDK/Classes/**/*'
   
-  s.vendored_frameworks = "TigerTradingSDK/Frameworks/*.{xcframework,framework}"
-  s.dependency 'libpag', '4.3.33'
+  s.resource_bundles = {
+      'TigerTrading_Privacy' => ['Classes/PrivacyInfo.xcprivacy'],
+  }
+  
+  s.swift_version = "5.0"
+  s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES" }
+  
+
+  s.vendored_frameworks = "TigerTradingSDK/Frameworks/*.{framework,xcframework}"
+  s.dependency 'libpag', '4.3.62'
   s.dependency 'AFNetworking'
   s.dependency 'MJRefresh'
   s.dependency 'Masonry'
@@ -41,16 +47,23 @@ TODO: Add long description of the pod here.
   s.dependency 'SDWebImage'
   s.dependency 'MBProgressHUD'
   s.dependency 'FMDB'
-  s.dependency 'Protobuf'
+  s.dependency 'Protobuf', '3.26.1'
   s.dependency 'FLAnimatedImage'
   s.dependency 'ReactiveObjC'
   s.dependency 'MqttCocoaAsyncSocket'
   s.dependency 'PromisesObjC'
-  # s.resource_bundles = {
-  #   'TigerTradingSDK' => ['TigerTradingSDK/Assets/*.png']
-  # }
+  s.dependency 'PromisesSwift'
+  s.dependency 'CocoaLumberjack'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'YYText'
+  s.dependency 'YYModel'
+  s.dependency 'YYCategories', '1.0.4'
+  s.dependency 'MMKV'
+  s.dependency 'MMKVCore'
+
+  
+  s.dependency 'RecaptchaEnterprise','18.7.0'
+  s.dependency 'Intercom', '9.3.5.2'
+  s.dependency 'GTCaptcha4', '1.8.8'
+  
 end

@@ -1,6 +1,0 @@
-framework module TBTradeBusinessBaseKit {
-  umbrella header "TBTradeBusinessBaseKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module TBStockKit {
-  umbrella header "TBStockKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

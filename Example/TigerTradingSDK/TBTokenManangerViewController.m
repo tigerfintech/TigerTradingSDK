@@ -51,14 +51,13 @@
     NSString *clientId = self.clientIdTF.text;
     NSString *code = self.codeTF.text;
     
-    [TigerTradingSDKManager setupBrokerClientId: clientId];
     [self exchangeAutorizationCode:code];
     
 }
 
 - (void)exchangeAutorizationCode:(NSString *)autorizationCode {
-    [TigerTradingSDKManager registerAccessToken:nil idToken:nil autorizationCode:autorizationCode state:nil callBack:^(BOOL isSucc, NSNumber * _Nonnull code, NSString * _Nonnull msg) {
-        if (isSucc) {
+    [TigerTradingSDKManager registerAutorizationCode:autorizationCode callBack:^(BOOL callBack, NSNumber *code, NSString *msg) {
+        if (callBack) {
             [self dismissAction];
         } else {
             NSLog(@"token exchange fail");

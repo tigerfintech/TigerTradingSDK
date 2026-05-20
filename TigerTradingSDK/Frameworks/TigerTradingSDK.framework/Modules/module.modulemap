@@ -1,6 +1,0 @@
-framework module TigerTradingSDK {
-  umbrella header "TigerTradingSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}
