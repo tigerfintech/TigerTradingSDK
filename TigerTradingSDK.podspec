@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TigerTradingSDK provides a complete set of binary frameworks for integrating
+Tiger Trade brokerage services into your iOS application. It includes modules
+for account management, stock trading, market data, charting, and more.
                        DESC
 
   s.homepage         = 'https://github.com/tigerfintech/TigerTradingSDK'
@@ -28,15 +30,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'TigerTradingSDK/Classes/**/*'
-  
-  s.resource_bundles = {
-      'TigerTrading_Privacy' => ['Classes/PrivacyInfo.xcprivacy'],
-  }
-  
   s.swift_version = "5.0"
   s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES" }
-  
 
   s.vendored_frameworks = "TigerTradingSDK/Frameworks/*.{framework,xcframework}"
   s.dependency 'libpag', '4.3.62'
