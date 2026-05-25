@@ -1,6 +1,5 @@
 # TigerTradingSDK
 
-[![CI Status](https://img.shields.io/travis/luopengfei/TigerTradingSDK.svg?style=flat)](https://travis-ci.org/luopengfei/TigerTradingSDK)
 [![Version](https://img.shields.io/cocoapods/v/TigerTradingSDK.svg?style=flat)](https://cocoapods.org/pods/TigerTradingSDK)
 [![License](https://img.shields.io/cocoapods/l/TigerTradingSDK.svg?style=flat)](https://cocoapods.org/pods/TigerTradingSDK)
 [![Platform](https://img.shields.io/cocoapods/p/TigerTradingSDK.svg?style=flat)](https://cocoapods.org/pods/TigerTradingSDK)
@@ -22,7 +21,7 @@ pod 'TigerTradingSDK'
 
 ## Author
 
-luopengfei, luopengfei@itiger.com
+tigerfintech, linbingjie@itiger.com
 
 ## License
 

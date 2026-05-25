@@ -1,4 +1,6 @@
 .DS_Store
+TigerTradingSDK/Frameworks/
+*.zip
 build/
 *.pbxuser
 !default.pbxuser

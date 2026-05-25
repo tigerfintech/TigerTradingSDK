@@ -5,12 +5,11 @@ platform :ios, '12.0'
 
 target 'TigerTradingSDK_Example' do
   pod 'TigerTradingSDK', :path => '../'
-#  pod 'TigerTradingSDK', :git => 'https://github.com/tigerfintech/TigerTradingSDK.git', :branch => 'dev'
-  target 'TigerTradingSDK_Tests' do
-    inherit! :search_paths
+  pod 'YYText', :git => 'https://github.com/tigerfintech/YYText.git'
+  pod 'RecaptchaEnterprise', '18.7.0'
+  pod 'Intercom', :git => 'https://github.com/tigerfintech/intercom-ios.git', :tag => '9.3.5.2'
+  pod 'GTCaptcha4', :git => 'https://github.com/tigerfintech/GTCaptcha4.git', :tag => '1.8.8'
 
-    
-  end
 end
 
 

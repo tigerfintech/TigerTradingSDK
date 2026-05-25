@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TigerTradingSDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of TigerTradingSDK.'
+  s.summary          = 'TigerTradingSDK is an iOS SDK for Tiger Trade integration.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/luopengfei/TigerTradingSDK'
+  s.homepage         = 'https://github.com/tigerfintech/TigerTradingSDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'luopengfei' => 'luopengfei@itiger.com' }
-  s.source           = { :git => 'https://github.com/luopengfei/TigerTradingSDK.git', :tag => s.version.to_s }
+  s.author           = { 'tigerfintech' => 'linbingjie@itiger.com' }
+  s.source           = { :http => "https://github.com/tigerfintech/TigerTradingSDK/releases/download/#{s.version}/TigerTradingSDK-#{s.version}.zip" }
 
   s.ios.deployment_target = '12.0'
 

@@ -31,7 +31,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     // token 过期处理通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tokenExpired) name:TigerTradingSDKLoginTokenExpiredNotification object:nil];
 
     // 初始化数据源
     [self setupDataSource];
@@ -198,7 +197,11 @@
     }];
     
     TBCellModel *tupLoginVCModel = [[TBCellModel alloc] initWithTitle:@"TUPLogin OR Homepage" action:^{
-        [TigerTradingSDKManager openLoginViewController:self];
+        [TigerTradingSDKManager openLoginViewController:self success:^{
+            
+        } failure:^(NSError * _Nonnull) {
+            
+        }];
     }];
     
     TBCellModel *logoutModel = [[TBCellModel alloc] initWithTitle:@"Logout" action:^{

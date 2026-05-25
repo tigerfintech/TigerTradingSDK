@@ -19,16 +19,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     
-    // Setup SDK with options and clientId
-    [TigerTradingSDKManager setupWithOption:launchOptions
-                                    appName:@""
-                                  appSecret:@""
-#ifdef DEBUG
-                  defaultNetWorkEnvironment:TigerTradingSDKNetWork_UAT];
-#else
-                  defaultNetWorkEnvironment:TigerTradingSDKNetWork_PRODITFS];
-#endif
-    
     // Initialize the root view controller
     TBViewController *vc = [[TBViewController alloc] init];
     
