@@ -1,0 +1,84 @@
+REPO_DIR       = File.expand_path("..", __dir__)
+FRAMEWORKS_DIR = File.join(REPO_DIR, "TigerTradingSDK", "Frameworks")
+PODSPEC_PATH   = File.join(REPO_DIR, "TigerTradingSDK.podspec")
+GITHUB_REPO    = "tigerfintech/TigerTradingSDK"
+SPECS_REPO     = "git@github.com:tigerfintech/Specs.git"
+
+desc "发布新版本。用法: bundle exec fastlane release version:x.y.z"
+lane :release do |options|
+  version = options[:version]
+  UI.user_error!("请传入版本号，例如: bundle exec fastlane release version:0.2.0") if version.nil? || version.empty?
+  UI.user_error!("版本号格式无效: #{version}（应为 x.y.z）") unless version =~ /^\d+\.\d+\.\d+$/
+
+  # ── 1. 检查 xcframework ──────────────────────────────────────────────────
+  xcf_list = Dir.glob(File.join(FRAMEWORKS_DIR, "*.xcframework"))
+  UI.user_error!("未找到 xcframework，请先将二进制放入 #{FRAMEWORKS_DIR}") if xcf_list.empty?
+  UI.success("找到 #{xcf_list.size} 个 xcframework")
+
+  # ── 2. 检查 GitHub token ─────────────────────────────────────────────────
+  github_token = ENV["GITHUB_API_TOKEN"]
+  UI.user_error!("缺少 GITHUB_API_TOKEN，请在 fastlane/.env 中配置") if github_token.nil? || github_token.empty?
+
+  # ── 3. 更新 podspec 版本号 ───────────────────────────────────────────────
+  UI.message("更新 podspec 版本号 -> #{version}")
+  content = File.read(PODSPEC_PATH)
+  updated = content.gsub(/s\.version\s*=\s*'[^']+'/, "s.version          = '#{version}'")
+  File.write(PODSPEC_PATH, updated)
+
+  # ── 4. 打 zip ────────────────────────────────────────────────────────────
+  zip_name = "TigerTradingSDK-#{version}.zip"
+  zip_path = File.join(REPO_DIR, zip_name)
+  UI.message("打包 #{zip_name} ...")
+  Dir.chdir(REPO_DIR) do
+    sh("zip -r #{zip_name} TigerTradingSDK/Frameworks/ LICENSE -q")
+  end
+  size_mb = (File.size(zip_path) / 1024.0 / 1024.0).round(1)
+  UI.success("打包完成: #{size_mb} MB")
+
+  # ── 5. git commit + tag + push ───────────────────────────────────────────
+  git_add(path: PODSPEC_PATH)
+  git_commit(path: PODSPEC_PATH, message: "chore: release #{version}")
+  add_git_tag(tag: version)
+  push_to_git_remote(tags: true)
+  UI.success("代码已推送，tag: #{version}")
+
+  # ── 6. 创建 GitHub Release 并上传 zip ────────────────────────────────────
+  UI.message("创建 GitHub Release #{version} ...")
+  github_release = set_github_release(
+    repository_name: GITHUB_REPO,
+    api_token:       github_token,
+    name:            version,
+    tag_name:        version,
+    description:     "TigerTradingSDK #{version} binary frameworks release.",
+    upload_assets:   [zip_path]
+  )
+  UI.success("Release 已创建: #{github_release['html_url']}")
+
+  # ── 7. 更新 Specs 仓库 ───────────────────────────────────────────────────
+  UI.message("更新 Specs 仓库 ...")
+  specs_tmp = Dir.mktmpdir("TigerSpecs")
+  begin
+    sh("git clone #{SPECS_REPO} #{specs_tmp} --depth 1 -q")
+    spec_dir = File.join(specs_tmp, "Specs", "TigerTradingSDK", version)
+    FileUtils.mkdir_p(spec_dir)
+    FileUtils.cp(PODSPEC_PATH, spec_dir)
+    Dir.chdir(specs_tmp) do
+      sh("git add .")
+      sh("git commit -m 'feat: add TigerTradingSDK #{version}' -q")
+      sh("git push origin main -q")
+    end
+  ensure
+    FileUtils.rm_rf(specs_tmp)
+  end
+  UI.success("Specs 仓库已更新")
+
+  # ── 8. 清理本地 zip ──────────────────────────────────────────────────────
+  File.delete(zip_path) if File.exist?(zip_path)
+
+  UI.success("========================================")
+  UI.success("  TigerTradingSDK #{version} 发布成功！")
+  UI.success("========================================")
+  UI.message("客户接入:")
+  UI.message("  source 'https://github.com/tigerfintech/Specs.git'")
+  UI.message("  pod 'TigerTradingSDK', '#{version}'")
+end

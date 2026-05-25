@@ -27,6 +27,8 @@ Stock.app.dSYM.zip
 Stock.ipa
 fastlane/report.xml
 fastlane/README.md
+fastlane/.env
+fastlane/*.html
 *.pyc
 Podfile.local
 tmp_path_Stock
