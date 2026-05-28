@@ -6,7 +6,7 @@ use_frameworks!
 platform :ios, '12.0'
 
 target 'TigerTradingSDK_Example' do
-  pod 'TigerTradingSDK', '0.3.0'
+  pod 'TigerTradingSDK'
   pod 'YYText', :git => 'https://github.com/tigerfintech/YYText.git'
   pod 'RecaptchaEnterprise', '18.7.0'
   pod 'Intercom', :git => 'https://github.com/tigerfintech/intercom-ios.git', :tag => '9.3.5.2'
