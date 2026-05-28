@@ -11,7 +11,7 @@ target 'TigerTradingSDK_Example' do
   pod 'RecaptchaEnterprise', '18.7.0'
   pod 'Intercom', :git => 'https://github.com/tigerfintech/intercom-ios.git', :tag => '9.3.5.2'
   pod 'GTCaptcha4', :git => 'https://github.com/tigerfintech/GTCaptcha4.git', :tag => '1.8.8'
-
+  pod 'AFNetworking', :git => 'https://github.com/tigerfintech/AFNetworking.git', :tag => '4.0.3'
 end
 
 
