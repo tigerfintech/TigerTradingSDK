@@ -24,12 +24,14 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSCalendarsUsageDescription</key>
+	<key>NSCalendarsWriteOnlyAccessUsageDescription</key>
 	<string>App需要您同意才能添加日历提醒</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Please allow Tiger Trade to access your Camera so that you can continue to use the account opening service.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Please allow Tiger Trade to access your location information so that you can continue to use the account opening service.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>App需要访问本地网络以获取实时行情数据</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Please allow Tiger Trade to access your Photo Library so that you can continue to use the account opening service.</string>
 	<key>UILaunchStoryboardName</key>
