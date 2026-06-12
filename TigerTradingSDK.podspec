@@ -34,7 +34,7 @@ for account management, stock trading, market data, charting, and more.
   s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES" }
 
   s.vendored_frameworks = "TigerTradingSDK/Frameworks/*.{framework,xcframework}"
-  s.dependency 'libpag', '4.3.62'
+  s.dependency 'libpag', '4.3.64'
   s.dependency 'AFNetworking'
   s.dependency 'MJRefresh'
   s.dependency 'Masonry'
