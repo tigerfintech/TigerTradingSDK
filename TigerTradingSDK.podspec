@@ -50,7 +50,7 @@ for account management, stock trading, market data, charting, and more.
   s.dependency 'PromisesSwift'
   s.dependency 'CocoaLumberjack'
 
-  s.dependency 'YYText'
+  s.dependency 'YYText', '1.0.8'
   s.dependency 'YYModel'
   s.dependency 'YYCategories', '1.0.4'
   s.dependency 'MMKV'
