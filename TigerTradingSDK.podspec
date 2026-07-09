@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TigerTradingSDK'
-  s.version          = '0.4.9'
+  s.version          = '0.5.0'
   s.summary          = 'TigerTradingSDK is an iOS SDK for Tiger Trade integration.'
 
 # This description is used to generate tags and improve search results.
