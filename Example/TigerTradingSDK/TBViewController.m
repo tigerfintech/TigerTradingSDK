@@ -15,7 +15,7 @@
 #import "TBTokenManangerViewController.h"
 #import <TBBaseKit/TBBaseKit.h>
 #import <TBNetworking/TBHttpRequestManager.h>
-@import TBUIKit;
+//@import TBUIKit;
 
 @interface TBViewController () <UITableViewDelegate, UITableViewDataSource, TigerTradingSDKDelegate>
 

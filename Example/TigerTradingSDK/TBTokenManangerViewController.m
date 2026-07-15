@@ -10,7 +10,7 @@
 
 
 #import <TigerTradingSDK/TigerTradingSDKManager.h>
-#import <TBUIKit/MBProgressHUD+Wrapper.h>
+//#import <TBUIKit/MBProgressHUD+Wrapper.h>
 
 
 @interface TBTokenManangerViewController ()
@@ -39,12 +39,12 @@
 - (IBAction)tokenExchangeAction:(id)sender {
     
     if (self.clientIdTF.text.length == 0) {
-        [MBProgressHUD showHint:@"请输入clientid" hide:2];
+//        [MBProgressHUD showHint:@"请输入clientid" hide:2];
         return;
     }
     
     if (self.codeTF.text.length == 0) {
-        [MBProgressHUD showHint:@"请输入autorizationCode" hide:2];
+//        [MBProgressHUD showHint:@"请输入autorizationCode" hide:2];
         return;
     }
     

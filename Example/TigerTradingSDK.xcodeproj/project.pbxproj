@@ -456,11 +456,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-TigerTradingSDK_Example/Pods-TigerTradingSDK_Example-resources.sh",
 				"${PODS_ROOT}/GTCaptcha4/gt4-ios-1.8.8-sec/SDK/GTCaptcha4.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/RecaptchaEnterpriseSDK/RecaptchaEnterpriseSDKResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/libpag/libpag.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTCaptcha4.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RecaptchaEnterpriseSDKResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/libpag.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -655,6 +657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -679,6 +682,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
