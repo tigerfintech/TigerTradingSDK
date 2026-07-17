@@ -1,5 +1,6 @@
 REPO_DIR       = File.expand_path("..", __dir__)
 FRAMEWORKS_DIR = File.join(REPO_DIR, "TigerTradingSDK", "Frameworks")
+DSYMS_DIR      = File.join(REPO_DIR, "TigerTradingSDK", "dSYMs")
 PODSPEC_PATH   = File.join(REPO_DIR, "TigerTradingSDK.podspec")
 GITHUB_REPO    = "tigerfintech/TigerTradingSDK"
 SPECS_REPO     = "git@github.com:tigerfintech/Specs.git"
@@ -29,10 +30,16 @@ lane :release do |options|
   zip_name = "TigerTradingSDK-#{version}.zip"
   zip_path = File.join(REPO_DIR, zip_name)
   UI.message("打包 #{zip_name} ...")
+  dsym_arg = Dir.exist?(DSYMS_DIR) && !Dir.empty?(DSYMS_DIR) ? "TigerTradingSDK/dSYMs/ " : ""
   Dir.chdir(REPO_DIR) do
-    sh("zip -r #{zip_name} TigerTradingSDK/Frameworks/ LICENSE -q")
+    sh("zip -r #{zip_name} TigerTradingSDK/Frameworks/ #{dsym_arg}LICENSE -q")
   end
   size_mb = (File.size(zip_path) / 1024.0 / 1024.0).round(1)
+  if dsym_arg.empty?
+    UI.important("⚠️ 未找到 dSYMs，zip 中不含符号文件")
+  else
+    UI.success("✅ dSYM 已包含在 zip 中")
+  end
   UI.success("打包完成: #{size_mb} MB")
 
   # ── 5. git commit + tag + push ───────────────────────────────────────────
