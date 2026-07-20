@@ -32,6 +32,9 @@ for account management, stock trading, market data, charting, and more.
 
   s.swift_version = "5.0"
   s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES" }
+  s.resource_bundles = {
+    "TigerTradingSDK" => ["PrivacyInfo.xcprivacy"]
+  }
 
   s.vendored_frameworks = "TigerTradingSDK/Frameworks/*.{framework,xcframework}"
   s.dependency 'libpag', '4.3.64'
