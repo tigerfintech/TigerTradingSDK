@@ -42,11 +42,12 @@ lane :release do |options|
   end
   UI.success("打包完成: #{size_mb} MB")
 
-  # ── 5. git commit + tag + push ───────────────────────────────────────────
+  # ── 5. git commit + push branch + tag + push tag ────────────────────────
   git_add(path: PODSPEC_PATH)
   git_commit(path: PODSPEC_PATH, message: "chore: release #{version}")
+  push_to_git_remote(tags: false)
   add_git_tag(tag: version)
-  push_to_git_remote(tags: true)
+  push_to_git_remote(tags: true, push_options: ["--tags"])
   UI.success("代码已推送，tag: #{version}")
 
   # ── 6. 创建 GitHub Release 并上传 zip ────────────────────────────────────
