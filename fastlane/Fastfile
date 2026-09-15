@@ -43,6 +43,7 @@ lane :release do |options|
   UI.success("打包完成: #{size_mb} MB")
 
   # ── 5. git commit + push branch + tag + push tag ────────────────────────
+  sh("git pull --rebase origin #{git_branch}")
   git_add(path: PODSPEC_PATH)
   git_commit(path: PODSPEC_PATH, message: "chore: release #{version}")
   push_to_git_remote(tags: false)
