@@ -20,6 +20,13 @@ lane :release do |options|
   github_token = ENV["GITHUB_API_TOKEN"]
   UI.user_error!("缺少 GITHUB_API_TOKEN，请在 fastlane/.env 中配置") if github_token.nil? || github_token.empty?
 
+  # ── 2.5. 拉取最新代码，避免 push 被远端拒绝 ────────────────────────────
+  UI.message("拉取最新代码 ...")
+  Dir.chdir(REPO_DIR) do
+    current_branch = sh("git rev-parse --abbrev-ref HEAD").strip
+    sh("git pull --rebase origin #{current_branch}")
+  end
+
   # ── 3. 更新 podspec 版本号 ───────────────────────────────────────────────
   UI.message("更新 podspec 版本号 -> #{version}")
   content = File.read(PODSPEC_PATH)
