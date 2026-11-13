@@ -1,20 +1,26 @@
+# 由 Demo 导出脚本填入已发布版本后生成 Podfile。
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/tigerfintech/Specs.git'
 
-use_frameworks!
+# 沿用当前 Example target 的最低系统版本。
+platform :ios, '15.0'
+use_frameworks! :linkage => :dynamic
 
-platform :ios, '12.0'
+project 'TigerQuoteSDK.xcodeproj'
 
-target 'TigerTradingSDK_Example' do
-  pod 'TigerTradingSDK'
+target 'TigerQuoteSDK_Example' do
+  pod 'TigerTradingSDK', '3.2.2'
 end
 
+target 'TigerQuoteSDK_Example_US' do
+  pod 'TigerTradingSDKUS', '3.2.2'
+end
 
+# 只调整本 Demo 生成的 Pods 工程，与当前 Example 的最低系统版本一致。
 post_install do |installer|
   installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
-      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+    target.build_configurations.each do |configuration|
+      configuration.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
     end
   end
 end

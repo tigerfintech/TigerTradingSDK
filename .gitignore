@@ -1,35 +1,28 @@
+# 本机及 Xcode 状态
 .DS_Store
-TigerTradingSDK/Frameworks/
-*.zip
-build/
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-*.xcworkspace
-!default.xcworkspace
-xcuserdata
-profile
-*.moved-aside
-DerivedData
-.idea/
-# Pods - for those of you who use CocoaPods
-Example/Pods
-Example/frameworkBuild
-Example/Podfile.lock
-Example/Podfile.local
+xcuserdata/
 *.xcuserstate
-Stock.app.dSYM.zip
-Stock.ipa
-fastlane/report.xml
-fastlane/README.md
-fastlane/.env
-fastlane/*.html
-*.pyc
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace/
+
+# CocoaPods 生成内容；SDK 版本由 Podfile 固定
+Example/Pods/
+Example/Podfile.lock
 Podfile.local
-tmp_path_Stock
-Example/components
+
+# 构建与验证产物
+build/
+DerivedData/
+*.ipa
+*.dSYM/
+*.dSYM.zip
+*.zip
+*.log
+VALIDATION.md
+
+# 本地环境文件
+.env
+.env.*
