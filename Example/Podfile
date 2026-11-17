@@ -9,11 +9,11 @@ use_frameworks! :linkage => :dynamic
 project 'TigerQuoteSDK.xcodeproj'
 
 target 'TigerQuoteSDK_Example' do
-  pod 'TigerTradingSDK', '3.2.2'
+  pod 'TigerTradingSDK', '3.2.1'
 end
 
 target 'TigerQuoteSDK_Example_US' do
-  pod 'TigerTradingSDKUS', '3.2.2'
+  pod 'TigerTradingSDKUS', '3.2.1'
 end
 
 # 只调整本 Demo 生成的 Pods 工程，与当前 Example 的最低系统版本一致。

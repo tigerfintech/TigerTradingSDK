@@ -56,7 +56,7 @@
     // 给 demoApp 的 webview UA 加 "DemoApp" 标识
     [TBAppManager setCustomUserAgentSuffix:@"DemoApp"];
     [TBAPPFunctionConfigManager sharedInstance].debug_watchlistMode = TBSDKWatchlistModeDisabled; // 设置为SDK自己维护自选
-    
+
 #ifdef DEBUG
     [TigerTradingSDKManager setupSDKDebugMode:YES];
 #else

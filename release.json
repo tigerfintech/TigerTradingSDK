@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "sdk_version": "3.2.2",
-  "tag": "3.2.2",
+  "sdk_version": "3.2.1",
+  "tag": "3.2.1",
   "minimum_ios": "15.0",
   "variants": [
     {

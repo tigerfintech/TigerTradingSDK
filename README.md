@@ -1,6 +1,6 @@
 # TigerTradingSDK Demo
 
-本示例使用 SDK **3.2.2**，最低支持 iOS 15。Standard 和 US 共用一份源码、资源及配置入口，分别集成对应的公开 SDK。
+本示例使用 SDK **3.2.1**，最低支持 iOS 15。Standard 和 US 共用一份源码、资源及配置入口，分别集成对应的公开 SDK。
 
 | 版本 | Target | Scheme | Pod |
 | --- | --- | --- | --- |

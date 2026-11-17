@@ -280,7 +280,7 @@
 //        [self presentViewController:vc animated:YES completion:nil];
     }];
 #endif
-    
+
     NSString *loginTitle = @"游客登录";
 #if !TB_PUBLIC_EXAMPLE
     loginTitle = @"⭐️登录";
